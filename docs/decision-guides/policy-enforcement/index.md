@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817662"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023708"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guía de decisiones sobre el cumplimiento de directivas
 
 La definición de una directiva de la organización no será eficaz a menos que se pueda aplicar en la organización. Un aspecto clave a la hora de planear cualquier migración a la nube consiste en determinar la mejor manera de combinar las herramientas que ofrece la plataforma de nube con los procesos de TI ya existentes para maximizar el cumplimiento de la directiva en todo el patrimonio de la nube.
 
-![Esquema de las opciones de cumplimiento de directivas, de las menos a las más complejas, con sus hipervínculos](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Esquema de las opciones de cumplimiento de directivas, de las menos a las más complejas, con sus hipervínculos](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Vaya a: [Procedimientos recomendados de la base de referencia](#baseline-recommended-practices) | [Supervisión del cumplimiento de la directiva](#policy-compliance-monitoring) | [Cumplimiento de la directiva](#policy-enforcement) | [Directiva para toda la organización](#cross-organization-policy) | [Cumplimiento automatizado](#automated-enforcement)
 
@@ -28,7 +28,7 @@ A medida que crece el entorno en la nube, se tendrá que enfrentar con la corres
 
 Los mecanismos de cumplimiento de directivas que proporciona la plataforma en el nivel de recurso o en el de suscripción normalmente son suficientes para entornos en la nube menores. Las implementaciones más grandes justifican un ámbito de cumplimiento mayor y podrían necesitar aprovechar las ventajas de mecanismos de cumplimiento más sofisticados que implican estándares de implementación, agrupación de recursos y organización y la integración del cumplimiento de directivas con los sistemas de registro e informes.
 
-Los principales factores para determinar el ámbito de los procesos de cumplimiento de directivas son los [requisitos de gobernanza en la nube](/azure/architecture/cloud-adoption/governance/overview) de la organización, el tamaño y la naturaleza del entorno en la nube y cómo se refleja la organización en el [diseño de suscripciones](../subscriptions/index.md). Un aumento de tamaño del entorno o una mayor necesidad de administrar de forma centralizada la aplicación de directivas pueden justificar un aumento en el ámbito del cumplimiento.
+Los principales factores para determinar el ámbito de los procesos de cumplimiento de directivas son los [requisitos de gobernanza en la nube](../../govern/index.md) de la organización, el tamaño y la naturaleza del entorno en la nube y cómo se refleja la organización en el [diseño de suscripciones](../subscriptions/index.md). Un aumento de tamaño del entorno o una mayor necesidad de administrar de forma centralizada la aplicación de directivas pueden justificar un aumento en el ámbito del cumplimiento.
 
 ## <a name="baseline-recommended-practices"></a>Procedimientos recomendados sobre la base de referencia
 
@@ -43,15 +43,15 @@ Inicie la planeación del cumplimiento de la directiva de la nube mediante el an
 
 ## <a name="policy-compliance-monitoring"></a>Supervisión del cumplimiento de la directiva
 
-Un primer paso más allá de la simple confianza en los mecanismos de cumplimiento de directivas proporcionados por la plataforma de Azure es garantizar la posibilidad de comprobar que las aplicaciones y servicios basados en la nube cumplen con la directiva organizativa. Esto incluye la implementación de funcionalidades de notificación para alertar a las partes responsables si un recurso no logra el cumplimiento. El [registro y notificación](../log-and-report/index.md) eficaz del estado de cumplimiento de las cargas de trabajo de la nube es una parte fundamental de una estrategia de cumplimiento de la directiva corporativa.
+Un primer paso más allá de la simple confianza en los mecanismos de cumplimiento de directivas proporcionados por la plataforma de Azure es garantizar la posibilidad de comprobar que las aplicaciones y servicios basados en la nube cumplen con la directiva organizativa. Esto incluye la implementación de funcionalidades de notificación para alertar a las partes responsables si un recurso no logra el cumplimiento. El [registro y notificación](../logging-and-reporting/index.md) eficaz del estado de cumplimiento de las cargas de trabajo de la nube es una parte fundamental de una estrategia de cumplimiento de la directiva corporativa.
 
-A medida que crece el patrimonio de la nube, hay herramientas adicionales como [Azure Security Center](/azure/security-center) que ofrecen seguridad y detección de amenazas integrada, y que ayuda a aplicar una administración centralizada de la directiva y a enviar alertas sobre el estado de los recursos locales y en la nube.
+A medida que crece el patrimonio de la nube, hay herramientas adicionales como [Azure Security Center](https://docs.microsoft.com/azure/security-center) que ofrecen seguridad y detección de amenazas integrada, y que ayuda a aplicar una administración centralizada de la directiva y a enviar alertas sobre el estado de los recursos locales y en la nube.
 
 ## <a name="policy-enforcement"></a>Aplicación de directivas
 
 En Azure, también puede aplicar opciones de configuración y reglas de creación de recursos en el nivel de grupo de administración, suscripción o grupo de recursos para ayudar a garantizar la alineación con las directivas.
 
-[Azure Policy](/azure/governance/policy/overview) es un servicio de Azure para crear, asignar y administrar directivas. Dichas directivas aplican distintas reglas y efectos a los recursos, con el fin de que estos sigan siendo compatibles con los estándares corporativos y los acuerdos de nivel de servicio. Azure Policy evalúa los recursos que incumplen las directivas asignadas. Por ejemplo, puede que desee limitar el tamaño de SKU de las máquinas virtuales del entorno. Una vez que se implementa la directiva correspondiente, se evalúa el cumplimiento de los recursos nuevos y existentes. Con la directiva correcta, se puede conseguir el cumplimiento de los recursos existentes.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) es un servicio de Azure para crear, asignar y administrar directivas. Dichas directivas aplican distintas reglas y efectos a los recursos, con el fin de que estos sigan siendo compatibles con los estándares corporativos y los acuerdos de nivel de servicio. Azure Policy evalúa los recursos que incumplen las directivas asignadas. Por ejemplo, puede que desee limitar el tamaño de SKU de las máquinas virtuales del entorno. Una vez que se implementa la directiva correspondiente, se evalúa el cumplimiento de los recursos nuevos y existentes. Con la directiva correcta, se puede conseguir el cumplimiento de los recursos existentes.
 
 ## <a name="cross-organization-policy"></a>Directiva para toda la organización
 
@@ -61,7 +61,7 @@ El [diseño de las suscripciones](../subscriptions/index.md) deberá tener en cu
 
 ## <a name="automated-enforcement"></a>Cumplimiento automatizado
 
-Aunque las plantillas de implementación estándar son eficaces a una escala menor, [Azure Blueprints](/azure/governance/blueprints/overview) permite un aprovisionamiento estándar a gran escala y la orquestación de la implementación de las soluciones de Azure. Las cargas de trabajo de varias suscripciones se pueden implementar con valores de directiva coherentes en cualquier recurso que se cree.
+Aunque las plantillas de implementación estándar son eficaces a una escala menor, [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) permite un aprovisionamiento estándar a gran escala y la orquestación de la implementación de las soluciones de Azure. Las cargas de trabajo de varias suscripciones se pueden implementar con valores de directiva coherentes en cualquier recurso que se cree.
 
 En entornos de TI que integran recursos locales y en la nube, puede que necesite usar sistemas de registro y notificación que ofrezcan funcionalidades de supervisión híbridas. Los sistemas de supervisión operativa personalizados o de terceros pueden ofrecer otras funcionalidades adicionales de cumplimiento de directivas. Para entornos en la nube mayores o más maduros, analice cómo integrar mejor estos sistemas con los recursos en la nube.
 
