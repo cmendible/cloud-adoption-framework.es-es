@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817968"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023751"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guía de decisiones sobre redes definidas por software
 
@@ -22,9 +22,9 @@ Redes definidas por software (SDN) es una arquitectura de red diseñada para per
 
 ## <a name="networking-decision-guide"></a>Guía de decisiones sobre redes
 
-![Esquema de las opciones de red, de las menos a las más complejas, con sus hipervínculos](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Esquema de las opciones de red, de las menos a las más complejas, con sus hipervínculos](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Vaya a: [Solo PaaS](paas-only.md) | [Nativa de la nube](cloud-native.md) | [Red perimetral en la nube](cloud-dmz.md) [Híbrida](hybrid.md) | [Modelo en estrella tipo hub-and-spoke](hub-spoke.md) | [Más información](#learn-more)
+Vaya a: [Solo PaaS](./paas-only.md) | [Nativa de la nube](./cloud-native.md) | [Red perimetral en la nube](./cloud-dmz.md) [Híbrida](./hybrid.md) | [Modelo en estrella tipo hub-and-spoke](./hub-spoke.md) | [Más información](#learn-more)
 
 SDN proporciona varias opciones con diversos grados de complejidad y precios. La guía de detección anterior proporciona una referencia para personalizar rápidamente dichas opciones, con el fin de ajustarlas lo mejor posible a estrategias empresariales y tecnológicas concretas.
 
@@ -53,18 +53,18 @@ Al planear la arquitectura de red virtual o la combinación de arquitecturas que
 
 Más información acerca de las arquitecturas de red principales definidas por el software:
 
-- **[Solo PaaS](paas-only.md):** la mayoría de los productos de plataforma como servicio (PaaS) admiten un conjunto limitado de características de redes integradas y es posible que no necesiten una red definida por software explícitamente para cumplir los requisitos de las cargas de trabajo.
-- **[Nativas de la nube](cloud-native.md):** una arquitectura nativa de la nube admite cargas de trabajo basadas en la nube con redes virtuales basadas en funcionalidades de redes definidas por software predeterminadas de la plataforma en la nube, sin necesidad de depender de recursos locales o externos.
-- **[Red perimetral en la nube](cloud-dmz.md):** admite una conectividad limitada entre la red local y en la nube que se protege mediante la implementación de una red perimetral que controla estrechamente el tráfico entre los dos entornos.
-- **[Híbrida](hybrid.md):** la arquitectura de red en la nube híbrida permite a las redes virtuales de entornos en la nube de confianza acceder a los recursos locales y viceversa.
-- **[En estrella tipo hub-and-spoke](hub-spoke.md):** La arquitectura en estrella tipo hub-and-spoke permite administrar centralmente la conectividad externa y los servicios compartidos, aislar cargas de trabajo individuales y superar los límites de suscripciones posibles.
+- **[Solo PaaS](./paas-only.md):** la mayoría de los productos de plataforma como servicio (PaaS) admiten un conjunto limitado de características de redes integradas y es posible que no necesiten una red definida por software explícitamente para cumplir los requisitos de las cargas de trabajo.
+- **[Nativas de la nube](./cloud-native.md):** una arquitectura nativa de la nube admite cargas de trabajo basadas en la nube con redes virtuales basadas en funcionalidades de redes definidas por software predeterminadas de la plataforma en la nube, sin necesidad de depender de recursos locales o externos.
+- **[Red perimetral en la nube](./cloud-dmz.md):** admite una conectividad limitada entre la red local y en la nube que se protege mediante la implementación de una red perimetral que controla estrechamente el tráfico entre los dos entornos.
+- **[Híbrida](./hybrid.md):** la arquitectura de red en la nube híbrida permite a las redes virtuales de entornos en la nube de confianza acceder a los recursos locales y viceversa.
+- **[En estrella tipo hub-and-spoke](./hub-spoke.md):** La arquitectura en estrella tipo hub-and-spoke permite administrar centralmente la conectividad externa y los servicios compartidos, aislar cargas de trabajo individuales y superar los límites de suscripciones posibles.
 
 ## <a name="learn-more"></a>Más información
 
 Para más información acerca de las redes definidas por software en Azure, consulte:
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). En Azure, Azure Virtual Network proporciona la funcionalidad de SDN principal, que actúa como un análogo en la nube a las redes locales físicas. Las redes virtuales también actúan como límite de aislamiento predeterminado entre los recursos de la plataforma.
-- [Procedimientos recomendados de seguridad de la red de Azure](/azure/security/azure-security-network-security-best-practices). Recomendaciones del equipo de seguridad de Azure para configurar las redes virtuales para minimizar las vulnerabilidades de seguridad.
+- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). En Azure, Azure Virtual Network proporciona la funcionalidad de SDN principal, que actúa como un análogo en la nube a las redes locales físicas. Las redes virtuales también actúan como límite de aislamiento predeterminado entre los recursos de la plataforma.
+- [Procedimientos recomendados de seguridad de la red de Azure](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). Recomendaciones del equipo de seguridad de Azure para configurar las redes virtuales para minimizar las vulnerabilidades de seguridad.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

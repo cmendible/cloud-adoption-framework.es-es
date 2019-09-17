@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818138"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022586"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Protección de las herramientas de administración y supervisión
 
@@ -26,7 +26,7 @@ La *supervisión* es el acto de recopilar y analizar datos para determinar el re
 - **Supervisión básica.** La supervisión básica proporciona el control fundamental requerido de los recursos de Azure. Estos servicios requieren una configuración mínima y recopilan la telemetría principal que usan los servicios de supervisión premium.
 - **Supervisión profunda de la aplicación y la infraestructura.** Los servicios de Azure proporcionan funcionalidades enriquecidas para recopilar y analizar datos de supervisión en profundidad. Estos servicios se basan en la supervisión básica y aprovechan las funcionalidades comunes de Azure. Proporcionan análisis eficaces con los datos recopilados y le ofrecen información única sobre sus aplicaciones e infraestructura.
 
-Obtenga más información sobre [Azure Monitor](/azure/azure-monitor/overview) para la supervisión de los recursos migrados.
+Obtenga más información sobre [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) para la supervisión de los recursos migrados.
 
 ## <a name="security-monitoring"></a>Supervisión de la seguridad
 
@@ -39,7 +39,7 @@ Confíe en Azure Security Center para lograr una supervisión unificada de la se
 - **Alertas e incidentes clasificados por orden de prioridad.** Céntrese primero en las amenazas más críticas con la clasificación en orden de prioridad de las alertas e incidentes de seguridad.
 - **Soluciones de seguridad integradas.** Recopile, busque y analice datos de seguridad de una gran variedad de orígenes, incluidas las soluciones conectadas de los asociados.
 
-Obtenga más información sobre [Azure Security Center](/azure/security-center) para la protección de los recursos migrados.
+Obtenga más información sobre [Azure Security Center](https://docs.microsoft.com/azure/security-center) para la protección de los recursos migrados.
 
 ## <a name="protect-assets-and-data"></a>Protección de recursos y datos
 
@@ -50,4 +50,4 @@ Azure Backup proporciona un medio de protección de las máquinas virtuales, arc
 - La copia de seguridad de bases de datos de SQL Server.
 - La recuperación de recursos protegidos.
 
-Obtenga más información sobre [Azure Backup](/azure/backup) para proteger los recursos migrados.
+Obtenga más información sobre [Azure Backup](https://docs.microsoft.com/azure/backup) para proteger los recursos migrados.

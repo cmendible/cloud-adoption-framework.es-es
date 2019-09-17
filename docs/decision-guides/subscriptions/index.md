@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0997698660f19ff47a2eebe6dcdccb122e7f20b5
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906108"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023630"
 ---
 # <a name="subscription-decision-guide"></a>Guía de decisiones de suscripción
 
@@ -37,7 +37,8 @@ Como cada organización es diferente, los grupos de administración de Azure est
 
 Antes de finalizar el diseño de la suscripción, considere cómo las decisiones sobre la [coherencia de recursos](../resource-consistency/index.md) pueden influir en las opciones de diseño.
 
-> ![NOTE] Los Contratos Enterprise (EA) de Azure le permiten definir otra jerarquía organizativa con fines de facturación. Esta jerarquía es distinta de la jerarquía del grupo de administración, que se centra en proporcionar un modelo de herencia para aplicar fácilmente directivas adecuadas y control de acceso a los recursos.
+> [!NOTE]
+> Los Contratos Enterprise (EA) de Azure le permiten definir otra jerarquía organizativa con fines de facturación. Esta jerarquía es distinta de la jerarquía del grupo de administración, que se centra en proporcionar un modelo de herencia para aplicar fácilmente directivas adecuadas y control de acceso a los recursos.
 
 Los patrones de suscripción siguientes reflejan un aumento inicial de la sofisticación en el diseño de la suscripción, seguido de varias jerarquías más avanzadas que se pueden adaptar bien a su organización:
 
@@ -94,9 +95,9 @@ Las jerarquías de los grupos de administración pueden incluir hasta seis nivel
 
 ## <a name="related-resources"></a>Recursos relacionados
 
-- [Administración del acceso a recursos de Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Varias capas de gobernanza en grandes empresas](/azure/architecture/cloud-adoption/governance/journeys/large-enterprise/multiple-layers-of-governance)
-- [Varias regiones geográficas](/azure/architecture/cloud-adoption/migrate/expanded-scope/multiple-regions)
+- [Administración del acceso a recursos de Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Varias capas de gobernanza en grandes empresas](../../govern/guides/complex/multiple-layers-of-governance.md)
+- [Varias regiones geográficas](../../migrate/expanded-scope/multiple-regions.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

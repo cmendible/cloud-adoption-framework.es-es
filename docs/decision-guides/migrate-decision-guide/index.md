@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 39254fdf2dd5638978899308c4fe79cd40cf249f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816965"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023827"
 ---
 # <a name="migration-tools-decision-guide"></a>Guía para la toma de decisiones de las herramientas de migración
 
@@ -21,7 +21,7 @@ La estrategia y las herramientas que usa para migrar una aplicación en Azure de
 
 La opción de usar las tecnologías de plataforma como servicio (PaaS) o infraestructura como servicio (IaaS) se toma debido al equilibrio entre costo, tiempo, la deuda técnica existente y las devoluciones a largo plazo. A menudo, IaaS es la ruta más rápida hacia la nube y la que menor cantidad de cambio en la carga de trabajo necesita. PaaS puede requerir que se realicen modificaciones en las estructuras de datos o en el código fuente, pero genera importantes ventajas a largo plazo, ya que reduce los costos operativos y aumenta la flexibilidad técnica. En el diagrama siguiente, el término _modernizar_ se usa para reflejar la decisión de modernizar un recurso durante la migración y migrar el recurso modernizado a una plataforma PaaS.
 
-![Árbol de decisión de herramientas de migración de ejemplo.](../../_images/migration/migration-tools-decision-tree.png)
+![Árbol de decisión de herramientas de migración de ejemplo.](../../_images/migrate/migration-tools-decision-tree.png)
 
 ## <a name="key-questions"></a>Preguntas clave
 
@@ -40,7 +40,7 @@ En consonancia con el énfasis que hace Cloud Adoption Frameworks en los esfuerz
 
 ## <a name="learn-more"></a>Más información
 
-- **[Aspectos básicos de la nube: introducción a las opciones de proceso de Azure](/azure/architecture/guide/technology-choices/compute-overview)** . Proporciona información acerca de las funcionalidades de las opciones de proceso de Azure IaaS y PaaS.
-- **[Aspectos básicos de la nube: elección del almacén de datos apropiado](/azure/architecture/guide/technology-choices/data-store-overview)** . Describe las opciones de almacenamiento de PaaS disponibles en la plataforma Azure.
+- **[Aspectos básicos de la nube: introducción a las opciones de proceso de Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Proporciona información acerca de las funcionalidades de las opciones de proceso de Azure IaaS y PaaS.
+- **[Aspectos básicos de la nube: elección del almacén de datos apropiado](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Describe las opciones de almacenamiento de PaaS disponibles en la plataforma Azure.
 - **[Migración de ámbito ampliado: los requisitos de almacenamiento superan la capacidad de red durante un esfuerzo de migración](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Describe mecanismos de migración de datos alternativos para escenarios en los que migración de datos se ve dificultada por el ancho de banda de red disponible.
-- **[SQL Database: elija la opción de SQL Server correcta en Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Explicación de las opciones y las justificaciones comerciales para elegir hospedar las cargas de trabajo de SQL Server en una infraestructura hospedada (IaaS) o en un entorno de servicios hospedados (PaaS).
+- **[SQL Database: elija la opción de SQL Server correcta en Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Explicación de las opciones y las justificaciones comerciales para elegir hospedar las cargas de trabajo de SQL Server en una infraestructura hospedada (IaaS) o en un entorno de servicios hospedados (PaaS).

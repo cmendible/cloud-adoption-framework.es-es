@@ -8,18 +8,18 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: 888d45eacf15150586eda0e6ace771b1802ac673
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816676"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024433"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Plataforma de adopción de la nube de Microsoft para Azure
 
 Cloud Adoption Framework es el único interlocutor de Microsoft para la adopción de la nube en Azure, la consolidación y el uso compartido de los procedimientos recomendados de empleados, asociados y clientes de Microsoft. Esta plataforma proporciona a los clientes empresariales un conjunto de herramientas, orientaciones y documentos que ayudan a modelar la tecnología, el negocio y las estrategias de los usuarios para lograr los resultados empresariales deseados durante el esfuerzo de adopción. Esta guía se adapta a las diferentes fases e iteraciones del ciclo de vida normal de un proceso de adopción de la nube, lo que garantiza un acceso sencillo a la guía adecuada en el momento oportuno.
 
-![Introducción a Cloud Adoption Framework](./_images/cloud-adoption-framework-overview.png)
+![Introducción a Cloud Adoption Framework](./_images/caf-overview.png)
 
 ## <a name="getting-started-executive-summaries"></a>Introducción: Resúmenes ejecutivos
 
@@ -35,7 +35,7 @@ Cada sección de Cloud Adoption Framework hace referencia al diagrama de informa
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./business-strategy/index.md">
+        <a href="./strategy/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Migre y modernice las cargas de trabajo existentes.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./governance/index.md">
+        <a href="./govern/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -130,7 +130,7 @@ Controle el entorno y las cargas de trabajo.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organization/index.md">
+        <a href="./organize/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -154,12 +154,12 @@ Prepare al personal para habilitar la adopción de la nube y las operaciones.
 
 Cloud Adoption Framework se ofrece actualmente como versión preliminar pública. La plataforma alcanzará la disponibilidad general (GA) cuando se hayan cumplido en su totalidad los siguientes objetivos a los que se aspira y que se describen en la siguiente sección. En esta versión preliminar, las áreas de enfoque principales son:
 
-- [Estrategias de adopción de la nube](./business-strategy/index.md)
+- [Estrategias de adopción de la nube](./strategy/index.md)
 - [Planeamiento de la adopción de la nube](./plan/index.md)
 - [Migración a la nube](./migrate/index.md)
-- [Gobernanza de la nube](./governance/journeys/index.md)
+- [Gobernanza de la nube](./govern/guides/index.md)
 
-Cloud Adoption Framework se ampliará con frecuencia a medida que se aproxime a la fase de disponibilidad general. Esta ampliación agregará profundidad a cada sección y nuevas secciones de contenido. Para más información, consulte la [hoja de ruta de Cloud Adoption Framework](./appendix/roadmap.md).
+Cloud Adoption Framework se ampliará con frecuencia a medida que se aproxime a la fase de disponibilidad general. Esta ampliación agregará profundidad a cada sección y nuevas secciones de contenido. Para más información, consulte la [hoja de ruta de Cloud Adoption Framework](./reference/roadmap.md).
 
 ## <a name="intent"></a>Intención
 
@@ -181,7 +181,7 @@ Cada una de las secciones de Cloud Adoption Framework representa una especializa
 
 Si su empresa es nueva en Azure, comience por leer [Introducción a Cloud Adoption Framework](./getting-started/migrate.md). Esta introducción proporciona una guía preceptiva para la transformación digital de la empresa en cada paso del proceso.
 
-Si la empresa tiene experiencia en Azure y está buscando una guía más detallada o procedimientos recomendados para determinadas áreas, consulte la [introducción a la gobernanza](./governance/index.md) y las [guías de decisiones de arquitectura](./decision-guides/index.md). Agregaremos más secciones a medida que se aproxime la fase de disponibilidad general.
+Si la empresa tiene experiencia en Azure y está buscando una guía más detallada o procedimientos recomendados para determinadas áreas, consulte la [introducción a la gobernanza](./govern/index.md) y las [guías de decisiones de arquitectura](./decision-guides/index.md). Agregaremos más secciones a medida que se aproxime la fase de disponibilidad general.
 
 > [!div class="nextstepaction"]
 > [Primeros pasos](./getting-started/migrate.md)

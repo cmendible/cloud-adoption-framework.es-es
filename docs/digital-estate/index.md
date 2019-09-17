@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817849"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023467"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ Un análisis del patrimonio digital impulsa las actividades de adopción de la n
 
 Para completar el análisis del patrimonio digital, realice los pasos siguientes:
 
-1. [Determine el enfoque de análisis](approach.md).
-1. [Recopile el inventario del estado actual](inventory.md).
-1. [Racionalice los recursos del patrimonio digital](rationalize.md).
-1. [Alinee los recursos con las ofertas de la nube para calcular los precios](calculate.md).
+1. [Determine el enfoque de análisis](./approach.md).
+1. [Recopile el inventario del estado actual](./inventory.md).
+1. [Racionalice los recursos del patrimonio digital](./rationalize.md).
+1. [Alinee los recursos con las ofertas de la nube para calcular los precios](./calculate.md).
 
 Los modelos financieros y trabajos pendientes de la migración se pueden modificar para que reflejen el patrimonio racionalizado y tasado.
 
@@ -56,4 +56,4 @@ Los modelos financieros y trabajos pendientes de la migración se pueden modific
 Antes de comenzar el planeamiento del patrimonio digital, determine qué enfoque usar.
 
 > [!div class="nextstepaction"]
-> [Enfoques de planeamiento del patrimonio digital](approach.md)
+> [Enfoques de planeamiento del patrimonio digital](./approach.md)

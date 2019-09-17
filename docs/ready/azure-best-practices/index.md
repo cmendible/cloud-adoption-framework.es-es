@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1d4423e230d2eeff524a864f163e0cb13dc065b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 275342d452c3f9c47c004014d6e2831c88aa91df
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818274"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022237"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Procedimientos recomendados de preparación para Azure
 
@@ -24,7 +24,7 @@ Una parte importante del proceso de preparación para la nube consiste en dotar 
 Use las guías siguientes para organizar e implementar sus recursos en el entorno de Azure:
 
 - [Conceptos básicos de Azure](../considerations/fundamental-concepts.md). Aprenda los conceptos y términos básicos que se emplean en Azure. Conozca también cómo se relacionan entre sí estos conceptos.
-- [Convenciones de nomenclatura y etiquetado recomendadas](../considerations/name-and-tag.md). Revise las recomendaciones detalladas para asignar nombres a los recursos y etiquetarlos. Estas recomendaciones son aplicables a los procesos de adopción de la nube empresarial.
+- [Convenciones de nomenclatura y etiquetado recomendadas](../considerations/naming-and-tagging.md). Revise las recomendaciones detalladas para asignar nombres a los recursos y etiquetarlos. Estas recomendaciones son aplicables a los procesos de adopción de la nube empresarial.
 - [Escalado de varias suscripciones de Azure](../considerations/scaling-subscriptions.md). Comprenda las estrategias de escalado de varias suscripciones de Azure.
 - [Organización de los recursos con grupos de administración de Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json). Conozca cómo los grupos de administración de Azure pueden administrar recursos, roles, directivas e implementaciones en varias suscripciones.
 - [Creación de coherencia en la nube híbrida](../../infrastructure/misc/hybrid-consistency.md). Cree soluciones de nube híbrida que ofrezcan las ventajas de la innovación en la nube conservando muchas de las comodidades de la administración local.

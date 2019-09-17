@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd4d6e7a017c9a71c090110720c28701082ce792
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817560"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023648"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guía de decisiones de nomenclatura y etiquetado de recursos
 
@@ -26,7 +26,7 @@ La organización de los recursos basados en la nube es una de las tareas más im
 
 ## <a name="tagging-decision-guide"></a>Guía de decisiones de identidades
 
-![Trazado de opciones de identidades de menos a más complejas, alineadas con vínculos](../../_images/discovery-guides/discovery-guide-tagging.png)
+![Trazado de opciones de identidades de menos a más complejas, alineadas con vínculos](../../_images/decision-guides/decision-guide-resource-tagging.png)
 
 Vaya a: [Convenciones de nomenclatura de línea de base](#baseline-naming-conventions) | [Patrones de etiquetado de recursos](#resource-tagging-patterns) | [Más información](#learn-more)
 
@@ -74,7 +74,7 @@ Los patrones de etiquetado comunes que se enumeran a continuación proporcionan 
 Para obtener más información sobre la nomenclatura y etiquetado en Azure, consulte:
 
 - [Convenciones de nomenclatura para los recursos de Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Consulte esta guía para convenciones de nomenclatura recomendadas para los recursos de Azure.
-- [Uso de etiquetas para organizar los recursos de Azure](/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Puede aplicar etiquetas en Azure en los niveles de grupo de recursos y de recurso individual, lo que ofrece flexibilidad en la granularidad de los informes de contabilidad en función de las etiquetas aplicadas.
+- [Uso de etiquetas para organizar los recursos de Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Puede aplicar etiquetas en Azure en los niveles de grupo de recursos y de recurso individual, lo que ofrece flexibilidad en la granularidad de los informes de contabilidad en función de las etiquetas aplicadas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

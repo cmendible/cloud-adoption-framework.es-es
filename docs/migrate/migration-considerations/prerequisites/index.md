@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818172"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022610"
 ---
 # <a name="prerequisites-for-migration"></a>Requisitos previos para la migración
 
@@ -25,10 +25,10 @@ Garantice la preparación empresarial, cultural y técnica antes de comenzar un 
 
 ## <a name="review-business-drivers"></a>Revisión de los impulsores de negocios
 
-Antes de comenzar cualquier migración a la nube, revise las guías [Planeamiento](../../../business-strategy/index.md) y [Preparación](../../../ready/index.md) de Cloud Adoption Framework para asegurarse de que la organización está preparada para los procesos de adopción de la nube y de migración. En concreto, revise los requisitos empresariales y los resultados esperados que impulsan la migración:
+Antes de comenzar cualquier migración a la nube, revise las guías [Planeamiento](../../../strategy/index.md) y [Preparación](../../../ready/index.md) de Cloud Adoption Framework para asegurarse de que la organización está preparada para los procesos de adopción de la nube y de migración. En concreto, revise los requisitos empresariales y los resultados esperados que impulsan la migración:
 
 - [Introducción: Migración](../../../getting-started/migrate.md)
-- [¿Por qué queremos realizar el traslado a la nube?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [¿Por qué queremos realizar el traslado a la nube?](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Definición de *Listo*
 
@@ -56,7 +56,7 @@ Se debe identificar un único miembro de cada equipo como responsable de cada un
 
 Además de la responsabilidad de alto nivel, hay acciones de las que un individuo o grupo se deben hacer responsables directamente. Estas son algunas de las responsabilidades que afectan a estas actividades:
 
-- **Prioridades empresariales.** Tome decisiones empresariales en relación a las cargas de trabajo que se desean migrar y a las restricciones temporales generales. Para más información, consulte [Cloud migration business motivations](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md) (Motivaciones empresariales para la migración a la nube).
+- **Prioridades empresariales.** Tome decisiones empresariales en relación a las cargas de trabajo que se desean migrar y a las restricciones temporales generales. Para más información, consulte [Cloud migration business motivations](../../../strategy/motivations.md) (Motivaciones empresariales para la migración a la nube).
 - **Preparación para la administración de cambios.** Establezca y comunique el plan para realizar el seguimiento de los cambios técnicos durante la migración. Habrá más información disponible sobre este tema en el tercer trimestre de 2019.
 - **Alineación del usuario empresarial.** Establezca un plan de preparación de la comunidad de usuarios empresariales para la ejecución de la migración. Habrá más información disponible sobre este tema en el tercer trimestre de 2019.
 - **Inventario y análisis del patrimonio digital.** Ejecución de las herramientas necesarias para catalogar y analizar el patrimonio digital. Consulte el análisis de Cloud Adoption Framework del [patrimonio digital](../../../digital-estate/index.md) para más información.

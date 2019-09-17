@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2e1ba47201285559be784fafe6b39bdbde0c35ed
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817084"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023896"
 ---
 # <a name="identity-decision-guide"></a>Guía de decisión de identidad
 
 En cualquier entorno, ya sea local, híbrido, o solo en la nube, el departamento de TI necesita controlar qué administradores, usuarios y grupos tienen acceso a los recursos. Los servicios de Administración de identidad y acceso (IAM) le permiten administrar el control de acceso en la nube.
 
-![Trazado de opciones de identidad de menos a más complejas, alineadas con vínculos a continuación](../../_images/discovery-guides/discovery-guide-identity.png)
+![Trazado de opciones de identidad de menos a más complejas, alineadas con vínculos a continuación](../../_images/decision-guides/decision-guide-identity.png)
 
 Vaya a: [Determinación de los requisitos de integración de identidades](#determine-identity-integration-requirements) | [Base de referencia en la nube](#cloud-baseline) | [Sincronización de directorios](#directory-synchronization) | [Servicios de dominios hospedados en la nube](#cloud-hosted-domain-services) | [Servicios de federación de Active Directory](#active-directory-federation-services) | [Más información](#learn-more)
 
@@ -61,7 +61,7 @@ Azure AD es el sistema de administración de identidad y acceso (IAM) nativo par
 
 Para organizaciones con una infraestructura de Active Directory local existente, la sincronización de directorios suele ser la mejor solución para conservar los usuarios existentes y la administración del acceso proporcionando al mismo tiempo las funcionalidades de IAM necesarias para administrar recursos en la nube. Este proceso replica continuamente la información de los directorios entre Azure AD y los servicios de directorio locales, lo que permite credenciales comunes para los usuarios y un sistema de identidades, roles y permisos coherente en toda la organización.
 
-Nota: Es posible que las organizaciones que han adoptado Office 365 ya hayan implementado la [sincronización de directorios](/office365/enterprise/set-up-directory-synchronization) entre su infraestructura de Active Directory local y Azure Active Directory.
+Nota: Es posible que las organizaciones que han adoptado Office 365 ya hayan implementado la [sincronización de directorios](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) entre su infraestructura de Active Directory local y Azure Active Directory.
 
 **Suposiciones de sincronización de directorios:** Con el uso de una solución de identidad sincronizada se asume lo siguiente:
 
@@ -91,16 +91,16 @@ Es probable que los directorios y los servicios de dominio existentes sigan usá
 
 La federación de identidades establece relaciones de confianza entre varios sistemas de administración de identidades para permitir las funciones más comunes de autenticación y autorización. Así, puede admitir capacidades de inicio de sesión único entre varios dominios dentro de su organización o sistemas de identidad administrados por los clientes o socios comerciales.
 
-Azure AD admite la federación de dominios de Active Directory locales con [Servicios de federación de Active Directory](/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Consulte la arquitectura de referencia [Extensión de Servicios de federación de Active Directory (AD FS) a Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) para ver cómo se puede implementar en Azure.
+Azure AD admite la federación de dominios de Active Directory locales con [Servicios de federación de Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Consulte la arquitectura de referencia [Extensión de Servicios de federación de Active Directory (AD FS) a Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) para ver cómo se puede implementar en Azure.
 
 ## <a name="learn-more"></a>Más información
 
 Para más información acerca de los servicios de identidad en Azure, consulte:
 
 - [Azure AD](https://azure.microsoft.com/services/active-directory). Azure AD proporciona servicios de identidad basados en la nube. Permite administrar el acceso a sus recursos de Azure y controlar la administración de identidades, el registro de dispositivos, el aprovisionamiento de usuarios, el control de acceso de la aplicación y la protección de datos.
-- [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity). La herramienta Azure AD Connect le permite conectarse a instancias de Azure AD con sus soluciones de administración de identidad existentes, permitiendo la sincronización del directorio actual en la nube.
-- [Control de acceso basado en rol](/azure/role-based-access-control/overview) (RBAC). Azure AD proporciona RBAC para administrar de forma eficaz y segura el acceso a los recursos en el plano de la administración. Los trabajos y las responsabilidades se organizan en roles, y los usuarios se asignan a estos roles. RBAC le permite controlar quién tiene acceso a un recurso, junto con las acciones que un usuario puede realizar en ese recurso.
-- [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM reduce el tiempo de exposición de los privilegios de acceso de recursos y aumenta la visibilidad de su uso mediante alertas e informes. Limita a los usuarios a que solo acepten sus privilegios "just-in-time" (JIT) o mediante la asignación de privilegios por un período de tiempo más corto, tras el cual se revocan automáticamente.
+- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity). La herramienta Azure AD Connect le permite conectarse a instancias de Azure AD con sus soluciones de administración de identidad existentes, permitiendo la sincronización del directorio actual en la nube.
+- [Control de acceso basado en rol](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC). Azure AD proporciona RBAC para administrar de forma eficaz y segura el acceso a los recursos en el plano de la administración. Los trabajos y las responsabilidades se organizan en roles, y los usuarios se asignan a estos roles. RBAC le permite controlar quién tiene acceso a un recurso, junto con las acciones que un usuario puede realizar en ese recurso.
+- [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM reduce el tiempo de exposición de los privilegios de acceso de recursos y aumenta la visibilidad de su uso mediante alertas e informes. Limita a los usuarios a que solo acepten sus privilegios "just-in-time" (JIT) o mediante la asignación de privilegios por un período de tiempo más corto, tras el cual se revocan automáticamente.
 - [Integración de dominios locales de Active Directory con Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad). Esta arquitectura de referencia proporciona un ejemplo de sincronización de directorios entre los dominios de Active Directory local y Azure AD.
 - [Extensión de Active Directory Domain Services (AD DS) a Azure.](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain) Esta arquitectura de referencia proporciona un ejemplo de cómo implementar servidores de AD DS para ampliar los servicios de dominio a los recursos basados en la nube.
 - [Extensión de Servicios de federación de Active Directory (AD FS) a Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs). Esta arquitectura de referencia configura Servicios de federación de Active Directory (AD FS) para realizar la autenticación federada y la autorización con su directorio Azure AD.

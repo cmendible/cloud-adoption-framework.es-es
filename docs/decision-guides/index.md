@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817985"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023861"
 ---
 # <a name="architectural-decision-guides"></a>Guías de decisiones sobre arquitectura
 
@@ -42,11 +42,11 @@ Cada una de las categorías siguientes representa una tecnología fundamental de
 
 [Cifrado](./encryption/index.md): proteja la información confidencial para adecuarse a los requisitos de la directiva de seguridad y cumplimiento de su organización.
 
-[Registros e informes](./log-and-report/index.md): supervise los datos de registro generados por los recursos en la nube. El análisis de los datos, proporciona información relacionada con el estado de las operaciones, el mantenimiento y el estado de cumplimiento de las cargas de trabajo.
+[Registros e informes](./logging-and-reporting/index.md): supervise los datos de registro generados por los recursos en la nube. El análisis de los datos, proporciona información relacionada con el estado de las operaciones, el mantenimiento y el estado de cumplimiento de las cargas de trabajo.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Obtenga información acerca de cómo tanto las suscripciones como las sirven como base de una implementación en la nube.
 
 > [!div class="nextstepaction"]
-> [Diseño de suscripciones](subscriptions/index.md)
+> [Diseño de suscripciones](./subscriptions/index.md)

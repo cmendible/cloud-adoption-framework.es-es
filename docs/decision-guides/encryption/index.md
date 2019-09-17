@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef608f27f75d5a47e3e23a568e576310b8962ea8
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817101"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023908"
 ---
 # <a name="encryption-decision-guide"></a>Guía de decisiones sobre cifrado
 
@@ -120,9 +120,9 @@ El cifrado de datos en uso implica proteger datos en un almacenamiento no persis
 
 Para más información acerca del cifrado y administración de claves en Azure, consulte:
 
-- [Introducción al cifrado de Azure](/azure/security/security-azure-encryption-overview). Descripción detallada de cómo utiliza Azure el cifrado para proteger los datos en reposo y en tránsito.
-- [Azure Key Vault](/azure/key-vault/key-vault-overview) Key Vault es el principal sistema de administración de claves para almacenar y administrar claves de cifrado, secretos y certificados dentro de Azure.
-- [Procedimientos recomendados de cifrado y seguridad de datos en Azure](/azure/security/azure-security-data-encryption-best-practices). Un análisis sobre los procedimientos recomendados de cifrado y seguridad de datos en Azure.
+- [Introducción al cifrado de Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). Descripción detallada de cómo utiliza Azure el cifrado para proteger los datos en reposo y en tránsito.
+- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview) Key Vault es el principal sistema de administración de claves para almacenar y administrar claves de cifrado, secretos y certificados dentro de Azure.
+- [Procedimientos recomendados de cifrado y seguridad de datos en Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). Un análisis sobre los procedimientos recomendados de cifrado y seguridad de datos en Azure.
 - [Computación confidencial en Azure](https://azure.microsoft.com/solutions/confidential-compute/). La iniciativa de computación confidencial de Azure ofrece herramientas y tecnología para crear entornos de ejecución de confianza u otros mecanismos de cifrado para proteger los datos de uso.
 
 ## <a name="next-steps"></a>Pasos siguientes
