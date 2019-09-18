@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837786"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023437"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalización del patrimonio digital
 
-La racionalización de la nube es el proceso de evaluación de los recursos para determinar el mejor enfoque para hospedarlos en la nube. Una vez que haya determinado el [enfoque](approach.md) y que haya agregado un [inventario](inventory.md), puede comenzar la racionalización de la nube. En [Racionalización de la nube](rationalize.md) se describen las opciones de racionalización más comunes.
+La racionalización de la nube es el proceso de evaluación de los recursos para determinar el mejor enfoque para hospedarlos en la nube. Una vez que haya determinado el [enfoque](./approach.md) y que haya agregado un [inventario](./inventory.md), puede comenzar la racionalización de la nube. En [Racionalización de la nube](./rationalize.md) se describen las opciones de racionalización más comunes.
 
 ## <a name="traditional-view-of-rationalization"></a>Vista tradicional de la racionalización
 
@@ -30,7 +30,7 @@ La racionalización es fácil de entender cuando el proceso tradicional de racio
 
 **Análisis cualitativo.** El siguiente conjunto de decisiones requiere inteligencia humana en forma de análisis cualitativo. A menudo, estas preguntas son exclusivas de la solución y solo las partes interesadas de la empresa y los usuarios avanzados pueden responderlas. Estas decisiones son las que generalmente retrasan el proceso y ralentizan todo considerablemente. Este análisis generalmente consume de 40 a 80 horas de empleados a tiempo completo por aplicación.
 
-Para ver una guía sobre la elaboración de una lista de preguntas de análisis cualitativo, consulte [Enfoques de planeamiento del patrimonio digital](approach.md).
+Para ver una guía sobre la elaboración de una lista de preguntas de análisis cualitativo, consulte [Enfoques de planeamiento del patrimonio digital](./approach.md).
 
 **Decisión de racionalización.** En manos de un equipo de racionalización experimentado, los datos cualitativos y cuantitativos crean decisiones claras. Desafortunadamente, los equipos con un alto grado de experiencia en racionalización son caros de contratar o tardan meses en entrenarse.
 
@@ -60,7 +60,7 @@ En un proceso de racionalización incremental, se podría utilizar una solución
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Análisis cuantitativo: Optimización de las decisiones
 
-Con independencia del enfoque de la detección de inventario, el análisis cuantitativo puede conducir a una serie de decisiones y supuestos iniciales. Esto es especialmente cierto cuando se trata de identificar la primera carga de trabajo o cuando el objetivo de la racionalización es una comparación de costos de alto nivel. En un proceso de racionalización incremental, los equipos de adopción y estrategia de la nube limitan las [5 R de la racionalización](5-rs-of-rationalization.md) a dos decisiones concisas y solo aplican esos factores cuantitativos. Esto simplifica el análisis y reduce la cantidad de datos iniciales necesarios para impulsar el cambio.
+Con independencia del enfoque de la detección de inventario, el análisis cuantitativo puede conducir a una serie de decisiones y supuestos iniciales. Esto es especialmente cierto cuando se trata de identificar la primera carga de trabajo o cuando el objetivo de la racionalización es una comparación de costos de alto nivel. En un proceso de racionalización incremental, los equipos de adopción y estrategia de la nube limitan las [5 R de la racionalización](./5-rs-of-rationalization.md) a dos decisiones concisas y solo aplican esos factores cuantitativos. Esto simplifica el análisis y reduce la cantidad de datos iniciales necesarios para impulsar el cambio.
 
 Por ejemplo, si una organización se encuentra en medio de una migración de IaaS a la nube, se puede suponer que la mayoría de las cargas de trabajo se retirarán o se volverán a hospedar.
 
@@ -116,7 +116,7 @@ La primera carga de trabajo se implementa a menudo en un entorno experimental si
 
 ### <a name="qualitative-analysis"></a>Análisis cualitativo
 
-Los equipos de adopción y estrategia de la nube pueden trabajar juntos para analizar esta pequeña carga de trabajo. Esta colaboración ofrece una oportunidad controlada de crear y probar criterios de análisis cualitativo. La población más pequeña ofrece la oportunidad de encuestar a los usuarios afectados para realizar un análisis cualitativo detallado en una semana o menos. Para conocer los factores comunes de análisis cualitativo, consulte el objetivo de racionalización específico en el documento [Las 5 R de la racionalización](5-rs-of-rationalization.md).
+Los equipos de adopción y estrategia de la nube pueden trabajar juntos para analizar esta pequeña carga de trabajo. Esta colaboración ofrece una oportunidad controlada de crear y probar criterios de análisis cualitativo. La población más pequeña ofrece la oportunidad de encuestar a los usuarios afectados para realizar un análisis cualitativo detallado en una semana o menos. Para conocer los factores comunes de análisis cualitativo, consulte el objetivo de racionalización específico en el documento [Las 5 R de la racionalización](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migración
 
@@ -161,4 +161,4 @@ En algunos casos, el modelo financiero puede ser demasiado estricto para tomar u
 El resultado de un esfuerzo de racionalización es un trabajo pendiente priorizado de todos los recursos afectados por la transformación elegida. Este trabajo pendiente ya está listo para servir de base para los modelos de cálculo de costos de los servicios en la nube.
 
 > [!div class="nextstepaction"]
-> [Alineación de los modelos de costos con el patrimonio digital](calculate.md)
+> [Alineación de los modelos de costos con el patrimonio digital](./calculate.md)

@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905286"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025172"
 ---
 # <a name="azure-fundamental-concepts"></a>Conceptos básicos de Azure
 
@@ -69,7 +69,7 @@ Al crear una suscripción a Azure, puede asociarla a un inquilino de Azure AD e
 
 Una cuenta de correo electrónico puede asociarse a varias suscripciones de Azure. El administrador de cuenta puede transferir una suscripción a otra cuenta.
 
-Para ver una descripción detallada de los roles definidos en Azure, consulte [Roles de administrador de suscripciones clásico de RBAC de Azure y de administrador de Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Para ver una descripción detallada de los roles definidos en Azure, consulte [Roles de administrador de suscripciones clásico de RBAC de Azure y de administrador de Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Suscripciones y regiones
 
@@ -84,13 +84,13 @@ Una suscripción no está vinculada a una región específica de Azure. Sin emba
 
 Los siguientes recursos proporcionan información detallada sobre los conceptos descritos en este artículo:
 
-- [¿Cómo funciona Azure?](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Administración del acceso a recursos de Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Información general sobre Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [Control de acceso basado en rol (RBAC) para recursos de Azure](/azure/role-based-access-control/overview)
-- [¿Qué es Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Asociación o incorporación de una suscripción de Azure al inquilino de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologías de Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [¿Cómo funciona Azure?](../../getting-started/what-is-azure.md)
+- [Administración del acceso a recursos de Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Información general sobre Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Control de acceso basado en rol (RBAC) para recursos de Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [¿Qué es Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Asociación o incorporación de una suscripción de Azure al inquilino de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologías de Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Suscripciones, licencias, cuentas e inquilinos para ofertas de nube de Microsoft](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Pasos siguientes

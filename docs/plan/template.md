@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839162"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022308"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan de adopción de la nube y Azure DevOps
 
@@ -59,7 +59,7 @@ La vista más clara del plan de adopción de la nube procede de la vista de trab
 
 ## <a name="align-the-cloud-adoption-plan"></a>Alineación del plan de adopción de la nube
 
-Las páginas de información general de las fases de estrategia y planeamiento del ciclo de vida de la adopción de la nube hacen referencia a la [Plantilla de estrategia y planeamiento de Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Esa plantilla organiza las decisiones y los puntos de datos que alinearán la plantilla del plan de adopción de la nube con los planes específicos para la adopción. Si aún no lo ha hecho, es posible que desee completar los ejercicios relacionados con la [estrategia](../business-strategy/index.md) y el [planeamiento](../plan/index.md) antes de alinear el nuevo proyecto.
+Las páginas de información general de las fases de estrategia y planeamiento del ciclo de vida de la adopción de la nube hacen referencia a la [Plantilla de estrategia y planeamiento de Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Esa plantilla organiza las decisiones y los puntos de datos que alinearán la plantilla del plan de adopción de la nube con los planes específicos para la adopción. Si aún no lo ha hecho, es posible que desee completar los ejercicios relacionados con la [estrategia](../strategy/index.md) y el [planeamiento](../plan/index.md) antes de alinear el nuevo proyecto.
 
 En los artículos siguientes se trata la alineación del plan de adopción de la nube:
 

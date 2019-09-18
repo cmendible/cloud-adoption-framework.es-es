@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836594"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025414"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decisiones que afectan a las migraciones
 
@@ -49,7 +49,7 @@ En esta sección del marco de adopción de la nube se establece la teoría para 
 
 ## <a name="effort"></a>Esfuerzo
 
-El esfuerzo de migración puede variar considerablemente en función del tamaño y las complejidades de las cargas de trabajo implicadas. Una migración de cargas de trabajo más pequeña en la que solo intervengan unos cientos de máquinas virtuales (VM) es un proceso táctico, que puede implementarse mediante herramientas automatizadas como [Azure Migrate](/azure/migrate/migrate-overview). Por el contrario, una gran migración empresarial de decenas de miles de cargas de trabajo requiere un proceso muy estratégico y puede implicar una extensa refactorización, recompilación y reemplazo de las aplicaciones existentes que integran las funcionalidades de plataforma como servicio (PaaS) y software como servicio (SaaS). [Es fundamental identificar y equilibrar el ámbito](../../expanded-scope/balance-the-portfolio.md) de las migraciones planeadas.
+El esfuerzo de migración puede variar considerablemente en función del tamaño y las complejidades de las cargas de trabajo implicadas. Una migración de cargas de trabajo más pequeña en la que solo intervengan unos cientos de máquinas virtuales (VM) es un proceso táctico, que puede implementarse mediante herramientas automatizadas como [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Por el contrario, una gran migración empresarial de decenas de miles de cargas de trabajo requiere un proceso muy estratégico y puede implicar una extensa refactorización, recompilación y reemplazo de las aplicaciones existentes que integran las funcionalidades de plataforma como servicio (PaaS) y software como servicio (SaaS). [Es fundamental identificar y equilibrar el ámbito](../../expanded-scope/balance-the-portfolio.md) de las migraciones planeadas.
 
 Antes de tomar decisiones que pudieran tener un efecto a largo plazo sobre el programa de migración actual, es fundamental crear un consenso sobre las siguientes decisiones.
 

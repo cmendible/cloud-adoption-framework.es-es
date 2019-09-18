@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6dfee69d20afac27c735f2ff77abbadc2816ca26
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837506"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023599"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Red definida por software: Red perimetral en la nube
 
@@ -37,7 +37,7 @@ En la implementación de una red perimetral en la nube se da por hecho lo siguie
 
 El equipo de adopción de la nube debe considerar los siguientes problemas al considerar la implementación de una arquitectura de red virtual perimetral en la nube:
 
-- Conectar redes locales con redes en la nube aumenta la complejidad de los requisitos de seguridad. Aunque se proteja la conexión entre las redes en la nube y el entorno local, deberá cerciorarse de que los recursos en la nube están seguros. Todas las direcciones IP públicas creadas para acceder a las cargas de trabajo basadas en la nube deben protegerse correctamente mediante una [red perimetral de acceso público](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) o [Azure Firewall](/azure/firewall).
+- Conectar redes locales con redes en la nube aumenta la complejidad de los requisitos de seguridad. Aunque se proteja la conexión entre las redes en la nube y el entorno local, deberá cerciorarse de que los recursos en la nube están seguros. Todas las direcciones IP públicas creadas para acceder a las cargas de trabajo basadas en la nube deben protegerse correctamente mediante una [red perimetral de acceso público](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) o [Azure Firewall](https://docs.microsoft.com/azure/firewall).
 - La arquitectura de la red perimetral en la nube se usa comúnmente como punto de partida, mientras que la conectividad se protege aún más y la directiva de seguridad se alinea entre las redes locales y en la nube, lo que permite una adopción más amplia de una arquitectura de red híbrida a gran escala. Sin embargo, también puede aplicarse a implementaciones aisladas con necesidades específicas de seguridad, identidad y conectividad que el enfoque de la red perimetral en la nube satisface.
 
 ## <a name="learn-more"></a>Más información

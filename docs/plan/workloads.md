@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839166"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022282"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Definición y clasificación por prioridades de las cargas de trabajo para un plan de adopción de la nube
 
@@ -44,7 +44,7 @@ Si decide que no se necesita una racionalización del patrimonio digital, se rec
 
 En el artículo anterior, [Plan de adopción de la nube y Azure DevOps](./template.md), creó un plan de adopción de la nube en Azure DevOps.
 
-Ahora puede representar las cargas de trabajo en la lista de potencia de 10 en el plan de adopción de la nube. La forma más fácil de hacerlo es mediante la edición en masa en Microsoft Excel. Para preparar la estación de trabajo para la edición en masa, consulte [Adición o modificación en masa de elementos de trabajo con Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Ahora puede representar las cargas de trabajo en la lista de potencia de 10 en el plan de adopción de la nube. La forma más fácil de hacerlo es mediante la edición en masa en Microsoft Excel. Para preparar la estación de trabajo para la edición en masa, consulte [Adición o modificación en masa de elementos de trabajo con Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 En el paso 5 de este artículo se indica cómo seleccionar la **Lista de entradas**. En su lugar, seleccione **Lista de consultas**. A continuación, en la lista desplegable **Seleccionar una consulta**, seleccione la consulta **Plantilla de carga de trabajo**. Dicha consulta carga todos los trabajos relacionados con la migración de una sola carga de trabajo en la hoja de cálculo.
 

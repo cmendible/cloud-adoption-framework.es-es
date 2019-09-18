@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906328"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024411"
 ---
 # <a name="mainframe-application-migration"></a>Migración de aplicaciones del sistema central
 
@@ -51,7 +51,7 @@ Los entornos de procesamiento por lotes en la nube usan recursos de proceso en p
 
 ### <a name="data-ingestion-systems"></a>Sistemas de ingesta de datos
 
-Los sistemas centrales ingieren grandes lotes de datos de soluciones de venta minorista, servicios financieros y fabricación, entre otras, para su procesamiento. Con Azure, puede usar las utilidades de línea de comandos tales como [AzCopy](/azure/storage/common/storage-use-azcopy) para copiar los datos hacia y desde la ubicación de almacenamiento. También puede usar el servicio [Azure Data Factory](/azure/data-factory/introduction), que permite ingerir datos de distintos almacenes de datos para crear y programar flujos de trabajo basados en datos.
+Los sistemas centrales ingieren grandes lotes de datos de soluciones de venta minorista, servicios financieros y fabricación, entre otras, para su procesamiento. Con Azure, puede usar las utilidades de línea de comandos tales como [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) para copiar los datos hacia y desde la ubicación de almacenamiento. También puede usar el servicio [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction), que permite ingerir datos de distintos almacenes de datos para crear y programar flujos de trabajo basados en datos.
 
 Además de los entornos de emulación, Azure proporciona servicios de análisis y de plataforma como servicio (PaaS) que pueden mejorar los entornos de sistema central existentes.
 
@@ -63,7 +63,7 @@ Hay disponibles monitores de procesamiento de transacciones de varios proveedore
 
 ![Migración mediante "lift-and-shift" de un entorno de sistema central a Azure con software de emulación](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-En Azure, se usan entornos de emulación para ejecutar el administrador de TP y los trabajos por lotes que usan JCL. En la capa de datos, DB2 se reemplaza por [Azure SQL Database](/azure/sql-database/sql-database-technical-overview), aunque también se puede usar Microsoft SQL Server, DB2 LUW u Oracle Database. Un emulador admite IMS, VSAM y SEQ. Las herramientas de administración del sistema central se reemplazan por los servicios de Azure, y software de otros proveedores, que se ejecutan en máquinas virtuales.
+En Azure, se usan entornos de emulación para ejecutar el administrador de TP y los trabajos por lotes que usan JCL. En la capa de datos, DB2 se reemplaza por [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), aunque también se puede usar Microsoft SQL Server, DB2 LUW u Oracle Database. Un emulador admite IMS, VSAM y SEQ. Las herramientas de administración del sistema central se reemplazan por los servicios de Azure, y software de otros proveedores, que se ejecutan en máquinas virtuales.
 
 La funcionalidad de entrada de formularios y tratamiento de la pantalla normalmente se implementa mediante servidores web, que se pueden combinar con API de base de datos tales como ADO, ODBC y JDBC para el acceso a los datos y las transacciones. La gama exacta de componentes de IaaS de Azure que usará dependerá del sistema operativo que prefiera. Por ejemplo:
 
@@ -75,7 +75,7 @@ La funcionalidad de entrada de formularios y tratamiento de la pantalla normalme
 
 En Azure, las operaciones por lotes difieren del entorno típico de procesamiento por lotes de los sistemas centrales. Por su diseño, los trabajos por lotes de los sistemas centrales suelen procesarse en serie y su rendimiento depende del valor de IOPS que proporcione la red troncal del sistema central. Los entornos de procesamiento por lotes en la nube usan recursos de proceso en paralelo y redes de alta velocidad para obtener un mayor rendimiento.
 
-Para optimizar el rendimiento del procesamiento por lotes con Azure, considere las siguientes opciones de [proceso](/azure/virtual-machines/windows/overview), [almacenamiento](/azure/storage/blobs/storage-blobs-introduction), [red](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux) y [supervisión](/azure/azure-monitor/overview).
+Para optimizar el rendimiento del procesamiento por lotes con Azure, considere las siguientes opciones de [proceso](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [almacenamiento](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [red](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux) y [supervisión](https://docs.microsoft.com/azure/azure-monitor/overview).
 
 ### <a name="compute"></a>Proceso
 
@@ -93,7 +93,7 @@ Uso:
 
 Uso:
 
-- [SSD Premium de Azure ](/azure/virtual-machines/windows/premium-storage) o [SSD Ultra de Azure](/azure/virtual-machines/windows/disks-ultra-ssd) para tener el número máximo de IOPS disponible.
+- [SSD Premium de Azure ](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) o [SSD Ultra de Azure](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) para tener el número máximo de IOPS disponible.
 
 - Creación de particiones con varios discos para tener más E/S por segundo en cada tamaño de almacenamiento.
 
@@ -101,11 +101,11 @@ Uso:
 
 ### <a name="networking"></a>Redes
 
-- Use [Azure Accelerated Networking](/azure/virtual-network/create-vm-accelerated-networking-powershell) para minimizar la latencia.
+- Use [Azure Accelerated Networking](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) para minimizar la latencia.
 
 ### <a name="monitoring"></a>Supervisión
 
-- El uso de herramientas de supervisión, [Azure Monitor](/azure/azure-monitor/overview), [Azure Application Insights](/azure/application-insights/app-insights-overview) e incluso los registros de Azure permite a los administradores supervisar cualquiera el rendimiento de las ejecuciones por lotes y ayudar a eliminar los cuellos de botella.
+- El uso de herramientas de supervisión, [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) e incluso los registros de Azure permite a los administradores supervisar cualquiera el rendimiento de las ejecuciones por lotes y ayudar a eliminar los cuellos de botella.
 
 ## <a name="migrate-development-environments"></a>Migración de entornos de desarrollo
 
@@ -125,7 +125,7 @@ Las arquitecturas de nube distribuidas se basan en un conjunto de herramientas d
 
 ## <a name="migrate-databases-and-data"></a>Migración de bases de datos y datos
 
-Normalmente, la migración de aplicaciones implica el rehospedaje de la capa de datos. Migre las bases de datos de SQL Server, de código abierto y otras bases de datos relacionales a soluciones de Azure totalmente administradas, como [Instancia administrada de Azure SQL Database](/azure/sql-database/sql-database-managed-instance), [Azure Database for PostgreSQL](/azure/postgresql/overview) y [Azure Database for MySQL](/azure/mysql/overview) con [Azure Database Migration Service](/azure/dms/dms-overview).
+Normalmente, la migración de aplicaciones implica el rehospedaje de la capa de datos. Migre las bases de datos de SQL Server, de código abierto y otras bases de datos relacionales a soluciones de Azure totalmente administradas, como [Instancia administrada de Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) y [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) con [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Por ejemplo, puede migrar si la capa de datos del sistema central usa:
 
@@ -159,7 +159,7 @@ Además, cada nivel también puede proporcionar también los servicios de recupe
 
 En la siguiente ilustración se muestra una posible implementación de Azure con un sitio principal y uno secundario. En el sitio principal, las máquinas virtuales de producción, almacenamiento provisional y pruebas se implementan con alta disponibilidad. El sitio secundario es para recuperación ante desastres y copia de seguridad.
 
-![Posible implementación de Azure con un sitio principal y uno secundario](../../_images/mainframe-migration/migration-backup-DR.png)
+![Posible implementación de Azure con un sitio principal y uno secundario](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Migración preconfigurada de un sistema central a Azure
 
@@ -167,7 +167,7 @@ Trasladar las soluciones de un sistema central a Azure puede requerir una migrac
 
 Un escenario común es trasladar una aplicación a Azure y mantener en el sistema central los datos que la aplicación utiliza. Se utiliza un software específico para que las aplicaciones que se encuentran en Azure puedan acceder a los datos del sistema central. Afortunadamente, existe una amplia gama de soluciones que proporcionan la integración entre Azure y los entornos de sistema central existentes, compatibilidad con escenarios híbridos y migración con el tiempo. Los partners de Microsoft, proveedores de software independientes e integradores pueden ayudarle en camino.
 
-Una opción es [Microsoft Host Integration Server](/host-integration-server), una solución que proporciona la arquitectura distribuida de bases de datos relacionales (DRDA) necesaria para que las aplicaciones que se encuentran en Azure puedan acceder a los datos de DB2 que permanecen en el sistema central. Otras opciones para la integración entre el sistema central y Azure son algunas soluciones de IBM, Attunity, Codit u otros proveedores, y opciones de código abierto.
+Una opción es [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), una solución que proporciona la arquitectura distribuida de bases de datos relacionales (DRDA) necesaria para que las aplicaciones que se encuentran en Azure puedan acceder a los datos de DB2 que permanecen en el sistema central. Otras opciones para la integración entre el sistema central y Azure son algunas soluciones de IBM, Attunity, Codit u otros proveedores, y opciones de código abierto.
 
 ## <a name="partner-solutions"></a>Soluciones de socios
 
@@ -179,8 +179,8 @@ Azure es una infraestructura probada que ofrece alta disponibilidad y escalabili
 
 Para obtener más información, consulte los siguientes recursos:
 
-- [Comience a usar Azure](/azure)
+- [Comience a usar Azure](https://docs.microsoft.com/azure)
 
 - [Implementación de IBM DB2 pureScale en Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Documentación de Host Integration Server](/host-integration-server)
+- [Documentación de Host Integration Server](https://docs.microsoft.com/host-integration-server)

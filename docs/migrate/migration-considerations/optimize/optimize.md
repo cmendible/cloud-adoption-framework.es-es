@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836630"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022643"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Pruebas comparativas y ajuste del tamaño de los recursos de la nube
 
@@ -36,7 +36,7 @@ Durante la migración, utilice conjeturas razonadas y experimente con el cambio 
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Pruebas comparativas y optimización con Azure Cost Management
 
-[Azure cost Management](/azure/cost-management/overview) con licencia de Cloudyn, una subsidiaria de Microsoft, administra el gasto en la nube con transparencia y precisión. Este servicio supervisa, realiza pruebas comparativas, asigna y optimiza los costos de la nube.
+[Azure cost Management](https://docs.microsoft.com/azure/cost-management/overview) con licencia de Cloudyn, una subsidiaria de Microsoft, administra el gasto en la nube con transparencia y precisión. Este servicio supervisa, realiza pruebas comparativas, asigna y optimiza los costos de la nube.
 
 Los datos históricos pueden ayudar a administrar los costos mediante el análisis del uso y los gastos a lo largo del tiempo para identificar tendencias, que a continuación se usan para pronosticar gastos futuros. Administración de costos también incluye informes útiles de costos previstos. La asignación de costos administra los costos mediante el análisis basado en las directivas de etiquetado. Use la asignación de costos para el proceso de visualización completa de los gastos y contracargo, y para mostrar el uso de recursos y los costos asociados para influir en los comportamientos de consumo o cobrar a los clientes del inquilino. El control de acceso ayuda a administrar los costos al garantizar que los equipos y los usuarios solo tienen acceso a los datos de Cost Management que necesitan. Las alertas ayudan a administrar los costos mediante la notificación automática cuando se producen gastos adicionales o inusuales. También pueden notificar automáticamente a otras partes interesadas sobre anomalías de gastos y riesgos de gastos adicionales. Existen varios informes que admiten alertas en función de los umbrales de costo y presupuesto.
 

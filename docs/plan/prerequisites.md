@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837610"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022317"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Lista de comprobación de requisitos previos para un plan de adopción de la nube efectivo
 
@@ -21,7 +21,7 @@ Un plan solo es tan efectivo como los datos que se incluyen en él. Para que un 
 
 ## <a name="strategic-inputs"></a>Entradas estratégicas
 
-Las entradas estratégicas precisas garantizan que el trabajo que se realiza contribuye a la consecución de los resultados empresariales. La [sección de estrategia de Cloud Adoption Framework](../business-strategy/index.md) proporciona una serie de ejercicios para desarrollar una estrategia clara. Las salidas de estos ejercicios alimentan el plan de adopción de la nube. Antes de desarrollar el plan, asegúrese de que los siguientes elementos están bien definidos como un resultado de los ejercicios:
+Las entradas estratégicas precisas garantizan que el trabajo que se realiza contribuye a la consecución de los resultados empresariales. La [sección de estrategia de Cloud Adoption Framework](../strategy/index.md) proporciona una serie de ejercicios para desarrollar una estrategia clara. Las salidas de estos ejercicios alimentan el plan de adopción de la nube. Antes de desarrollar el plan, asegúrese de que los siguientes elementos están bien definidos como un resultado de los ejercicios:
 
 - **Motivaciones claras**: ¿por qué se va a realizar la adopción de la nube?
 - **Resultados empresariales definidos**: ¿qué resultados se esperan ver de la adopción de la nube?

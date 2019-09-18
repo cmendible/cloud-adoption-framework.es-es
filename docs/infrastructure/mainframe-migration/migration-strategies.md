@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838434"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024389"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Realizar el cambio desde sistemas centrales a Azure
 
@@ -48,7 +48,7 @@ En comparación, Azure ofrece Acuerdos de Nivel de Servicio (SLA) basados en el 
 
 Azure proporciona disponibilidad adicional al replicar datos de varios dispositivos de almacenamiento, ya sea localmente o en otras regiones geográficas. Si se produce un error basado en Azure, los recursos del proceso pueden obtener acceso a los datos replicados a nivel regional o local.
 
-Cuando usa la plataforma de Azure como recurso de un servicio (PaaS), como [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) y la [base de datos de Azure Cosmos](/azure/cosmos-db/introduction), Azure puede administrar automáticamente las conmutaciones por error. Cuando se usa la infraestructura de Azure como servicio (IaaS), la conmutación por error se basa en las funciones específicas del sistema, como las características Always On de SQL Server, las instancias de clústeres de conmutación por error y los grupos de disponibilidad.
+Cuando usa la plataforma de Azure como recurso de un servicio (PaaS), como [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) y la [base de datos de Azure Cosmos](https://docs.microsoft.com/azure/cosmos-db/introduction), Azure puede administrar automáticamente las conmutaciones por error. Cuando se usa la infraestructura de Azure como servicio (IaaS), la conmutación por error se basa en las funciones específicas del sistema, como las características Always On de SQL Server, las instancias de clústeres de conmutación por error y los grupos de disponibilidad.
 
 ## <a name="scalability"></a>Escalabilidad
 
@@ -60,7 +60,7 @@ Una instalación de acoplamiento también ofrece un proceso estrechamente acopla
 
 Los clientes del sistema central generalmente mantienen sitios de recuperación ante desastres o hacen uso de un proveedor de sistemas centrales independiente para hacer frente a situaciones de desastre. La sincronización con un sitio de recuperación ante desastres generalmente se realiza a través de copias de datos sin conexión. Ambas opciones conllevan costos elevados.
 
-La redundancia geográfica automatizada también está disponible a través del servicio de acoplamiento del sistema central, aunque conlleva un gran costo y, generalmente, está reservada para sistemas críticos. En cambio, Azure tiene opciones fáciles de implementar y muy rentables para realizar la [copia de seguridad](/azure/backup/backup-introduction-to-azure-backup), la [recuperación](/azure/site-recovery/site-recovery-overview) y la [redundancia](/azure/storage/common/storage-redundancy) a nivel local o regional, o por medio de la redundancia geográfica.
+La redundancia geográfica automatizada también está disponible a través del servicio de acoplamiento del sistema central, aunque conlleva un gran costo y, generalmente, está reservada para sistemas críticos. En cambio, Azure tiene opciones fáciles de implementar y muy rentables para realizar la [copia de seguridad](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), la [recuperación](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) y la [redundancia](https://docs.microsoft.com/azure/storage/common/storage-redundancy) a nivel local o regional, o por medio de la redundancia geográfica.
 
 ## <a name="storage"></a>Storage
 
@@ -73,7 +73,7 @@ Los tipos de almacenamiento físico para sistemas centrales incluyen:
 - **Almacenamiento central**: ubicado directamente en el procesador del sistema central, también se conoce como procesador o almacenamiento real.
 - **Almacenamiento auxiliar**: está separado del sistema central; este tipo incluye el almacenamiento en DASD y también se conoce como almacenamiento de paginación.
 
-La nube ofrece una gama de opciones flexibles y escalables, y solo deberá pagar las opciones que necesite. [Azure Storage](/azure/storage/common/storage-introduction) ofrece un almacén de objetos que se puede escalar de forma masiva destinado a objetos de datos, un servicio de sistema de archivos para la nube, un almacén de mensajería para mensajería confiable y un almacén NoSQL. En cuanto a las máquinas virtuales, los discos administrados y no administrados proporcionan un almacenamiento de disco persistente y seguro.
+La nube ofrece una gama de opciones flexibles y escalables, y solo deberá pagar las opciones que necesite. [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) ofrece un almacén de objetos que se puede escalar de forma masiva destinado a objetos de datos, un servicio de sistema de archivos para la nube, un almacén de mensajería para mensajería confiable y un almacén NoSQL. En cuanto a las máquinas virtuales, los discos administrados y no administrados proporcionan un almacenamiento de disco persistente y seguro.
 
 ## <a name="mainframe-development-and-testing"></a>Desarrollo y pruebas del sistema central
 
@@ -88,4 +88,4 @@ Cuando las soluciones se desarrollen y se prueben en Azure y estén listas para 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Migrar la aplicación del sistema central](application-strategies.md)
+> [Migrar la aplicación del sistema central](./application-strategies.md)

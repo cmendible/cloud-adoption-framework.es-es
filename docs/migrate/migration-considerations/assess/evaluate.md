@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b6e395839d00130c43e74f1c4071ef55d27a7286
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836694"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024660"
 ---
 # <a name="evaluate-workload-readiness"></a>Evaluación de la disponibilidad de las cargas de trabajo
 
@@ -27,16 +27,16 @@ Este artículo no pretende capturar todas las actividades de evaluación posible
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Actividades comunes de evaluación de la infraestructura
 
-- Requisitos de VMware: [revise los requisitos de Azure Site Recovery para VMware](/azure/site-recovery/vmware-physical-azure-support-matrix).
-- Requisitos de Hyper-V: [revise los requisitos de Azure Site Recovery para Hyper-V](/azure/site-recovery/hyper-v-azure-support-matrix).
+- Requisitos de VMware: [revise los requisitos de Azure Site Recovery para VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
+- Requisitos de Hyper-V: [revise los requisitos de Azure Site Recovery para Hyper-V](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
 
 Asegúrese de documentar cualquier discrepancia que haya en la configuración del host, la configuración de la máquina virtual replicada, los requisitos de almacenamiento o la configuración de red.
 
 ## <a name="common-database-evaluation-activities"></a>Actividades comunes de evaluación de bases de datos
 
 - Documente los objetivos de punto de recuperación y los objetivos de tiempo de recuperación de la implementación de base de datos actual. Se usan en [actividades de arquitectura](./architect.md) como ayuda para tomar decisiones.
-- Documente los requisitos de configuración de alta disponibilidad. Para entender los requisitos de SQL Server, consulte la [guía de soluciones de alta disponibilidad de SQL Server](/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Evalúe la compatibilidad de PaaS. En la [Guía de migración de datos de Azure](https://datamigration.microsoft.com) se asignan bases de datos locales a soluciones de PaaS de Azure compatibles, como [Cosmos DB](/azure/cosmos-db) o [Azure DB](/azure/sql-database) for [MySQL](/azure/mysql), [Postgres](/azure/postgresql) o [MariaDB](/azure/mariadb).
+- Documente los requisitos de configuración de alta disponibilidad. Para entender los requisitos de SQL Server, consulte la [guía de soluciones de alta disponibilidad de SQL Server](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
+- Evalúe la compatibilidad de PaaS. En la [Guía de migración de datos de Azure](https://datamigration.microsoft.com) se asignan bases de datos locales a soluciones de PaaS de Azure compatibles, como [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) o [Azure DB](https://docs.microsoft.com/azure/sql-database) for [MySQL](https://docs.microsoft.com/azure/mysql), [Postgres](https://docs.microsoft.com/azure/postgresql) o [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Cuando la compatibilidad con PaaS es una opción sin necesidad de realizar ninguna corrección, consulte al equipo responsable de las [actividades de arquitectura](./architect.md). Las migraciones de PaaS pueden generar importantes ahorros de tiempo y disminuciones en el costo total de propiedad (TCO) de la mayoría de las soluciones en la nube.
 - Cuando la compatibilidad con PaaS es una opción, pero se requiere una corrección, consulte a los equipos responsables de las [actividades de arquitectura](./architect.md) y las [actividades de corrección](../migrate/remediate.md). En muchos escenarios, las ventajas de las migraciones de PaaS para las soluciones de base de datos pueden superar el aumento en el tiempo de corrección.
 - Documente el tamaño y la tasa de cambio de cada base de datos que se va a migrar.

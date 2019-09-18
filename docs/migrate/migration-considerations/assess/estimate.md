@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834782"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025432"
 ---
 # <a name="estimate-cloud-costs"></a>Estimación del costo de la nube
 
@@ -23,7 +23,7 @@ Durante la migración, hay varios factores que pueden afectar a las decisiones y
 
 El tamaño del patrimonio digital afecta directamente a las decisiones de migración. Las migraciones que impliquen menos de 250 máquinas virtuales se pueden calcular mucho más fácilmente que una migración que implique más de 10 000 máquinas virtuales. Se recomienda encarecidamente que seleccione una carga de trabajo más pequeña para su primera migración. Esto le brinda al equipo una oportunidad para aprender a calcular los costos de un esfuerzo de migración sencillo antes de intentar calcular migraciones de cargas de trabajo más grandes y complejas.
 
-Sin embargo, tenga en cuenta que las migraciones más pequeñas, de una sola carga de trabajo, de todos modos pueden implicar una cantidad muy variable de recursos complementarios. Si la migración implica menos de 1000 máquinas virtuales, una herramienta como [Azure Migrate](/azure/migrate/migrate-overview) probablemente sea suficiente para recopilar datos sobre el inventario y realizar una previsión de los costos. Las opciones de herramientas de cálculos de costos adicionales se describen en el artículo sobre los [cálculos de costos del patrimonio digital](../../../digital-estate/calculate.md).
+Sin embargo, tenga en cuenta que las migraciones más pequeñas, de una sola carga de trabajo, de todos modos pueden implicar una cantidad muy variable de recursos complementarios. Si la migración implica menos de 1000 máquinas virtuales, una herramienta como [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) probablemente sea suficiente para recopilar datos sobre el inventario y realizar una previsión de los costos. Las opciones de herramientas de cálculos de costos adicionales se describen en el artículo sobre los [cálculos de costos del patrimonio digital](../../../digital-estate/calculate.md).
 
 Si hablamos de patrimonios digitales con más de 1000 unidades, todavía es posible desglosar una estimación en cuatro o cinco iteraciones accionables, lo que permite que el proceso de estimación sea manejable. En el caso de patrimonios más grandes o cuando se requiere un mayor grado de precisión para la previsión, es posible que se requiera un enfoque más integral, como el que se describe en la sección "[Patrimonio digital](../../../digital-estate/index.md)" de la Plataforma de adopción de la nube.
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818513"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025226"
 ---
 # <a name="organize-your-azure-resources"></a>Organización de los recursos de Azure
 
@@ -80,9 +80,9 @@ Para obtener más información, consulte:
 
 - [Aspectos básicos de Azure](../considerations/fundamental-concepts.md)
 - [Escalado con varias suscripciones de Azure](../considerations/scaling-subscriptions.md)
-- [Descripción de la administración del acceso a los recursos en Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organización de los recursos con grupos de administración de Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Límites del servicio de suscripción](/azure/azure-subscription-service-limits)
+- [Descripción de la administración del acceso a los recursos en Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organización de los recursos con grupos de administración de Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Límites del servicio de suscripción](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Un buen estándar de nomenclatura le ayuda a identificar los recursos de Azure P
 
 - El lado operativo debe asegurarse de que los nombres incluyan la información que necesitan los equipos de TI. Use los detalles que identifiquen la carga de trabajo, la aplicación, el entorno, la importancia y otra información que resulte útil para administrar los recursos.
 
-Los distintos tipos de recursos pueden tener distintos límites de longitud y caracteres permitidos, muchos de los cuales se enumeran en el [artículo sobre las convenciones de nomenclatura](/azure/architecture/best-practices/naming-conventions) de procedimientos recomendados de Azure. Para más información y recomendaciones centradas específicamente en la compatibilidad con las labores de adopción de la nube empresarial, consulte la [guía sobre nomenclatura y etiquetado](../considerations/name-and-tag.md) del marco de adopción de la nube.
+Los distintos tipos de recursos pueden tener distintos límites de longitud y caracteres permitidos, muchos de los cuales se enumeran en el [artículo sobre las convenciones de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) de procedimientos recomendados de Azure. Para más información y recomendaciones centradas específicamente en la compatibilidad con las labores de adopción de la nube empresarial, consulte la [guía sobre nomenclatura y etiquetado](../considerations/naming-and-tagging.md) del marco de adopción de la nube.
 
 En la tabla siguiente se incluyen patrones de nomenclatura para algunos tipos de ejemplos de recursos de Azure.
 
@@ -161,7 +161,7 @@ También puede utilizar etiquetas para muchas otras cosas. Entre los usos comune
 
 Cada recurso o grupo de recursos puede tener hasta 15 pares de nombre/valor de etiqueta. Esta limitación solo se aplica a las etiquetas que se aplican directamente al recurso o grupo de recursos.
 
-Para obtener más recomendaciones y ejemplos de etiquetado, consulte la [guía sobre el etiquetado](../considerations/name-and-tag.md) del marco de adopción de la nube.
+Para obtener más recomendaciones y ejemplos de etiquetado, consulte la [guía sobre el etiquetado](../considerations/naming-and-tagging.md) del marco de adopción de la nube.
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ Para aplicar una etiqueta a un grupo de recursos:
 
 ## <a name="learn-more"></a>Más información
 
-Para más información, consulte [Uso de etiquetas para organizar los recursos de Azure](/azure/azure-resource-manager/resource-group-using-tags).
+Para más información, consulte [Uso de etiquetas para organizar los recursos de Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

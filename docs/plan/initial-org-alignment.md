@@ -8,20 +8,20 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a485428cb188c0b1d6cfd7862c17a5b76284ddeb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839202"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022490"
 ---
 # <a name="initial-organization-alignment"></a>Alineación inicial de la organización
 
 El aspecto más importante de cualquier plan de adopción de la nube es la alineación de las personas que harán realidad el plan. Ningún plan está completo hasta que comprenda los aspectos relacionados con las personas.
 
-La verdadera alineación de la organización lleva tiempo. Será importante para establecer la alineación organizacional a largo plazo, especialmente a medida que la adopción de la nube se escala en la cultura del negocio y de TI. La alineación es tan importante que se ha dedicado a ella [una sección completa](../organization/index.md) en la sección de operaciones de Cloud Adoption Framework.
+La verdadera alineación de la organización lleva tiempo. Será importante para establecer la alineación organizacional a largo plazo, especialmente a medida que la adopción de la nube se escala en la cultura del negocio y de TI. La alineación es tan importante que se ha dedicado a ella [una sección completa](../organize/index.md) en la sección de operaciones de Cloud Adoption Framework.
 
-La alineación total de la organización no es un componente obligatorio del plan de adopción de la nube. Sin embargo, es necesaria cierta alineación inicial de la organización. En este artículo se describe un punto de partida del procedimiento recomendado para la alineación de la organización. Las instrucciones siguientes pueden ayudarle a completar el plan y preparar a sus equipos para la adopción de la nube. Cuando esté listo, puede usar la sección [alineación de la organización](../organization/index.md) para personalizar esta guía para ajustarla a su organización.
+La alineación total de la organización no es un componente obligatorio del plan de adopción de la nube. Sin embargo, es necesaria cierta alineación inicial de la organización. En este artículo se describe un punto de partida del procedimiento recomendado para la alineación de la organización. Las instrucciones siguientes pueden ayudarle a completar el plan y preparar a sus equipos para la adopción de la nube. Cuando esté listo, puede usar la sección [alineación de la organización](../organize/index.md) para personalizar esta guía para ajustarla a su organización.
 
 ## <a name="initial-best-practice-structure"></a>Estructura inicial del procedimiento recomendado
 
@@ -31,7 +31,7 @@ Para crear un equilibrio entre velocidad y control, se recomienda que durante la
 
 Es bastante intuitivo que las tareas de adopción de la nube requieren personas que ejecuten dichas tareas. Por lo tanto, a pocas personas les sorprende que el equipo de adopción de la nube sea un requisito. Sin embargo, es posible que las personas que no estén familiarizadas con la nube no aprecien totalmente la importancia de un equipo de gobernanza de la nube. Este desafío suele producirse en las primeras etapas de los ciclos de adopción. El equipo de gobernanza de la nube proporciona las comprobaciones y los equilibrios necesarios para garantizar que la adopción de la nube no expone el negocio a nuevos riesgos. Cuando se deban tomar riesgos, este equipo garantiza que se implementan los procesos y controles adecuados para mitigar o controlar esos riesgos.
 
-Para más información sobre la adopción de la nube, la gobernanza de la nube y otras funcionalidades de este tipo, consulte la breve sección sobre la [descripción de las funcionalidades necesarias en la nube](../organization/index.md?#understand-required-cloud-capabilities).
+Para más información sobre la adopción de la nube, la gobernanza de la nube y otras funcionalidades de este tipo, consulte la breve sección sobre la [descripción de las funcionalidades necesarias en la nube](../organize/index.md?#understand-required-cloud-capabilities).
 
 ## <a name="map-people-to-capabilities"></a>Asignación de personas a funcionalidades
 

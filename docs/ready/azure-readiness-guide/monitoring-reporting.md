@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c3ae19f9d8115e7d07241d22074d26ae5592560
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818547"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022073"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Supervisión e informes en Azure
 
@@ -35,10 +35,10 @@ Azure Monitor proporciona un único centro unificado para todos los datos de su
 
  Comience a supervisar lo siguiente:
 
-- [Aplicaciones](/azure/application-insights/app-insights-overview)
-- [Contenedores](/azure/monitoring/monitoring-container-overview)
-- [Máquinas virtuales](/azure/monitoring/monitoring-service-map)
-- [Redes](/azure/networking/network-monitoring-overview)
+- [Aplicaciones](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+- [Contenedores](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
+- [Máquinas virtuales](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
+- [Redes](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
 
 Para supervisar otros recursos, busque soluciones adicionales en Azure Marketplace.
 
@@ -46,7 +46,7 @@ Para explorar Azure Monitor, vaya a [Azure Portal](https://portal.azure.com/#b
 
 ## <a name="learn-more"></a>Más información
 
-Para más información, consulte [Documentación sobre Azure Monitor](/azure/monitoring-and-diagnostics).
+Para más información, consulte [Documentación sobre Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics).
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Para configurar una alerta de Service Health, vaya a [Azure Portal](https://por
 
 ## <a name="learn-more"></a>Más información
 
-Para más información, consulte la [documentación de Azure Service Health](/azure/service-health).
+Para más información, consulte la [documentación de Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -121,7 +121,7 @@ Para explorar Azure Advisor, vaya a [Azure Portal](https://portal.azure.com/#b
 
 ## <a name="learn-more"></a>Más información
 
-Para más información, consulte [Documentación de Azure Advisor](/azure/advisor).
+Para más información, consulte [Documentación de Azure Advisor](https://docs.microsoft.com/azure/advisor).
 
 ::: zone-end
 
@@ -151,6 +151,6 @@ Para explorar Azure Security Center, vaya a [Azure Portal](https://portal.azu
 
 ## <a name="learn-more"></a>Más información
 
-Para más información, consulte la [documentación de Azure Security Center](/azure/security-center).
+Para más información, consulte la [documentación de Azure Security Center](https://docs.microsoft.com/azure/security-center).
 
 ::: zone-end

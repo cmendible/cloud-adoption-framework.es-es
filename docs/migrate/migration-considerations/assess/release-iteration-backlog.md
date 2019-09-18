@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839086"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025403"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Administración de los cambios en un esfuerzo de migración incremental
 
-En este artículo se presupone que los procesos de migración son incrementales por naturaleza y que se ejecutan en paralelo al [proceso de control](../../../governance/index.md). Sin embargo, se podría usar la misma guía para rellenar las tareas iniciales en una estructura de descomposición del trabajo para los enfoques tradicionales de administración de cambios en cascada.
+En este artículo se presupone que los procesos de migración son incrementales por naturaleza y que se ejecutan en paralelo al [proceso de control](../../../govern/index.md). Sin embargo, se podría usar la misma guía para rellenar las tareas iniciales en una estructura de descomposición del trabajo para los enfoques tradicionales de administración de cambios en cascada.
 
 ## <a name="release-backlog"></a>Trabajo pendiente de liberación
 

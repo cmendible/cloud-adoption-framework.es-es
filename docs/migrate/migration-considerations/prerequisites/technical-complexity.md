@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836586"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025367"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Preparación para la complejidad técnica: administración de cambios ágil
 
@@ -46,7 +46,7 @@ El trabajo pendiente de migración permite realizar un seguimiento de la cartera
 
 Al principio, es poco probable que las cargas de trabajo pendientes de migración cumplan los criterios INVEST que se han descrito en la sección anterior. Más bien sirven como agrupación lógica de recursos de un inventario inicial que se usará como marcador de posición para el trabajo futuro. Puede que esos marcadores de posición no sean exactos desde un punto de vista técnico, pero sirven como base para la coordinación con la empresa.
 
-![Relación entre los trabajos pendientes de migración, versión e iteración que se usan durante el proceso de migración](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Relación entre los trabajos pendientes de migración, versión e iteración que se usan durante el proceso de migración](../../../_images/migrate/backlog-relationships.png)
 
 *Los trabajos pendientes de migración, versión e iteración realizan un seguimiento de los distintos niveles de actividad durante los procesos de migración.*
 

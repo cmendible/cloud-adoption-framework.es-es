@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6af51f1fa6526e2ea7cf13a824c7834d631aa59
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cc6ce12f425354cbf907474431f2ec0f45735fea
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835118"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024967"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Ejemplos y patrones de migración de aplicaciones
 
@@ -59,49 +59,49 @@ Los artículos de la serie se resumen a continuación.
 
 **Artículo** | **Detalles**
 --- | ---
-[Valoración de los recursos locales para su migración a Azure](contoso-migration-assessment.md) | En este artículo se muestra cómo ejecutar la valoración de una aplicación local que se ejecuta en VMware. Aquí, una organización de ejemplo valora las máquinas virtuales de la aplicación mediante el servicio Azure Migrate, y la base de datos SQL Server de la aplicación con Data Migration Assistant.
+[Valoración de los recursos locales para su migración a Azure](./contoso-migration-assessment.md) | En este artículo se muestra cómo ejecutar la valoración de una aplicación local que se ejecuta en VMware. Aquí, una organización de ejemplo valora las máquinas virtuales de la aplicación mediante el servicio Azure Migrate, y la base de datos SQL Server de la aplicación con Data Migration Assistant.
 
 ### <a name="infrastructure"></a>Infraestructura
 
 **Artículo** | **Detalles**
 --- | ---
-[Implementación de una infraestructura de Azure](contoso-migration-infrastructure.md) | En este artículo se muestra cómo una organización puede preparar su infraestructura local y su infraestructura de Azure para la migración. En el resto de los ejemplos que se proporcionan en esta sección se hace referencia al ejemplo de infraestructura que se establece en este artículo.
+[Implementación de una infraestructura de Azure](./contoso-migration-infrastructure.md) | En este artículo se muestra cómo una organización puede preparar su infraestructura local y su infraestructura de Azure para la migración. En el resto de los ejemplos que se proporcionan en esta sección se hace referencia al ejemplo de infraestructura que se establece en este artículo.
 
 ### <a name="windows-server-workloads"></a>Cargas de trabajo de Windows Server
 
 **Artículo** | **Detalles**
 --- | ---
-[Rehospedaje de una aplicación en VM de Azure](contoso-migration-rehost-vm.md) | En este artículo se proporciona un ejemplo de migración de máquinas virtuales de aplicaciones locales a máquinas virtuales de Azure mediante el servicio Site Recovery.
-[Rediseño de una aplicación local en un contenedor de Azure y Azure SQL Database](contoso-migration-rearchitect-container-sql.md) | En este artículo se proporciona un ejemplo de cómo migrar una aplicación a la vez que se rediseña el nivel web de la aplicación como un contenedor de Windows que se ejecuta en Azure Service Fabric y la base de datos con Azure SQL Database.
+[Rehospedaje de una aplicación en VM de Azure](./contoso-migration-rehost-vm.md) | En este artículo se proporciona un ejemplo de migración de máquinas virtuales de aplicaciones locales a máquinas virtuales de Azure mediante el servicio Site Recovery.
+[Rediseño de una aplicación local en un contenedor de Azure y Azure SQL Database](./contoso-migration-rearchitect-container-sql.md) | En este artículo se proporciona un ejemplo de cómo migrar una aplicación a la vez que se rediseña el nivel web de la aplicación como un contenedor de Windows que se ejecuta en Azure Service Fabric y la base de datos con Azure SQL Database.
 
 ### <a name="linux-workloads"></a>Cargas de trabajo de Linux
 
 **Artículo** | **Detalles**
 --- | ---
-[Rehospedaje de una aplicación Linux en VM de Azure y Azure Database for MySQL](contoso-migration-rehost-linux-vm-mysql.md) | En este artículo se proporciona un ejemplo de migración de una aplicación hospedada por Linux a máquinas virtuales de Azure mediante Site Recovery. Migra la base de datos de la aplicación a Azure Database for MySQL con MySQL Workbench.
-[Rehospedaje de una aplicación Linux en máquinas virtuales de Azure](contoso-migration-rehost-linux-vm.md) | En este ejemplo se muestra cómo completar una migración mediante lift-and-shift de una aplicación basada en Linux a máquinas virtuales de Azure con el servicio Site Recovery.
+[Rehospedaje de una aplicación Linux en VM de Azure y Azure Database for MySQL](./contoso-migration-rehost-linux-vm-mysql.md) | En este artículo se proporciona un ejemplo de migración de una aplicación hospedada por Linux a máquinas virtuales de Azure mediante Site Recovery. Migra la base de datos de la aplicación a Azure Database for MySQL con MySQL Workbench.
+[Rehospedaje de una aplicación Linux en máquinas virtuales de Azure](./contoso-migration-rehost-linux-vm.md) | En este ejemplo se muestra cómo completar una migración mediante lift-and-shift de una aplicación basada en Linux a máquinas virtuales de Azure con el servicio Site Recovery.
 
 ### <a name="sql-server-workloads"></a>Cargas de trabajo de SQL Server
 
 **Artículo** | **Detalles**
 --- | ---
-[Rehospedaje de una aplicación en una máquina virtual de Azure e Instancia administrada de Azure SQL Database](contoso-migration-rehost-vm-sql-managed-instance.md) | En este artículo se proporciona un ejemplo de migración de mediante lift-and-shift a Azure para una aplicación local. Esto implica la migración de la máquina virtual front-end de la aplicación mediante [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) y la base de datos de la aplicación a una Instancia administrada de Azure SQL Database con el [servicio Azure Database Migration](/azure/dms/dms-overview).
-[Rehospedaje de una aplicación en VM de Azure y en un grupo de disponibilidad AlwaysOn de SQL Server](contoso-migration-rehost-vm-sql-ag.md) | En este ejemplo se muestra cómo migrar una aplicación y datos mediante máquinas virtuales hospedadas de Azure SQL Server. Usa Site Recovery para migrar las VM de la aplicación y Azure Database Migration Service para migrar la base de datos de la aplicación a un clúster de SQL Server protegido por un grupo de disponibilidad AlwaysOn.
+[Rehospedaje de una aplicación en una máquina virtual de Azure e Instancia administrada de Azure SQL Database](./contoso-migration-rehost-vm-sql-managed-instance.md) | En este artículo se proporciona un ejemplo de migración de mediante lift-and-shift a Azure para una aplicación local. Esto implica la migración de la máquina virtual front-end de la aplicación mediante [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) y la base de datos de la aplicación a una Instancia administrada de Azure SQL Database con el [servicio Azure Database Migration](https://docs.microsoft.com/azure/dms/dms-overview).
+[Rehospedaje de una aplicación en VM de Azure y en un grupo de disponibilidad AlwaysOn de SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | En este ejemplo se muestra cómo migrar una aplicación y datos mediante máquinas virtuales hospedadas de Azure SQL Server. Usa Site Recovery para migrar las VM de la aplicación y Azure Database Migration Service para migrar la base de datos de la aplicación a un clúster de SQL Server protegido por un grupo de disponibilidad AlwaysOn.
 
 ### <a name="aspnet--php--java-apps"></a>Aplicaciones de ASP.NET/PHP/Java
 
 **Artículo** | **Detalles**
 --- | ---
-[Refactorización de una aplicación local a una aplicación web de Azure y Azure SQL Database](contoso-migration-refactor-web-app-sql.md) | En este ejemplo se muestra cómo migrar una aplicación local basada en Windows a una aplicación web de Azure y migrar la base de datos de la aplicación a una instancia de Azure SQL Server con Data Migration Assistant.
-[Refactorización de una aplicación de Linux a varias regiones con Azure App Service, Azure Traffic Manager y Azure Database for MySQL](contoso-migration-refactor-linux-app-service-mysql.md) | En este ejemplo se muestra cómo migrar una aplicación local de Linux a una aplicación web de Azure en varias regiones de Azure con Azure Traffic Manager, integrado con GitHub para la entrega continua. La base de datos de la aplicación se migra a una instancia de Azure Database for MySQL.
-[Recompilación de una aplicación en Azure](contoso-migration-rebuild.md) | En este artículo se proporciona un ejemplo de recompilación de una aplicación local con una variedad de servicios administrados y funcionalidades de Azure, como Azure App Service, Azure Kubernetes Service (AKS), Azure Functions, Azure Cognitive Services y Azure Cosmos DB.
-[Refactorización de Team Foundation Server en Azure DevOps Services](contoso-migration-tfs-vsts.md) | En este artículo se muestra un ejemplo de migración de una implementación de Team Foundation Server local a Azure DevOps Services en Azure.
+[Refactorización de una aplicación local a una aplicación web de Azure y Azure SQL Database](./contoso-migration-refactor-web-app-sql.md) | En este ejemplo se muestra cómo migrar una aplicación local basada en Windows a una aplicación web de Azure y migrar la base de datos de la aplicación a una instancia de Azure SQL Server con Data Migration Assistant.
+[Refactorización de una aplicación de Linux a varias regiones con Azure App Service, Azure Traffic Manager y Azure Database for MySQL](./contoso-migration-refactor-linux-app-service-mysql.md) | En este ejemplo se muestra cómo migrar una aplicación local de Linux a una aplicación web de Azure en varias regiones de Azure con Azure Traffic Manager, integrado con GitHub para la entrega continua. La base de datos de la aplicación se migra a una instancia de Azure Database for MySQL.
+[Recompilación de una aplicación en Azure](./contoso-migration-rebuild.md) | En este artículo se proporciona un ejemplo de recompilación de una aplicación local con una variedad de servicios administrados y funcionalidades de Azure, como Azure App Service, Azure Kubernetes Service (AKS), Azure Functions, Azure Cognitive Services y Azure Cosmos DB.
+[Refactorización de Team Foundation Server en Azure DevOps Services](./contoso-migration-tfs-vsts.md) | En este artículo se muestra un ejemplo de migración de una implementación de Team Foundation Server local a Azure DevOps Services en Azure.
 
 ### <a name="migration-scaling"></a>Escalado de una migración
 
 **Artículo** | **Detalles**
 --- | ---
-[Escalado de una migración a Azure](contoso-migration-scale.md) | En este artículo se muestra cómo una organización de ejemplo se prepara para escalar a una migración completa a Azure.
+[Escalado de una migración a Azure](./contoso-migration-scale.md) | En este artículo se muestra cómo una organización de ejemplo se prepara para escalar a una migración completa a Azure.
 
 ### <a name="demo-apps"></a>Aplicaciones de demostración
 

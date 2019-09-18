@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837614"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025314"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introducción a la ruta de preparación de las aptitudes
 
@@ -24,7 +24,7 @@ Los miembros del personal de TI pueden sentirse preocupados por sus roles y pues
 
 Cloud Adoption Framework guía a los lectores a lo largo de todo el ciclo de vida de la adopción. A lo largo de este marco, se proporcionan a los lectores oportunidades para crear las aptitudes necesarias. Para ayudarle a comenzar en este recorrido, se incluyen artículos sobre la preparación de las aptitudes según el siguiente esquema para facilitar el acceso. Cada uno de los vínculos siguientes se corresponde a las aptitudes necesarias para el éxito en cada una de esas fases de adopción.
 
-- **[Estrategia](../business-strategy/suggested-skills.md):** desarrolle las aptitudes necesarias para preparar un plan de migración accionable. Esto incluye la justificación empresarial y otras aptitudes necesarias de planeamiento empresarial.
+- **[Estrategia](../strategy/suggested-skills.md):** desarrolle las aptitudes necesarias para preparar un plan de migración accionable. Esto incluye la justificación empresarial y otras aptitudes necesarias de planeamiento empresarial.
 - **[Planeamiento](./suggested-skills.md):** desarrolle las aptitudes necesarias para preparar un plan de migración accionable. Esto incluye la justificación empresarial y otras aptitudes necesarias de planeamiento empresarial.
 - **[Listo](../ready/suggested-skills.md):** desarrolle las aptitudes necesarias para preparar la empresa, la cultura, las personas y el entorno para los cambios venideros.
 

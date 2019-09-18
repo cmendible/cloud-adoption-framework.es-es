@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0f720d78da2750fa05cbd117cdbf9f29e5e18558
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837482"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023389"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Innovación mediante la adopción de la nube en Cloud Adoption Framework
 
@@ -43,7 +43,7 @@ A medida que se desarrolla el contenido de innovación de Cloud Adoption Framewo
 - Prácticas a seguir que fomentan una mentalidad de crecimiento
 - Integración de estrategias de DevOps
 
-![Introducción a Cloud Adoption Framework](../_images/cloud-adoption-framework-overview.png)
+![Introducción a Cloud Adoption Framework](../_images/caf-overview.png)
 
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Ejemplos de cargas de trabajo comunes asociadas a una innovación en la nube
 

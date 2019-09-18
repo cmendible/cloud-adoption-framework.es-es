@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834678"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025109"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Ruta de preparación de aptitudes durante la fase de preparación de un recorrido de migración
 
@@ -24,7 +24,7 @@ Durante la fase de preparación de un recorrido de migración, el objetivo es pr
 En función de las motivaciones y los resultados empresariales asociados a un esfuerzo de adopción de la nube, es posible que se requieran líderes para establecer nuevas estructuras organizativas o equipos virtuales (equipos V) para facilitar diversas funciones. Los artículos siguientes le ayudarán a desarrollar las aptitudes necesarias para estructurar los equipos de acuerdo con los resultados deseados:
 
 - [Alineación inicial de la organización](./index.md) Información general sobre la alineación de la organización y diversas estructuras de equipo para facilitar objetivos específicos.
-- [Desglose en silos y feudos](../organization/fiefdoms-silos.md): Comprenda los dos antipatrones de organización comunes, así como formas de guiar al equipo a la colaboración productiva.
+- [Desglose en silos y feudos](../organize/fiefdoms-silos.md): Comprenda los dos antipatrones de organización comunes, así como formas de guiar al equipo a la colaboración productiva.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Rutas de aprendizaje de la preparación (técnica) del entorno
 

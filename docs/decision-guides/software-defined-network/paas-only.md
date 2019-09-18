@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9613e4be1173687e5f40409c34799c26480b0702
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837846"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023544"
 ---
 # <a name="software-defined-networking-paas-only"></a>Redes definidas por software: solo PaaS
 
 Al implementar un recurso de plataforma como servicio (PaaS), el proceso de implementación crea automáticamente una red asumida subyacente con un número limitado de controles a través de dicha red, como equilibrio de carga, bloqueo de puertos y conexiones a otros servicios PaaS.
 
-En Azure, varios tipos de recursos PaaS se pueden [implementar](/azure/virtual-network/virtual-network-for-azure-services) en una red virtual o [conectarse](/azure/virtual-network/virtual-network-service-endpoints-overview) a ella, permitiendo que estos recursos se integren en la infraestructura de red virtual existente. Otros servicios, como [App Service Environment](/azure/app-service/environment/intro), [Azure Kubernetes Services](/azure/aks/intro-kubernetes) y [Service Fabric](/azure/service-fabric/service-fabric-overview) deben implementarse dentro de la red virtual. Pero, en muchos casos, para cumplir los requisitos de conectividad y administración de tráfico de una carga de trabajo, basta con tener una arquitectura de red solo PaaS, basada exclusivamente en las capacidades de red nativas predeterminadas proporcionadas por los recursos PaaS.
+En Azure, varios tipos de recursos PaaS se pueden [implementar](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) en una red virtual o [conectarse](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) a ella, permitiendo que estos recursos se integren en la infraestructura de red virtual existente. Otros servicios, como [App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro), [Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes) y [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) deben implementarse dentro de la red virtual. Pero, en muchos casos, para cumplir los requisitos de conectividad y administración de tráfico de una carga de trabajo, basta con tener una arquitectura de red solo PaaS, basada exclusivamente en las capacidades de red nativas predeterminadas proporcionadas por los recursos PaaS.
 
 Si se plantea la opción de usar una arquitectura de red solo PaaS, asegúrese de validar que las suposiciones necesarias están en consonancia con los requisitos.
 

@@ -11,59 +11,59 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 897b6f3f5d3c506cc79050dd3453e30b677382b1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839154"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025268"
 ---
 # <a name="role-based-access-control"></a>Control de acceso basado en rol
 
-Los privilegios y los derechos de acceso basados en grupo son una buena práctica. Lidiar con grupos en lugar de con usuarios individuales simplifica el mantenimiento de las directivas de acceso, proporciona la administración de acceso coherente entre equipos y reduce los errores de configuración. Asignar usuarios a los grupos adecuados y eliminar aquellos de estos ayuda a mantener actualizados los privilegios de un usuario específico. El [control de acceso basado en rol (RBAC)](/azure/role-based-access-control/overview) de Azure ofrece administración de acceso específico para recursos organizados en torno a roles de usuario.
+Los privilegios y los derechos de acceso basados en grupo son una buena práctica. Lidiar con grupos en lugar de con usuarios individuales simplifica el mantenimiento de las directivas de acceso, proporciona la administración de acceso coherente entre equipos y reduce los errores de configuración. Asignar usuarios a los grupos adecuados y eliminar aquellos de estos ayuda a mantener actualizados los privilegios de un usuario específico. El [control de acceso basado en rol (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) de Azure ofrece administración de acceso específico para recursos organizados en torno a roles de usuario.
 
-Para información general sobre las prácticas de RBAC recomendadas como parte de una estrategia de identidad y seguridad, consulte [Procedimientos recomendados para la administración de identidades y la seguridad del control de acceso en Azure](/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
+Para información general sobre las prácticas de RBAC recomendadas como parte de una estrategia de identidad y seguridad, consulte [Procedimientos recomendados para la administración de identidades y la seguridad del control de acceso en Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
 
 ## <a name="overview-of-role-based-access-control"></a>Información general del control de acceso basado en rol
 
-Mediante el [ control de acceso basado en rol](/azure/role-based-access-control/overview), puede separar las tareas dentro de su equipo y otorgar solo acceso suficiente para usuarios, grupos, entidades de servicio o identidades administradas de Azure Active Directory (Azure AD) específicos para realizar sus trabajos. En lugar de proporcionar acceso no restringido a todos los empleados a los recursos o la suscripción de Azure, puede limitar los permisos para cada conjunto de recursos.
+Mediante el [ control de acceso basado en rol](https://docs.microsoft.com/azure/role-based-access-control/overview), puede separar las tareas dentro de su equipo y otorgar solo acceso suficiente para usuarios, grupos, entidades de servicio o identidades administradas de Azure Active Directory (Azure AD) específicos para realizar sus trabajos. En lugar de proporcionar acceso no restringido a todos los empleados a los recursos o la suscripción de Azure, puede limitar los permisos para cada conjunto de recursos.
 
-[Las definiciones de rol de RBAC](/azure/role-based-access-control/role-definitions) enumeran las operaciones permitidas o no permitidas para los usuarios o grupos asignados a ese rol. El [ámbito](/azure/role-based-access-control/overview#scope) de un rol especifica a qué recursos se aplican estos permisos definidos. Los ámbitos se pueden especificar en varios niveles: grupo de administración, suscripción, grupo de recursos o recurso. Los ámbitos se estructuran en una relación de elementos primarios y secundarios.
+[Las definiciones de rol de RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) enumeran las operaciones permitidas o no permitidas para los usuarios o grupos asignados a ese rol. El [ámbito](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope) de un rol especifica a qué recursos se aplican estos permisos definidos. Los ámbitos se pueden especificar en varios niveles: grupo de administración, suscripción, grupo de recursos o recurso. Los ámbitos se estructuran en una relación de elementos primarios y secundarios.
 
-![Jerarquía de ámbitos RBAC](./images/rbac-scope.png)
+![Jerarquía de ámbitos RBAC](../../_images/azure-best-practices/rbac-scope.png)
 
-Para instrucciones detalladas para la asignación de usuarios y grupos a roles específicos y la asignación de roles a ámbitos, consulte [Administración del acceso a los recursos de Azure mediante RBAC y Azure Portal](/azure/role-based-access-control/role-assignments-portal).
+Para instrucciones detalladas para la asignación de usuarios y grupos a roles específicos y la asignación de roles a ámbitos, consulte [Administración del acceso a los recursos de Azure mediante RBAC y Azure Portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
 Al planear la estrategia de control de acceso, use un modelo de acceso con privilegios mínimos que solo conceda a los usuarios los permisos necesarios para realizar su trabajo. El siguiente diagrama muestra un patrón sugerido para usar RBAC a través de este enfoque.
 
-![Patrón sugerido para usar RBAC](./images/rbac-least-privilege.png)
+![Patrón sugerido para usar RBAC](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Los permisos más específicos o detallados son los que define y lo más probable es que los controles de acceso sean complejos y difíciles de administrar. Esto es especialmente cierto cuando los recursos en la nube aumentan de tamaño. Evite asignar permisos específicos de recursos. En su lugar, [utilice grupos de administración](/azure/governance/management-groups) para control de acceso en toda la compañía y [grupos de recursos](/azure/azure-resource-manager/resource-group-overview#resource-groups) para control de acceso en las suscripciones. Asimismo, evite permisos específicos del usuario. En su lugar, asigne acceso a [grupos en Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups).
+> Los permisos más específicos o detallados son los que define y lo más probable es que los controles de acceso sean complejos y difíciles de administrar. Esto es especialmente cierto cuando los recursos en la nube aumentan de tamaño. Evite asignar permisos específicos de recursos. En su lugar, [utilice grupos de administración](https://docs.microsoft.com/azure/governance/management-groups) para control de acceso en toda la compañía y [grupos de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) para control de acceso en las suscripciones. Asimismo, evite permisos específicos del usuario. En su lugar, asigne acceso a [grupos en Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
 ## <a name="using-built-in-rbac-roles"></a>Uso de roles de RBAC integrados
 
 Azure proporciona muchas definiciones de roles integrados, con tres roles principales para proporcionar acceso:
 
-- El rol [Propietario](/azure/role-based-access-control/built-in-roles#owner) puede administrarlo todo, incluido el acceso a los recursos.
-- El rol [Colaborador](/azure/role-based-access-control/built-in-roles#contributor) puede administrarlo todo, excepto el acceso a los recursos.
-- El rol [Lector](/azure/role-based-access-control/built-in-roles#reader) puede verlo todo, pero no realizar cambios.
+- El rol [Propietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) puede administrarlo todo, incluido el acceso a los recursos.
+- El rol [Colaborador](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) puede administrarlo todo, excepto el acceso a los recursos.
+- El rol [Lector](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) puede verlo todo, pero no realizar cambios.
 
 A partir de estos niveles de acceso principales, los roles integrados adicionales proporcionan controles más detallados para acceder a determinados tipos de recursos o características de Azure. Por ejemplo, puede administrar el acceso a las máquinas virtuales mediante los siguientes roles integrados:
 
-- El rol [Inicio de sesión de administrador de máquina virtual](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) puede ver las máquinas virtuales en el portal e iniciar sesión como _administrador_.
-- El rol [Colaborador de la máquina virtual](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) puede administrar máquinas virtuales, pero no puede acceder a ellas ni a la red virtual ni a la cuenta de almacenamiento a las que está conectado.
-- El rol [Inicio de sesión de usuario de máquina virtual](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) puede ver las máquinas virtuales en el portal e iniciar sesión como usuario normal.
+- El rol [Inicio de sesión de administrador de máquina virtual](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) puede ver las máquinas virtuales en el portal e iniciar sesión como _administrador_.
+- El rol [Colaborador de la máquina virtual](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) puede administrar máquinas virtuales, pero no puede acceder a ellas ni a la red virtual ni a la cuenta de almacenamiento a las que está conectado.
+- El rol [Inicio de sesión de usuario de máquina virtual](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) puede ver las máquinas virtuales en el portal e iniciar sesión como usuario normal.
 
 Para ver otro ejemplo del uso de roles integrados para administrar el acceso a características concretas, consulte la explicación sobre cómo controlar el acceso a las características de seguimiento de costos en [Seguimiento de los costos a través de las unidades de negocio, entornos o proyectos](./track-costs.md#provide-the-right-level-of-cost-access).
 
-Para una lista completa de todos los roles integrados, consulte [Roles integrados en los recursos de Azure](/azure/role-based-access-control/built-in-roles).
+Para una lista completa de todos los roles integrados, consulte [Roles integrados en los recursos de Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
 ## <a name="using-custom-roles"></a>Uso de los roles personalizados
 
 Aunque los roles integrados en el soporte técnico de Azure admiten una amplia variedad de escenarios de control de acceso, es posible que no satisfagan todas las necesidades de su organización o equipo. Por ejemplo, si tiene un único grupo de usuarios responsables de administrar máquinas virtuales y recursos de Azure SQL Database, es posible que desee crear un rol personalizado para optimizar la administración de los controles de acceso necesarios.
 
-La documentación de RBAC de Azure contiene instrucciones sobre la [creación de roles personalizados](/azure/role-based-access-control/custom-roles), junto con detalles sobre [cómo funcionan las definiciones de los roles](/azure/role-based-access-control/role-definitions).
+La documentación de RBAC de Azure contiene instrucciones sobre la [creación de roles personalizados](https://docs.microsoft.com/azure/role-based-access-control/custom-roles), junto con detalles sobre [cómo funcionan las definiciones de los roles](https://docs.microsoft.com/azure/role-based-access-control/role-definitions).
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>Separación de responsabilidades y roles para organizaciones de gran tamaño
 

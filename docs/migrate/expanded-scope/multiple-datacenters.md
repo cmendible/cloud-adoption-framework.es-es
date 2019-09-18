@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e58dd50417ec6377774f07ee613a5fc69f74f0ea
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839114"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024793"
 ---
 # <a name="multiple-datacenters"></a>Varios centros de datos
 
@@ -37,7 +37,7 @@ El cambio más importante en el proceso de evaluación, cuando se amplía el ám
 
 ### <a name="suggested-action-during-the-assess-process"></a>Acción sugerida durante el proceso de evaluación
 
-**Evaluación de las dependencias entre centros de datos:** Las [herramientas de visualización de dependencias de Azure Migrate](/azure/migrate/concepts-dependency-visualization) pueden ayudar a identificar las dependencias. El uso de este conjunto de herramientas antes de la migración es un excelente procedimiento recomendado general. Sin embargo, cuando se trabaja con una complejidad global, se vuelve un paso necesario para el proceso de evaluación. A través de una [agrupación de dependencias](/azure/migrate/how-to-create-group-machine-dependencies), la visualización puede ayudar a identificar los puertos y las direcciones IP de cualquiera de los recursos que se necesitan para admitir la carga de trabajo.
+**Evaluación de las dependencias entre centros de datos:** Las [herramientas de visualización de dependencias de Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) pueden ayudar a identificar las dependencias. El uso de este conjunto de herramientas antes de la migración es un excelente procedimiento recomendado general. Sin embargo, cuando se trabaja con una complejidad global, se vuelve un paso necesario para el proceso de evaluación. A través de una [agrupación de dependencias](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), la visualización puede ayudar a identificar los puertos y las direcciones IP de cualquiera de los recursos que se necesitan para admitir la carga de trabajo.
 
 > [!IMPORTANT]
 > Dos notas importantes: en primer lugar, se requiere que un experto en la materia que entienda los esquemas de dirección IP y la ubicación de los recursos identifique los recursos que residen en un centro de datos secundario. En segundo lugar, es importante evaluar tanto las dependencias de nivel inferior y clientes en el objeto visual para comprender las dependencias bidireccionales.

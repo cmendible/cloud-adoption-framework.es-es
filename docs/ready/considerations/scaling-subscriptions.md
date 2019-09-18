@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905351"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025141"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Escalado con varias suscripciones de Azure
 
@@ -39,7 +39,7 @@ Otras situaciones pueden requerir suscripciones adicionales. Tenga en cuenta lo 
 
 - Las suscripciones tienen límites diferentes para diferentes tipos de recursos. Por ejemplo, el número de redes virtuales de una suscripción es limitado. Cuando una suscripción se acerque a cualquiera de sus límites, tendrá que crear otra suscripción y colocar ahí los nuevos recursos.
 
-  Para más información, consulte [Límites, cuotas y restricciones de suscripción y servicios de Microsoft Azure](/azure/azure-subscription-service-limits).
+  Para más información, consulte [Límites, cuotas y restricciones de suscripción y servicios de Microsoft Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Cada suscripción puede implementar sus propias directivas para los tipos de recursos que se pueden implementar y las regiones compatibles.
 
@@ -59,7 +59,7 @@ Otras situaciones pueden requerir suscripciones adicionales. Tenga en cuenta lo 
 
 También puede optar por crear suscripciones adicionales por otras razones técnicas o empresariales específicas de su organización. Es posible que se generen costos adicionales por la entrada y salida de datos entre las suscripciones.
 
-Puede mover muchos tipos de recursos de una suscripción a otra o usar implementaciones automatizadas para migrar recursos a otra suscripción. Para más información, consulte [Traslado de los recursos a un nuevo grupo de recursos o a una nueva suscripción](/azure/azure-resource-manager/resource-group-move-resources).
+Puede mover muchos tipos de recursos de una suscripción a otra o usar implementaciones automatizadas para migrar recursos a otra suscripción. Para más información, consulte [Traslado de los recursos a un nuevo grupo de recursos o a una nueva suscripción](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Administración de varias suscripciones
 
@@ -76,7 +76,7 @@ Azure proporciona cuatro niveles de ámbito administración: grupo de administra
 
 Al confiar en este modelo de herencia, puede organizar las suscripciones de la jerarquía de forma que cada suscripción siga las directivas y los controles de seguridad adecuados.
 
-![Los cuatro niveles de ámbito para organizar los recursos de Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Los cuatro niveles de ámbito para organizar los recursos de Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Todas las asignaciones de acceso o directivas en el grupo de administración raíz se aplican a todos los recursos dentro del directorio. Considere cuidadosamente qué elementos define en este ámbito. Incluya solo las asignaciones que debe tener.
 
@@ -86,26 +86,26 @@ Cuando se mueve una suscripción a un grupo de administración existente, se her
 
 ![Ejemplo de una jerarquía de grupos de administración](../../_images/ready/management-group-hierarchy.png)
 
-Para más información, consulte [Organización de los recursos con grupos de administración de Azure](/azure/governance/management-groups).
+Para más información, consulte [Organización de los recursos con grupos de administración de Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Sugerencias para crear suscripciones
 
 - Identifique quién será responsable de crear las suscripciones.
 - Decida qué recursos estarán en una suscripción de forma predeterminada.
 - Decida el aspecto de todas las suscripciones estándar. Es necesario considerar el acceso RBAC, las directivas, las etiquetas y los recursos de infraestructura.
-- Si es posible, [use una entidad de servicio](/azure/azure-resource-manager/grant-access-to-create-subscription) para crear suscripciones. Defina un grupo de seguridad que pueda solicitar nuevas suscripciones a través de un flujo de trabajo automatizado.
+- Si es posible, [use una entidad de servicio](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription) para crear suscripciones. Defina un grupo de seguridad que pueda solicitar nuevas suscripciones a través de un flujo de trabajo automatizado.
 - Si es cliente de un Contrato Enterprise (EA), pídale al servicio de soporte técnico de Azure que bloquee la creación de suscripciones no EA en su organización.
 
 ## <a name="related-resources"></a>Recursos relacionados
 
 - [Conceptos básicos de Azure](./fundamental-concepts.md).
-- [Organización de los recursos con grupos de administración de Azure](/azure/governance/management-groups).
-- [Elevación de los privilegios de acceso para administrar todas las suscripciones y los grupos de administración de Azure](/azure/role-based-access-control/elevate-access-global-admin).
-- [Traslado de recursos de Azure a otro grupo de recursos o a otra suscripción](/azure/azure-resource-manager/resource-group-move-resources).
+- [Organización de los recursos con grupos de administración de Azure](https://docs.microsoft.com/azure/governance/management-groups).
+- [Elevación de los privilegios de acceso para administrar todas las suscripciones y los grupos de administración de Azure](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin).
+- [Traslado de recursos de Azure a otro grupo de recursos o a otra suscripción](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Revise las [convenciones de recomendadas de nomenclatura y etiquetado](./name-and-tag.md) que se deben seguir al implementar los recursos de Azure.
+Revise las [convenciones de recomendadas de nomenclatura y etiquetado](./naming-and-tagging.md) que se deben seguir al implementar los recursos de Azure.
 
 > [!div class="nextstepaction"]
-> [Convenciones recomendadas de nomenclatura y etiquetado](./name-and-tag.md)
+> [Convenciones recomendadas de nomenclatura y etiquetado](./naming-and-tagging.md)

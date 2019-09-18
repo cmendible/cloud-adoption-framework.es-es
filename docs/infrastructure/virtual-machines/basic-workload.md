@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5e241e550f2fd79fcd7de48a0b041809340b78
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838162"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024363"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Implementación de una carga de trabajo básica en Azure
 
@@ -30,26 +30,26 @@ Este aislamiento también incluye otro concepto conocido como DevOps. DevOps inc
 Una *carga de trabajo básica* normalmente se define como una sola aplicación web o una red virtual (VNet) con máquina virtual (VM).
 
 > [!NOTE]
-> Esta guía no incluye el desarrollo de aplicaciones. Para más información sobre cómo desarrollar aplicaciones en Azure, consulte la [Guía de arquitectura de aplicaciones de Azure](/azure/architecture/guide).
+> Esta guía no incluye el desarrollo de aplicaciones. Para más información sobre cómo desarrollar aplicaciones en Azure, consulte la [Guía de arquitectura de aplicaciones de Azure](https://docs.microsoft.com/azure/architecture/guide).
 
 Independientemente de si la carga de trabajo es una aplicación web o una máquina virtual, cada una de estas implementaciones requiere un *grupo de recursos*. Un usuario con permisos para crear un grupo de recursos debe hacerlo antes de aplicar los pasos siguientes.
 
 ## <a name="basic-web-application-paas"></a>Aplicación web básica (Paas)
 
-Para una aplicación web básica, seleccione una de las guías de inicio rápido en 5 minutos en la [documentación de Web Apps](/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) y siga los pasos.
+Para una aplicación web básica, seleccione una de las guías de inicio rápido en 5 minutos en la [documentación de Web Apps](https://docs.microsoft.com/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) y siga los pasos.
 
 > [!NOTE]
 > Algunas de las guías de inicio rápido implementarán un grupo de recursos de forma predeterminada. En este caso, no es necesario crear un grupo de recursos de forma explícita. En caso contrario, implemente la aplicación web en el grupo de recursos creado anteriormente.
 
-Una vez implementada la carga de trabajo simple, puede obtener más información sobre los procedimientos recomendados para implementar una [aplicación web básica](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) en Azure.
+Una vez implementada la carga de trabajo simple, puede obtener más información sobre los procedimientos recomendados para implementar una [aplicación web básica](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) en Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Una sola máquina virtual Windows o Linux (IaaS)
 
-Para una carga de trabajo simple que se ejecuta en una máquina virtual, el primer paso es implementar una red virtual. Todos los recursos de una infraestructura como servicio (IaaS) en Azure, tales como máquinas virtuales, equilibradores de carga y puertas de enlace, requieren una red virtual. Vea más información sobre las [redes virtuales de Azure](/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json) y, a continuación, siga los pasos para [implementar una red virtual en Azure mediante el portal](/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Al especificar la configuración de la red virtual en Azure Portal, asegúrese de especificar el nombre del grupo de recursos creado anteriormente.
+Para una carga de trabajo simple que se ejecuta en una máquina virtual, el primer paso es implementar una red virtual. Todos los recursos de una infraestructura como servicio (IaaS) en Azure, tales como máquinas virtuales, equilibradores de carga y puertas de enlace, requieren una red virtual. Vea más información sobre las [redes virtuales de Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json) y, a continuación, siga los pasos para [implementar una red virtual en Azure mediante el portal](https://docs.microsoft.com/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Al especificar la configuración de la red virtual en Azure Portal, asegúrese de especificar el nombre del grupo de recursos creado anteriormente.
 
-El siguiente paso es decidir si va a implementar una sola máquina virtual Windows o Linux. En el caso de una máquina virtual Windows, siga los pasos para [implementar una máquina virtual Windows en Azure con el portal](/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). De nuevo, al especificar la configuración de la máquina virtual en Azure Portal, especifique el nombre del grupo de recursos creado anteriormente.
+El siguiente paso es decidir si va a implementar una sola máquina virtual Windows o Linux. En el caso de una máquina virtual Windows, siga los pasos para [implementar una máquina virtual Windows en Azure con el portal](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). De nuevo, al especificar la configuración de la máquina virtual en Azure Portal, especifique el nombre del grupo de recursos creado anteriormente.
 
-Después de seguir los pasos e implementar la máquina virtual, puede ver los [procedimientos recomendados para ejecutar una máquina virtual Windows en Azure](/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). En el caso de una máquina virtual Linux, siga los pasos para [implementar una máquina virtual Linux en Azure con el portal](/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). También puede ver los [procedimientos recomendados para ejecutar una máquina virtual Linux en Azure](/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Después de seguir los pasos e implementar la máquina virtual, puede ver los [procedimientos recomendados para ejecutar una máquina virtual Windows en Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). En el caso de una máquina virtual Linux, siga los pasos para [implementar una máquina virtual Linux en Azure con el portal](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). También puede ver los [procedimientos recomendados para ejecutar una máquina virtual Linux en Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

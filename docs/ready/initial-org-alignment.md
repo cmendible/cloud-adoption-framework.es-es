@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834682"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021985"
 ---
 # <a name="initial-organization-alignment"></a>Alineación inicial de la organización
 
@@ -43,7 +43,7 @@ Por ejemplo, un equipo de estrategia en la nube podría estar a cargo del direct
 
 También es importante formar otros dos equipos de alto nivel: un equipo de gobernanza y un equipo de seguridad. Estos equipos son responsables del diseño, la implementación y la auditoría regular de directivas de seguridad y gobernanza de la empresa. El equipo de gobernanza precisa de miembros que hayan trabajado con protección de recursos, administración de costos, directivas de grupo y temas relacionados. El equipo de seguridad requiere que sus miembros sean expertos en los estándares de seguridad actuales, así como en los requisitos de seguridad de la empresa.
 
-![Equipo de estrategia de nube, con equipos de gobernanza y seguridad](../_images/getting-started-overview-1.png)
+![Equipo de estrategia de nube, con equipos de gobernanza y seguridad](../_images/ready/getting-started-overview-1.png)
 
 El equipo de gobernanza es responsable de diseñar e implementar el modelo de gobernanza de la empresa en la nube, así como de implementar y mantener los recursos de infraestructura compartida que forman parte de la transformación digital. Estos recursos incluyen el hardware, el software y los recursos en la nube necesarios para conectar la red local a una red virtual en la nube.
 
@@ -53,9 +53,9 @@ El equipo de seguridad es responsable de diseñar e implementar las directivas d
 
 El siguiente paso en la transformación digital de la empresa consiste en que los miembros del equipo de estrategia en la nube obtengan información sobre cómo las tecnologías en la nube cambiarán la forma en la que empresa hace negocios. Se trata de preparar y planear los cambios en la empresa, el personal y las tecnologías. Es importante que los miembros del equipo de estrategia en la nube comprendan qué es nuevo y diferente en la nube en comparación con un entorno local.
 
-![Los equipos de estrategia, gobernanza y seguridad en la nube aprenden los procedimientos recomendados para trabajar en la nube.](../_images/getting-started-overview-2.png)
+![Los equipos de estrategia, gobernanza y seguridad en la nube aprenden los procedimientos recomendados para trabajar en la nube.](../_images/ready/getting-started-overview-2.png)
 
-El punto de partida para comprender la nube consiste en aprender [cómo funciona Azure](../getting-started/what-is-azure.md) de un modo general. A continuación, se trata de obtener información sobre los conceptos básicos de [gobernanza en Azure](../governance/resource-consistency/what-is-governance.md) como preparación para [comprender la administración del acceso a los recurso](../governance/resource-consistency/azure-resource-access.md).
+El punto de partida para comprender la nube consiste en aprender [cómo funciona Azure](../getting-started/what-is-azure.md) de un modo general. A continuación, se trata de obtener información sobre los conceptos básicos de [gobernanza en Azure](../govern/resource-consistency/what-is-governance.md) como preparación para [comprender la administración del acceso a los recurso](../govern/resource-consistency/resource-access-management.md).
 
 Para un aprendizaje avanzado, el equipo de gobernanza debería revisar los conceptos y las guías de diseño de la sección de gobernanza de la tabla de contenido. Las secciones de infraestructura y cargas de trabajo son útiles para comprender las arquitecturas y las cargas de trabajo típicas en la nube.
 
@@ -93,7 +93,7 @@ Ahora que se han enumerado y priorizado los objetivos de la transformación digi
 
 Los equipos reciben las listas con prioridades y trabajan en cada solución de alto nivel para diseñar cada solución. El proceso de diseño implica la especificación de nueva infraestructura y nuevas cargas de trabajo. También puede haber cambios en los roles de las personas y los procesos que siguen. También es muy importante en esta fase que cada uno de los equipos de diseño incluya a los equipos de gobernanza y de seguridad para que revisen cada diseño. Cada diseño debe cumplir las directivas y procedimientos definidos por los equipos de gobernanza y seguridad y estos equipos se deben incluir en la aprobación final de cada diseño.
 
-![El equipo de estrategia en la nube entrega soluciones generales a los equipos de diseño e implementación.](../_images/getting-started-overview-3.png)
+![El equipo de estrategia en la nube entrega soluciones generales a los equipos de diseño e implementación.](../_images/ready/getting-started-overview-3.png)
 
 El diseño de cada solución no es una tarea trivial. A medida que se crean diseños, deben tenerse en cuenta en el contexto de otros diseños de soluciones de otros equipos. Por ejemplo, si varios de los diseños provocan una migración de servicios y aplicaciones locales existentes a la nube, puede ser más eficaz agruparlos y diseñar una estrategia de migración general. En otro ejemplo, podría no resultar posible migrar algunas aplicaciones y servicios locales existentes y la solución puede ser reemplazarlos por un nuevo desarrollo o servicios de terceros. En este caso, puede resultar más eficaz agruparlos y determinar la superposición entre ellos para decidir si se puede usar un servicio de terceros para más de una solución.
 

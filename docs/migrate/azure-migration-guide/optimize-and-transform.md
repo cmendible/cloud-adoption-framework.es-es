@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c44bcd45783ee6ea61bbbe33b6b76ce7034eca2c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818904"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024746"
 ---
 # <a name="optimize-and-transform"></a>Optimizar y transformar
 
@@ -60,13 +60,13 @@ Tenga en cuenta que el cambio de tamaño de las máquinas virtuales de producci�
 
 ::: zone target="docs"
 
-- [Administración de reservas para los recursos de Azure](/azure/billing/billing-manage-reserved-vm-instance)
-- [Cambio de tamaño de una máquina virtual Windows](/azure/virtual-machines/windows/resize-vm)
-- [Cambiar el tamaño de una máquina virtual Linux que usa la CLI de Azure](/azure/virtual-machines/linux/change-vm-size)
+- [Administración de reservas para los recursos de Azure](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
+- [Cambio de tamaño de una máquina virtual Windows](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
+- [Cambiar el tamaño de una máquina virtual Linux que usa la CLI de Azure](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
 
 Los asociados pueden revisar el uso en el Centro de partners.
 
-- [Cambio de tamaño de VM de Microsoft Azure para el uso de reserva máximo](/partner-center/azure-usage)
+- [Cambio de tamaño de VM de Microsoft Azure para el uso de reserva máximo](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -126,8 +126,8 @@ También puede usar **Advisor** y seleccionar la pestaña **Costos** para identi
 
 ::: zone target="docs"
 
-- [Tutorial: Optimización de los costos a partir de las recomendaciones](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Prevención de cargos inesperados con la administración de costos y facturación de Azure](/azure/billing/billing-getting-started)
-- [Explore y analice los costos con Análisis de costos](/azure/cost-management/quick-acm-cost-analysis)
+- [Tutorial: Optimización de los costos a partir de las recomendaciones](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Prevención de cargos inesperados con la administración de costos y facturación de Azure](https://docs.microsoft.com/azure/billing/billing-getting-started)
+- [Explore y analice los costos con Análisis de costos](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: d4f420274b27646e94c64c2e5347bff50124c9dd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837814"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023811"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Enfoques de planeamiento del patrimonio digital
 
@@ -62,4 +62,4 @@ Se recomienda encarecidamente un enfoque incremental, como para muchos procesos 
 Una vez seleccionado un enfoque, se puede recopilar el inventario.
 
 > [!div class="nextstepaction"]
-> [Recopilación de datos de inventario](inventory.md)
+> [Recopilación de datos de inventario](./inventory.md)

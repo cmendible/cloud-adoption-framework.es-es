@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905623"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022674"
 ---
 # <a name="understand-partnership-options"></a>Descripción de las opciones de colaboración
 
@@ -34,10 +34,10 @@ Si una organización planea realizar una migración a Azure por sí misma, Micro
 
 - **Herramientas de evaluación y migración.** Azure proporciona una amplia variedad de herramientas que se pueden usar en distintas fases para la transformación en la nube, incluida la evaluación de la infraestructura existente. Para más información, consulte la sección "Evaluación" en el capítulo "Migración" que aparece a continuación.
 - **[Plataforma de adopción de la nube de Microsoft](../../index.md).** Esta plataforma presenta un enfoque estructurado para la adopción y la migración a la nube. Se basa en prácticas probadas en muchas de las interacciones con los clientes compatibles con Microsoft y se organiza como una serie de pasos, desde la arquitectura y el diseño hasta la implementación. Para cada paso, hay instrucciones auxiliares que lo ayudarán con el diseño de la arquitectura de la aplicación.
-- **[Patrones de diseño en la nube](/azure/architecture/patterns).** Azure proporciona algunos patrones útiles de diseño en la nube para crear cargas de trabajo confiables, escalables y seguras en la nube. Cada patrón describe el problema al que hace frente, las consideraciones sobre su aplicación y un ejemplo basado en Azure. La mayoría incluye ejemplos de código o fragmentos de código que muestran cómo implementar el patrón en Azure. Sin embargo, son importantes para todos los sistemas distribuidos, tanto si se hospedan en Azure como en otras plataformas en la nube.
-- **[Aspectos básicos de la nube](/azure/architecture/guide).** Estos ayudan a enseñar los enfoques básicos para la implementación de los conceptos básicos. Esta guía ayuda a los técnicos a pensar en soluciones que van más allá de un único servicio de Azure.
-- **[Escenarios de ejemplo](/azure/architecture/example-scenario).** En esta guía se proporcionan referencias de implementaciones de clientes reales, donde se describen las herramientas, los enfoques y los procesos que los clientes han seguido para lograr objetivos empresariales específicos.
-- **[Arquitecturas de referencia](/azure/architecture/reference-architectures).** Las arquitecturas de referencia se organizan por escenario, agrupando juntas aquellas arquitecturas relacionadas. Cada arquitectura incluye procedimientos recomendados junto con consideraciones sobre escalabilidad, disponibilidad, capacidad de administración y seguridad. La mayoría también incluye una solución que se puede implementar.
+- **[Patrones de diseño en la nube](https://docs.microsoft.com/azure/architecture/patterns).** Azure proporciona algunos patrones útiles de diseño en la nube para crear cargas de trabajo confiables, escalables y seguras en la nube. Cada patrón describe el problema al que hace frente, las consideraciones sobre su aplicación y un ejemplo basado en Azure. La mayoría incluye ejemplos de código o fragmentos de código que muestran cómo implementar el patrón en Azure. Sin embargo, son importantes para todos los sistemas distribuidos, tanto si se hospedan en Azure como en otras plataformas en la nube.
+- **[Aspectos básicos de la nube](https://docs.microsoft.com/azure/architecture/guide).** Estos ayudan a enseñar los enfoques básicos para la implementación de los conceptos básicos. Esta guía ayuda a los técnicos a pensar en soluciones que van más allá de un único servicio de Azure.
+- **[Escenarios de ejemplo](https://docs.microsoft.com/azure/architecture/example-scenario).** En esta guía se proporcionan referencias de implementaciones de clientes reales, donde se describen las herramientas, los enfoques y los procesos que los clientes han seguido para lograr objetivos empresariales específicos.
+- **[Arquitecturas de referencia](https://docs.microsoft.com/azure/architecture/reference-architectures).** Las arquitecturas de referencia se organizan por escenario, agrupando juntas aquellas arquitecturas relacionadas. Cada arquitectura incluye procedimientos recomendados junto con consideraciones sobre escalabilidad, disponibilidad, capacidad de administración y seguridad. La mayoría también incluye una solución que se puede implementar.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -76,7 +76,7 @@ Las principales fases de una interacción típica de FastTrack for Azure son:
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>Ofertas de los Servicios de Microsoft alineadas con los enfoques de la Plataforma de adopción de la nube
 
-![Enfoque de la Plataforma de adopción de la nube de los Servicios de Microsoft](../../../_images/mcs-program-approach.jpg)
+![Enfoque de la Plataforma de adopción de la nube de los Servicios de Microsoft](../../../_images/migrate/mcs-program-approach.jpg)
 
 **Evaluación:** los Servicios de Microsoft usan un [enfoque unificado, de datos y de herramientas](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) que se compone de talleres de diseño, información en tiempo real de Azure, modelos de amenazas de seguridad e identidad y diversas herramientas para proporcionar información sobre los desafíos, los riesgos, las recomendaciones y los problemas a un entorno de Azure existente con un resultado clave como la [hoja de ruta de modernización de alto nivel](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 

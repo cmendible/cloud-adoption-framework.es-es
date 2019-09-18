@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839030"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022598"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Lista de comprobación del planeamiento del entorno de migración: validación de la preparación del entorno antes de la migración
 
@@ -33,7 +33,7 @@ La primera decisión, y la más importante, con respecto a cualquier entorno pre
 
 Tanto si elige alinearse con una estrategia de control de la nube más amplia como si no para la migración inicial, deberá asegurarse de que el entorno de implementación de la nube esté configurado para admitir las cargas de trabajo.
 
-Si desde el principio tiene previsto alinear la migración con una estrategia de gobernanza de la nube, deberá aplicar [Las cinco disciplinas de la gobernanza de la nube](../../../governance/governance-disciplines.md) para ayudar a tomar decisiones sobre las directivas, cadenas de herramientas y mecanismos de cumplimiento que alinearán el entorno de nube con los requisitos corporativos generales. Consulte las [guías de diseño de gobernanza accionables](../../../governance/journeys/index.md) del marco de adopción de la nube para ver ejemplos de cómo implementar este modelo con los servicios de Azure.
+Si desde el principio tiene previsto alinear la migración con una estrategia de gobernanza de la nube, deberá aplicar [Las cinco disciplinas de la gobernanza de la nube](../../../govern/governance-disciplines.md) para ayudar a tomar decisiones sobre las directivas, cadenas de herramientas y mecanismos de cumplimiento que alinearán el entorno de nube con los requisitos corporativos generales. Consulte las [guías de diseño de gobernanza accionables](../../../govern/guides/index.md) del marco de adopción de la nube para ver ejemplos de cómo implementar este modelo con los servicios de Azure.
 
 Si las migraciones iniciales no están estrechamente alineadas con una estrategia de gobernanza de la nube más amplia, aún será necesario gestionar los problemas generales de planeamiento de la organización, acceso e infraestructura. Consulte la [guía de preparación de Azure](../../../ready/azure-readiness-guide/index.md) para obtener ayuda con estas decisiones de preparación de la nube.
 
@@ -64,7 +64,7 @@ Los servicios de identidad basados en la nube son un requisito previo para ofrec
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si el entorno cumple los requisitos mínimos, se puede considerar aprobado para la preparación de la migración. [La administración de la complejidad cultural y de los cambios](./culture-complexity.md) ayuda a alinear roles y responsabilidades para garantizar las expectativas adecuadas durante la ejecución del plan.
+Si el entorno cumple los requisitos mínimos, se puede considerar aprobado para la preparación de la migración. [La administración de la complejidad cultural y de los cambios](./cultural-complexity.md) ayuda a alinear roles y responsabilidades para garantizar las expectativas adecuadas durante la ejecución del plan.
 
 > [!div class="nextstepaction"]
-> [Administración de la complejidad cultural y de los cambios](./culture-complexity.md)
+> [Administración de la complejidad cultural y de los cambios](./cultural-complexity.md)

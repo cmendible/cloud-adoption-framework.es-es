@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837754"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023329"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ En cada bastidor o clúster, la mayoría de los servidores están designados par
 
 Cada instancia del controlador de tejido se conecta a otro conjunto de servidores que ejecutan software de orquestación en la nube, conocido normalmente como **front-end**. El front-end hospeda los servicios web, las API RESTful y las bases de datos internas de Azure utilizadas para todas las funciones que realiza la nube.
 
-Por ejemplo, el front-end hospeda los servicios que controlan las solicitudes de cliente para asignar recursos de Azure como [máquinas virtuales](/azure/virtual-machines) y servicios como [Cosmos DB](/azure/cosmos-db/introduction). En un primer tiempo, el front-end valida el usuario y comprueba que esté autorizado para asignar los recursos solicitados. Si es así, el front-end consulta una base de datos para buscar un bastidor de servidores con capacidad suficiente y, luego, indica al controlador de tejido de ese bastidor que asigne el recurso.
+Por ejemplo, el front-end hospeda los servicios que controlan las solicitudes de cliente para asignar recursos de Azure como [máquinas virtuales](https://docs.microsoft.com/azure/virtual-machines) y servicios como [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). En un primer tiempo, el front-end valida el usuario y comprueba que esté autorizado para asignar los recursos solicitados. Si es así, el front-end consulta una base de datos para buscar un bastidor de servidores con capacidad suficiente y, luego, indica al controlador de tejido de ese bastidor que asigne el recurso.
 
 Así que, básicamente, Azure es una inmensa colección de servidores y hardware de red que ejecuta un complejo conjunto de aplicaciones distribuidas para orquestar la configuración y el funcionamiento del hardware y el software virtualizado de esos servidores. Es esta orquestación la que hace que Azure sea tan eficaz: los usuarios ya no son responsables de mantener y actualizar el hardware, ya que de todo esto se encarga Azure en segundo plano.
 
@@ -45,8 +45,4 @@ Así que, básicamente, Azure es una inmensa colección de servidores y hardware
 Ahora que comprende el funcionamiento interno de Azure, obtenga información sobre la gobernanza de recursos en la nube.
 
 > [!div class="nextstepaction"]
-> [Obtenga información sobre la gobernanza de recursos](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [Obtenga información sobre la gobernanza de recursos](../govern/resource-consistency/what-is-governance.md)

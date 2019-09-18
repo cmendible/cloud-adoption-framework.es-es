@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 294a426aef047bb7acd418c19574a4fd7e0b2320
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905638"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024804"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de control de costos centrados en la migración
 
@@ -70,8 +70,8 @@ La estimación resultante, mostrada a continuación, identifica los costos mensu
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- [Configuración y revisión de una evaluación con Azure Migrate](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Para obtener un plan más completo sobre la administración de costos en números más grandes de recursos (infraestructura, aplicaciones y datos), consulte el artículo sobre el [modelo de gobernanza de la Plataforma de adopción de la nube](../../governance/journeys/index.md). En concreto, las instrucciones sobre la [materia de Cost Management](../../governance/cost-management/index.md) y la [guía de mejora de Cost Management en grandes empresas](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+- [Configuración y revisión de una evaluación con Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- Para obtener un plan más completo sobre la administración de costos en números más grandes de recursos (infraestructura, aplicaciones y datos), consulte el artículo sobre el [modelo de gobernanza de la Plataforma de adopción de la nube](../../govern/guides/index.md). En concreto, las instrucciones sobre la [materia de Cost Management](../../govern/cost-management/index.md) y la [guía de mejora de Cost Management en grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Estimación y optimización de costos de máquina virtual durante y después de la migración](#tab/EstimateOptimize)
 
@@ -91,7 +91,7 @@ Los siguientes pasos proporcionan recomendaciones sobre el costo para los recurs
 
 Azure Cost Management puede proporcionar una vista más holística de los hábitos de gasto, incluida una vista detallada de los costos y las tendencias de los gastos a lo largo del tiempo. En el caso de las migraciones grandes o complejas, esta vista puede proporcionar la información necesaria para tomar decisiones amplias sobre la administración de costos de rastreo.
 
-Requisitos previos: el recordatorio de esta pestaña da por supuesto que el lector ha completado la configuración de Azure Cost Management durante la finalización de la guía de preparación de Azure. Para obtener más detalles sobre cómo configurar Azure Cost Management, consulte este [artículo en la guía de preparación de Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/manage-costs). Una vez que se rellenen los datos, siga los siguientes pasos para estimar los costos mensuales en función de los datos recopilados.
+Requisitos previos: el recordatorio de esta pestaña da por supuesto que el lector ha completado la configuración de Azure Cost Management durante la finalización de la guía de preparación de Azure. Para obtener más detalles sobre cómo configurar Azure Cost Management, consulte este [artículo en la guía de preparación de Azure](../../ready/azure-readiness-guide/manage-costs.md). Una vez que se rellenen los datos, siga los siguientes pasos para estimar los costos mensuales en función de los datos recopilados.
 
 Los siguientes pasos cargarán los datos de análisis de costos de Azure Cost Management para sus suscripciones:
 
@@ -104,9 +104,9 @@ Este análisis le permitirá revisar los costos totales, el presupuesto (si esta
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- Para obtener un plan más completo sobre la administración de costos en números más grandes de recursos (infraestructura, aplicaciones y datos), consulte el artículo sobre el [modelo de gobernanza de la Plataforma de adopción de la nube](../../governance/journeys/index.md). En concreto, las instrucciones sobre la [materia de Cost Management](../../governance/cost-management/index.md) y la [guía de mejora incremental de Cost Management en grandes empresas](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
-- Para obtener más información sobre Azure Advisor, consulte [Reducción de los costos de servicio con Azure Advisor](/azure/advisor/advisor-cost-recommendations).
-- Para obtener más información sobre Azure Cost Management, consulte [Descripción y uso de ámbitos](/azure/cost-management/understand-work-scopes) y [Explore y analice los costos con Análisis de costos](/azure/cost-management/quick-acm-cost-analysis).
+- Para obtener un plan más completo sobre la administración de costos en números más grandes de recursos (infraestructura, aplicaciones y datos), consulte el artículo sobre el [modelo de gobernanza de la Plataforma de adopción de la nube](../../govern/guides/index.md). En concreto, las instrucciones sobre la [materia de Cost Management](../../govern/cost-management/index.md) y la [guía de mejora incremental de Cost Management en grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
+- Para obtener más información sobre Azure Advisor, consulte [Reducción de los costos de servicio con Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
+- Para obtener más información sobre Azure Cost Management, consulte [Descripción y uso de ámbitos](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) y [Explore y analice los costos con Análisis de costos](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
 # <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Trucos y sugerencias para optimizar los costos](#tab/TipsTricks)
 
@@ -130,7 +130,7 @@ Habla con su representante de la cuenta de Microsoft para comprender cómo puede
 
 ## <a name="azure-reservations"></a>Reservas de Azure
 
-[Reservas de Azure](/azure/billing/billing-save-compute-costs-reservations) le permiten realizar el pago por adelantado por un año o tres años de máquina virtual o capacidad de proceso de SQL Database. El pago por adelantado le permite obtener un descuento en los recursos que utiliza. Las reservas de Azure pueden reducir significativamente los costos de las máquinas virtuales o de proceso de SQL Database, hasta un 72 % con respecto a los precios de pago por uso con el compromiso por adelantado de uno o tres años. Las reservas ofrecen un descuento en la facturación y no afectan al estado del entorno de ejecución de las máquinas virtuales o bases de datos SQL.
+[Reservas de Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) le permiten realizar el pago por adelantado por un año o tres años de máquina virtual o capacidad de proceso de SQL Database. El pago por adelantado le permite obtener un descuento en los recursos que utiliza. Las reservas de Azure pueden reducir significativamente los costos de las máquinas virtuales o de proceso de SQL Database, hasta un 72 % con respecto a los precios de pago por uso con el compromiso por adelantado de uno o tres años. Las reservas ofrecen un descuento en la facturación y no afectan al estado del entorno de ejecución de las máquinas virtuales o bases de datos SQL.
 
 ## <a name="use-azure-hybrid-benefit"></a>Uso de la Ventaja híbrida de Azure
 
@@ -138,8 +138,8 @@ Si ya tiene licencias de Windows Server o de SQL Server en las implementaciones 
 
 ## <a name="low-priority-vms-with-batch"></a>Máquinas virtuales de prioridad baja con Batch
 
-En el caso de los procesos en segundo plano de prioridad más baja, Batch ofrece un medio de administrar las máquinas virtuales del servicio en segundo plano y reducir los costos. Sin embargo, es importante comprender el impacto del rendimiento de las [máquinas virtuales de prioridad baja con Batch](/azure/batch/batch-low-pri-vms) antes de elegir esta opción con descuento.
+En el caso de los procesos en segundo plano de prioridad más baja, Batch ofrece un medio de administrar las máquinas virtuales del servicio en segundo plano y reducir los costos. Sin embargo, es importante comprender el impacto del rendimiento de las [máquinas virtuales de prioridad baja con Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) antes de elegir esta opción con descuento.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-Para obtener un plan más completo sobre la administración de costos en números más grandes de recursos (infraestructura, aplicaciones y datos), consulte el artículo sobre el [modelo de gobernanza de la Plataforma de adopción de la nube](../../governance/journeys/index.md). En concreto, las instrucciones sobre la [materia de Cost Management](../../governance/cost-management/index.md) y la [guía de mejora incremental de Cost Management en la gobernanza de grandes empresas](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+Para obtener un plan más completo sobre la administración de costos en números más grandes de recursos (infraestructura, aplicaciones y datos), consulte el artículo sobre el [modelo de gobernanza de la Plataforma de adopción de la nube](../../govern/guides/index.md). En concreto, las instrucciones sobre la [materia de Cost Management](../../govern/cost-management/index.md) y la [guía de mejora incremental de Cost Management en la gobernanza de grandes empresas](../../govern/guides/complex/cost-management-improvement.md).

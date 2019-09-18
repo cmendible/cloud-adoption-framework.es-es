@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837822"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023613"
 ---
 # <a name="cloud-rationalization"></a>Racionalización de la nube
 
-La racionalización de la nube es el proceso de evaluar los recursos para determinar la mejor manera de migrar o modernizar cada activo en la nube. Para más información sobre el proceso de racionalización, vea [¿Qué es un patrimonio digital?](index.md).
+La racionalización de la nube es el proceso de evaluar los recursos para determinar la mejor manera de migrar o modernizar cada activo en la nube. Para más información sobre el proceso de racionalización, vea [¿Qué es un patrimonio digital?](./index.md).
 
 ## <a name="rationalization-context"></a>Contexto de racionalización
 
@@ -161,4 +161,4 @@ Factores de análisis cualitativo:
 En conjunto, puede aplicar estos cinco puntos esenciales de la racionalización a un patrimonio digital para que sea más fácil tomar decisiones de racionalización sobre el estado futuro de cada aplicación.
 
 > [!div class="nextstepaction"]
-> [¿Qué es un patrimonio digital?](index.md)
+> [¿Qué es un patrimonio digital?](./index.md)

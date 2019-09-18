@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839062"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025462"
 ---
 # <a name="business-change-plan"></a>Plan de cambio de negocio
 
@@ -25,7 +25,7 @@ Los planes de adopción de los usuarios se centran en cómo adoptarán los usuar
 
 Aunque los enfoques pueden variar, los temas generales están presentes en la mayoría de los planes de adopción de los usuarios. Estos temas se basan normalmente en un enfoque de control de riesgos y de facilitación que se adapta a las mejoras incrementales. La matriz Eason, que se muestra en la ilustración siguiente, representa los controladores que se encuentran detrás de estos temas en un espectro de tipos de adopción.
 
-![Matriz Eason de preocupaciones relacionadas con la adopción por parte de los usuarios](../../../_images/eason-matrix.jpg)
+![Matriz Eason de preocupaciones relacionadas con la adopción por parte de los usuarios](../../../_images/migrate/eason-matrix.jpg)
 
 *Matriz Eason de tipos de adopción por parte de los usuarios.*
 
@@ -37,8 +37,8 @@ Un plan de cambio empresarial va más allá del cambio técnico y presupone que 
 
 **Preguntas previas.** Las preguntas previas analizan los impactos o cambios que se producen antes de que se produzca la adopción por parte del usuario:
 
-- ¿Se ha cuantificado un [resultado empresarial](../../../business-strategy/business-outcomes/index.md) previsible?
-- ¿Se asigna el impacto empresarial a [métricas de aprendizaje](../../../business-strategy/learning-metrics.md) definidas?
+- ¿Se ha cuantificado un [resultado empresarial](../../../strategy/business-outcomes/index.md) previsible?
+- ¿Se asigna el impacto empresarial a [métricas de aprendizaje](../../../strategy/learning-metrics.md) definidas?
 - ¿Qué procesos y equipos empresariales podrán aprovechar esta solución técnica?
 - ¿Qué persona de la empresa puede preparar mejor a los usuarios avanzados para realizar pruebas y enviar comentarios?
 - ¿Se ha implicado a los directivos en el planeamiento de las prioridades y de la migración?
