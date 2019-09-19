@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818649"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025255"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Gobernanza, seguridad y cumplimiento en Azure
 
-A medida que se establece la directiva corporativa y se planean las estrategias de gobierno, se pueden usar herramientas y servicios como Azure Policy, Azure Blueprints y Azure Security Center para aplicar y automatizar las decisiones de gobierno de su organización. Antes de empezar a planear el gobierno, use la [herramienta de banco de pruebas comparativas de gobierno](http://aka.ms/caf/gov/assess) para identificar posibles brechas en el enfoque del gobierno en la nube de su organización. Para obtener más información sobre cómo desarrollar procesos de gobierno, consulte la [guía de gobernanza de la plataforma de adopción de la nube para Azure](../../governance/index.md).
+A medida que se establece la directiva corporativa y se planean las estrategias de gobierno, se pueden usar herramientas y servicios como Azure Policy, Azure Blueprints y Azure Security Center para aplicar y automatizar las decisiones de gobierno de su organización. Antes de empezar a planear el gobierno, use la [herramienta de banco de pruebas comparativas de gobierno](http://aka.ms/caf/gov/assess) para identificar posibles brechas en el enfoque del gobierno en la nube de su organización. Para obtener más información sobre cómo desarrollar procesos de gobierno, consulte la [guía de gobernanza de la plataforma de adopción de la nube para Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Para publicar artefactos de un plano técnico en su suscripción:
 
 Para obtener más información, consulte:
 
-- [Azure Blueprints](/azure/governance/blueprints)
+- [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Plataforma de adopción de la nube: Guía de decisiones de la coherencia de recursos](../../decision-guides/resource-consistency/index.md)
-- [Ejemplos de planos técnicos basados en estándares](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Ejemplos de planos técnicos basados en estándares](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Para aplicar una directiva a un grupo de recursos:
 
 Para obtener más información, consulte:
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [Plataforma de adopción de la nube: Guía de decisiones sobre el cumplimiento de directivas](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Para explorar Azure Security Center, vaya a [Azure Portal](https://portal.azu
 
 Para obtener más información, consulte:
 
-- [Azure Security Center](/azure/security-center)
-- [Acceso de máquina virtual Just-In-Time](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
+- [Acceso de máquina virtual Just-In-Time](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Plan de tarifa Estándar y Gratis](https://azure.microsoft.com/pricing/details/security-center)
-- [Plataforma de adopción de la nube: Materia sobre gobierno de línea de base de seguridad](../../governance/security-baseline/index.md)
+- [Plataforma de adopción de la nube: Materia sobre gobierno de línea de base de seguridad](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

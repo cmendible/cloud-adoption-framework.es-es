@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818836"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022830"
 ---
 # <a name="assess-the-digital-estate"></a>Evaluación del patrimonio digital
 
@@ -58,8 +58,8 @@ Para iniciar una evaluación de migración de servidor mediante Azure Migrate, s
 
 ### <a name="read-more"></a>Más información
 
-- [Información general de Azure Migrate](/azure/migrate/migrate-services-overview).
-- [Migración de servidores físicos o virtualizados a Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Información general de Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview).
+- [Migración de servidores físicos o virtualizados a Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure Migrate en Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview).
 
 ::: zone-end
@@ -68,22 +68,22 @@ Para iniciar una evaluación de migración de servidor mediante Azure Migrate, s
 
 Mapa de servicio detecta automáticamente los componentes de la aplicación en sistemas Windows y Linux y asigna la comunicación entre servicios. Con Service Map puede ver los servidores en la forma en que piensa en ellos: como sistemas interconectados que ofrecen servicios críticos. Service Map muestra las conexiones entre servidores, procesos, la latencia de conexión entrante y saliente y puertos en cualquier arquitectura conectada de TCP sin necesidad de ninguna configuración más allá de la instalación de un agente.
 
-Azure Migrate utiliza Service Map para mejorar las funcionalidades de generación de informes y las dependencias en todo el entorno. Los detalles completos de esta integración se describen en [Visualización de dependencias](/azure/migrate/concepts-dependency-visualization). Si usa el servicio de migración de Azure, no se requieren pasos adicionales para configurar y obtener las ventajas de Service Map. Las instrucciones siguientes se proporcionan para su referencia si quiere usar Service Map para otros propósitos o proyectos.
+Azure Migrate utiliza Service Map para mejorar las funcionalidades de generación de informes y las dependencias en todo el entorno. Los detalles completos de esta integración se describen en [Visualización de dependencias](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Si usa el servicio de migración de Azure, no se requieren pasos adicionales para configurar y obtener las ventajas de Service Map. Las instrucciones siguientes se proporcionan para su referencia si quiere usar Service Map para otros propósitos o proyectos.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Habilitación de la visualización de dependencias con Service Map
 
 Para usar la visualización de dependencias, debe descargar e instalar agentes en cada máquina local que vaya a analizar.
 
-- Es necesario tener instalado [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) en cada máquina.
-- Es necesario tener instalado [Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) en cada máquina.
+- Es necesario tener instalado [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) en cada máquina.
+- Es necesario tener instalado [Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) en cada máquina.
 - Además, si tiene máquinas sin conectividad a Internet, debe descargar e instalar en ellas la puerta de enlace de Log Analytics.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Más información
 
-- [Uso de la solución Service Map en Azure](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate y Service Map: Visualización de dependencias](/azure/migrate/concepts-dependency-visualization)
+- [Uso de la solución Service Map en Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate y Service Map: Visualización de dependencias](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Escenarios y partes interesadas](#tab/Scenarios)

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818751"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022768"
 ---
 # <a name="organize-your-azure-resources"></a>Organización de los recursos de Azure
 
@@ -76,9 +76,9 @@ Cree un grupo de recursos para contener recursos como aplicaciones web, bases de
 
 Para obtener más información, consulte:
 
-- [Descripción de la administración del acceso a los recursos en Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organización de los recursos con grupos de administración de Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Límites del servicio de suscripción](/azure/azure-subscription-service-limits)
+- [Descripción de la administración del acceso a los recursos en Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organización de los recursos con grupos de administración de Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Límites del servicio de suscripción](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Un buen estándar de nomenclatura lo ayuda a identificar los recursos en el port
 
 ::: zone target="docs"
 
-Se recomienda revisar y seguir las indicaciones de la [guía de patrones y procedimientos](/azure/architecture/best-practices/naming-conventions).
+Se recomienda revisar y seguir las indicaciones de la [guía de patrones y procedimientos](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
 
 >[!TIP]
 >Evite usar caracteres especiales (`-` o `_`) como primer o último carácter en ningún nombre. Estos caracteres hacen que la mayoría de las reglas de validación produzcan un error.
@@ -151,7 +151,7 @@ También puede utilizar etiquetas para muchas otras cosas. Entre los usos comune
 
 Cada recurso o grupo de recursos puede tener un máximo de 15 pares de nombre/valor de etiqueta. No obstante, esta limitación solo afecta a las etiquetas que se aplican directamente al recurso o grupo de recursos.
 
-Para más información sobre el etiquetado, consulte las [convenciones de nomenclatura del Centro de arquitectura de Azure para los recursos de Azure](../../ready/considerations/name-and-tag.md#metadata-tags).
+Para más información sobre el etiquetado, consulte las [convenciones de nomenclatura del Centro de arquitectura de Azure para los recursos de Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags).
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Para aplicar una etiqueta a un grupo de recursos:
 
 ## <a name="learn-more"></a>Más información
 
-Para más información, consulte [Uso de etiquetas para organizar los recursos de Azure](/azure/azure-resource-manager/resource-group-using-tags).
+Para más información, consulte [Uso de etiquetas para organizar los recursos de Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

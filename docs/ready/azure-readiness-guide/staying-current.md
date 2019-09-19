@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 375631e516163dd1c0ea4832033c68bf17aad515
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818496"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022027"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Manténgase al día con Microsoft Azure
 
@@ -25,7 +25,7 @@ Las plataformas de nube como Microsoft Azure cambian más rápido de lo que much
 
 Los recursos siguientes pueden ayudarle a mantenerse al día con Azure:
 
-- [Azure Service Health](/azure/service-health/service-health-overview)
+- [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
   - Service Health y las alertas proporcionan notificaciones puntuales sobre problemas de servicio en curso, mantenimiento planeado y avisos de estado. Este recurso también incluye información sobre las características que se van a quitar de Azure.
 - [Actualizaciones de Azure](https://azure.microsoft.com/updates)
   - Suscríbase a las actualizaciones de Azure para recibir anuncios sobre actualizaciones de productos. Los resúmenes breves están vinculados a detalles adicionales, lo que facilita el seguimiento de las actualizaciones.
