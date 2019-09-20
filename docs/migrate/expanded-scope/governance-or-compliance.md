@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5becd757d1bca3f10b30297f4c502b49a659c4
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905612"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022732"
 ---
 # <a name="governance-or-compliance-strategy"></a>Estrategia de cumplimiento o de gobernanza
 
@@ -27,11 +27,11 @@ La mayor parte de las actividades de requisitos previos se ven afectadas cuando 
 
 La configuración del entorno base de Azure podría cambiar significativamente al integrar los requisitos de cumplimiento o gobernanza. Para entender cómo cambian los requisitos previos, es importante comprender su naturaleza. Antes de comenzar cualquier migración que requiera gobernanza o cumplimiento, se debe elegir e implementar un enfoque en el entorno de nube. A continuación se muestran algunos enfoques de alto nivel que se suelen observar durante las migraciones:
 
-**Enfoque de gobernanza común:** Para la mayoría de las organizaciones, el [modelo de gobernanza de Cloud Adoption Framework](../../governance/journeys/index.md) es un enfoque suficiente que consiste en la implementación de un producto mínimo viable, seguido de iteraciones específicas de madurez de la gobernanza para abordar los riesgos tangibles identificados en el plan de adopción. Este enfoque proporciona las herramientas mínimas necesarias para establecer una gobernanza coherente, de modo que el equipo pueda comprender las herramientas. Después se expande en esas herramientas para abordar los problemas comunes de gobierno.
+**Enfoque de gobernanza común:** Para la mayoría de las organizaciones, el [modelo de gobernanza de Cloud Adoption Framework](../../govern/guides/index.md) es un enfoque suficiente que consiste en la implementación de un producto mínimo viable, seguido de iteraciones específicas de madurez de la gobernanza para abordar los riesgos tangibles identificados en el plan de adopción. Este enfoque proporciona las herramientas mínimas necesarias para establecer una gobernanza coherente, de modo que el equipo pueda comprender las herramientas. Después se expande en esas herramientas para abordar los problemas comunes de gobierno.
 
-**Planos técnicos de cumplimiento ISO 27001:** En el caso de los clientes que deben cumplir los estándares de cumplimiento ISO, los [ejemplos de planos técnicos de los servicios compartidos ISO 27001](/azure/governance/blueprints/samples/iso27001-shared/index) pueden servir como un producto mínimo viable más eficaz para producir restricciones de gobernanza más ricas al principio del proceso iterativo. El [ejemplo de App Service Environment/SQL Database ISO 27001](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) se expande en el plano técnico para asignar los controles e implementar una arquitectura común para un entorno de aplicación. A medida que se publiquen otros planos técnicos de cumplimiento, también se hará referencia a ellos.
+**Planos técnicos de cumplimiento ISO 27001:** En el caso de los clientes que deben cumplir los estándares de cumplimiento ISO, los [ejemplos de planos técnicos de los servicios compartidos ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) pueden servir como un producto mínimo viable más eficaz para producir restricciones de gobernanza más ricas al principio del proceso iterativo. El [ejemplo de App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) se expande en el plano técnico para asignar los controles e implementar una arquitectura común para un entorno de aplicación. A medida que se publiquen otros planos técnicos de cumplimiento, también se hará referencia a ellos.
 
-**Centro de datos virtual:** Es posible que se requiera un punto de partida de gobernanza más sólido. En estos casos, considere el uso de [Centro de datos virtual de Azure](https://docs.microsoft.com/azure/architecture/vdc). Este enfoque se suele recomendar durante los esfuerzos de adopción de escala empresarial y, especialmente, los esfuerzos que superan los 10 000 recursos. También es la elección de facto para los escenarios complejos de gobernanza cuando no se necesita ninguno de los elementos siguientes: requisitos de cumplimiento normativo de terceros ampliados, conocimiento profundo de los dominios o paridad con los requisitos de cumplimiento normativo y las directivas de gobernanza de TI madurados.
+**Centro de datos virtual:** Es posible que se requiera un punto de partida de gobernanza más sólido. En estos casos, considere el uso de [Centro de datos virtual de Azure](../../reference/vdc.md). Este enfoque se suele recomendar durante los esfuerzos de adopción de escala empresarial y, especialmente, los esfuerzos que superan los 10 000 recursos. También es la elección de facto para los escenarios complejos de gobernanza cuando no se necesita ninguno de los elementos siguientes: requisitos de cumplimiento normativo de terceros ampliados, conocimiento profundo de los dominios o paridad con los requisitos de cumplimiento normativo y las directivas de gobernanza de TI madurados.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Opción de asociación para completar los requisitos previos
 
@@ -49,19 +49,19 @@ Durante la evaluación, se necesitan decisiones adicionales para alinearse con e
 
 Los requisitos de evaluación de gobernanza y cumplimiento son demasiado específicos del cliente para proporcionar instrucciones generales sobre los pasos reales que se llevan a cabo durante la evaluación. Sin embargo, se recomienda que el proceso incluya tareas y asignaciones de tiempo para la "alineación con los requisitos de cumplimiento y gobernanza". Para más información sobre estos requisitos, consulte los vínculos siguientes:
 
-Para una comprensión más profunda de la gobernanza, consulte el artículo [Las cinco disciplinas de la gobernanza de la nube](/azure/architecture/cloud-adoption/governance/governance-disciplines). En esta sección de Cloud Adoption Framework también se incluyen plantillas para documentar las directivas, las instrucciones y los requisitos de cada una de las cinco secciones:
+Para una comprensión más profunda de la gobernanza, consulte el artículo [Las cinco disciplinas de la gobernanza de la nube](../../govern/governance-disciplines.md). En esta sección de Cloud Adoption Framework también se incluyen plantillas para documentar las directivas, las instrucciones y los requisitos de cada una de las cinco secciones:
 
-- [Cost Management](/azure/architecture/cloud-adoption/governance/cost-management/template)
-- [Línea de base de seguridad](/azure/architecture/cloud-adoption/governance/security-baseline/template)
-- [Coherencia de recursos](/azure/architecture/cloud-adoption/governance/resource-consistency/template)
-- [Línea de base de identidad](/azure/architecture/cloud-adoption/governance/identity-baseline/template)
-- [Aceleración de la implementación](/azure/architecture/cloud-adoption/governance/deployment-acceleration/template)
+- [Cost Management](../../govern/cost-management/template.md)
+- [Línea de base de seguridad](../../govern/security-baseline/template.md)
+- [Coherencia de recursos]../../govern/resource-consistency/template.md)
+- [Línea de base de identidad]../../govern/identity-baseline/template.md)
+- [Aceleración de la implementación](../../govern/deployment-acceleration/template.md)
 
-Para obtener instrucciones sobre el desarrollo de instrucciones de gobierno basadas en el modelo de gobernanza de Cloud Adoption Framework, consulte [Implementación de una estrategia de gobernanza en la nube](/azure/architecture/cloud-adoption/governance/corporate-policy).
+Para obtener instrucciones sobre el desarrollo de instrucciones de gobierno basadas en el modelo de gobernanza de Cloud Adoption Framework, consulte [Implementación de una estrategia de gobernanza en la nube](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimización y promoción de los cambios del proceso
 
-Durante los procesos de optimización y promoción, se recomienda que el equipo de gobernanza de la nube invierta tiempo en probar y validar si se respetan los estándares de gobernanza y cumplimiento. Además, este paso es un buen momento para insertar procesos para el equipo de gobernanza de la nube con el fin de ajustar plantillas que podrían proporcionar [aceleración de implementación](/azure/architecture/cloud-adoption/governance/deployment-acceleration) adicional para proyectos futuros.
+Durante los procesos de optimización y promoción, se recomienda que el equipo de gobernanza de la nube invierta tiempo en probar y validar si se respetan los estándares de gobernanza y cumplimiento. Además, este paso es un buen momento para insertar procesos para el equipo de gobernanza de la nube con el fin de ajustar plantillas que podrían proporcionar [aceleración de implementación](../../govern/deployment-acceleration/index.md) adicional para proyectos futuros.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Acción sugerida durante el proceso de optimización y promoción
 

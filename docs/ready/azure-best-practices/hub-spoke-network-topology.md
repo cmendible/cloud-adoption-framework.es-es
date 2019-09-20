@@ -11,19 +11,19 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 48f73d7c7f2e7f3bba8183464c786a3e0744807c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905485"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022356"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topología de red de concentrador y radio
 
 La red de *concentrador y radio* es un modelo de redes que permite la administración eficaz de los requisitos habituales de comunicación o seguridad. También ayuda a evitar las limitaciones de las suscripciones de Azure. Este modelo aborda los siguientes aspectos:
 
 - **Ahorro en costos y eficiencia de la administración**. La centralización de los servicios que se pueden compartir entre varias cargas de trabajo, como las aplicaciones virtuales de red (NVA) y los servidores DNS, en una única ubicación permite que TI minimice los recursos redundantes y el esfuerzo de administración.
-- **Superación de los límites de las suscripciones**. Las cargas de trabajo grandes basadas en la nube pueden requerir el uso de más recursos que los permitidos en una sola suscripción de Azure. (Consulte [Límites de suscripción][Limits]). El emparejamiento de redes virtuales de carga de trabajo de distintas suscripciones con un centro de conectividad central puede superar estos límites.
+- **Superación de los límites de las suscripciones**. Las cargas de trabajo grandes basadas en la nube pueden requerir el uso de más recursos que los permitidos en una sola suscripción de Azure. El emparejamiento de redes virtuales de carga de trabajo de distintas suscripciones con un centro de conectividad central puede superar estos límites. Para más información, consulte [Límites de suscripción](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Separación de cuestiones**. Puede implementar cargas de trabajo individuales entre los equipos de TI centrales y los equipos de las cargas de trabajo.
 
 Es posible que los entornos en la nube más pequeños no se beneficien de la estructura y las funcionalidades agregadas que ofrece este modelo. Pero los mayores esfuerzos de adopción en la nube deben considerar la implementación de una arquitectura de red de concentrador y radio si tienen alguna de las preocupaciones mencionadas anteriormente.
@@ -31,8 +31,8 @@ Es posible que los entornos en la nube más pequeños no se beneficien de la est
 > [!NOTE]
 > El sitio de arquitecturas de referencia de Azure contiene plantillas de ejemplo que puede usar como base para implementar sus propias redes de concentrador y radio:
 >
-> - [Implementación de una topología de red de concentrador y radio en Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementación de una topología de red de concentrador y radio con servicios compartidos en Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementación de una topología de red de concentrador y radio en Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementación de una topología de red de concentrador y radio con servicios compartidos en Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Información general
 
@@ -45,7 +45,7 @@ Un concentrador es la zona de red central que controla e inspecciona el tráfico
 El concentrador contiene los componentes de los servicios comunes utilizados por los radios. Los ejemplos siguientes son servicios centrales comunes:
 
 - La infraestructura de Windows Server Active Directory necesaria para la autenticación de usuarios de terceros que acceden desde redes que no son de confianza antes de obtener acceso a las cargas de trabajo del radio. Incluye los Servicios de federación de Active Directory (AD FS) relacionados.
-- Un servicio DNS que resuelve los nombres de la carga de trabajo en los radios para acceder a recursos locales y en Internet si no se utiliza [Azure DNS][DNS].
+- Un servicio DNS que resuelve los nombres de la carga de trabajo en los radios para acceder a recursos locales y en Internet si no se utiliza [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview).
 - Una infraestructura de clave pública (PKI), para implementar el inicio de sesión único en las cargas de trabajo.
 - Control de flujo de tráfico TCP y UDP entre las zonas de red de los radios (spokes) e Internet.
 - Control de flujo entre los radios (spokes) y local.
@@ -61,7 +61,7 @@ Los radios también pueden segregar y habilitar varios grupos dentro de su organ
 
 En Azure, todos los componentes, de cualquier tipo, se implementan en una suscripción de Azure. El aislamiento de componentes de Azure en distintas suscripciones de Azure puede satisfacer los requisitos de diferentes líneas de negocio, como la configuración de niveles diferenciados de acceso y autorización.
 
-Una única implementación de concentrador y radio puede escalarse verticalmente a un gran número de radios. Pero, al igual que pasa con todos los sistemas de TI, hay límites en las plataformas. La implementación del centro se enlaza a una suscripción de Azure específica que tiene restricciones y límites. (Un ejemplo es un número máximo de emparejamientos de redes virtuales. Para más información, consulte [Límites, cuotas y restricciones de suscripción y servicios de Azure][Limits]).
+Una única implementación de concentrador y radio puede escalarse verticalmente a un gran número de radios. Pero, al igual que pasa con todos los sistemas de TI, hay límites en las plataformas. La implementación del centro se enlaza a una suscripción de Azure específica que tiene restricciones y límites. (Un ejemplo es un número máximo de emparejamientos de redes virtuales. Para más información, consulte [Límites, cuotas y restricciones de suscripción y servicios de Azure] y [Límites].
 
 En los casos en los que los límites puedan ser un problema, puede escalar verticalmente la arquitectura extendiendo el modelo desde un único concentrador y radio a un clúster de concentradores y radios. Puede conectar entre sí varios concentradores en una o más regiones de Azure mediante el emparejamiento de redes virtuales, Azure ExpressRoute, una WAN virtual o una red privada virtual de sitio a sitio.
 
@@ -83,53 +83,48 @@ Los radios también pueden estar conectados entre sí mediante un radio que act�
 
 <!-- images -->
 
-[0]: ./images/network-redundant-equipment.png "Ejemplos de superposición de componentes"
-[1]: ./images/network-hub-spoke-high-level.png "Ejemplo de alto nivel de una red de concentrador y radio"
-[2]: ./images/network-hub-spokes-cluster.png "Clúster de concentradores y radios"
-[3]: ./images/network-spoke-to-spoke.png "Radio a radio"
-[4]: ./images/network-hub-spoke-block-level-diagram.png "Diagrama de nivel de bloque del concentrador y radio"
-[5]: ./images/network-users-groups-subsciptions.png "Usuarios, grupos, suscripciones y proyectos"
-[6]: ./images/network-infrastructure-high-level.png "Diagrama de infraestructura de alto nivel"
-[7]: ./images/network-highlevel-perimeter-networks.png "Diagrama de infraestructura de alto nivel"
-[8]: ./images/network-vnet-peering-perimeter-neworks.png "Emparejamiento de la red virtual y redes perimetrales"
-[9]: ./images/network-high-level-diagram-monitoring.png "Diagrama de alto nivel para supervisión"
-[10]: ./images/network-high-level-workloads.png "Diagrama de alto nivel para cargas de trabajo"
+[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Ejemplos de superposición de componentes"
+[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Ejemplo de alto nivel de una red de concentrador y radio"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Clúster de concentradores y radios"
+[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Radio a radio"
+[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagrama de nivel de bloque del concentrador y radio"
+[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Usuarios, grupos, suscripciones y proyectos"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagrama de infraestructura de alto nivel"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagrama de infraestructura de alto nivel"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Emparejamiento de la red virtual y redes perimetrales"
+[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagrama de alto nivel para supervisión"
+[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagrama de alto nivel para cargas de trabajo"
 
 <!-- links -->
 
-[Limits]: /azure/azure-subscription-service-limits
-[Roles]: /azure/role-based-access-control/built-in-roles
-[VNet]: /azure/virtual-network/virtual-networks-overview
-[network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[DNS]: /azure/dns/dns-overview
-[PrivateDNS]: /azure/dns/private-dns-overview
-[VNetPeering]: /azure/virtual-network/virtual-network-peering-overview
-[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: /azure/role-based-access-control/overview
-[azure-ad]: /azure/active-directory/active-directory-whatis
-[VPN]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: /azure/expressroute/expressroute-introduction
-[ExRD]: /azure/expressroute/expressroute-erdirect-about
-[vWAN]: /azure/virtual-wan/virtual-wan-about
-[NVA]: /azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: /azure/firewall/overview
-[SubMgmt]: /azure/architecture/cloud-adoption/appendix/azure-scaffold
-[RGMgmt]: /azure/azure-resource-manager/resource-group-overview
-[DMZ]: /azure/best-practices-network-security
-[ALB]: /azure/load-balancer/load-balancer-overview
-[PIP]: /azure/virtual-network/resource-groups-networking#public-ip-address
-[AFD]: /azure/frontdoor/front-door-overview
-[AppGW]: /azure/application-gateway/application-gateway-introduction
-[WAF]: /azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: /azure/monitoring-and-diagnostics/
-[ActLog]: /azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: /azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: /azure/operations-management-suite/operations-management-suite-overview
-[NPM]: /azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: /azure/app-service/
-[HDI]: /azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: /azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: /azure/traffic-manager/traffic-manager-overview
+[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
+[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
+[user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
+[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
+[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
+[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
+[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
+[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
+[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
+[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[SubMgmt]: ../../reference/azure-scaffold.md
+[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
+[DMZ]: https://docs.microsoft.com/azure/best-practices-network-security
+[ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
+[PIP]: https://docs.microsoft.com/azure/virtual-network/resource-groups-networking#public-ip-address
+[AFD]: https://docs.microsoft.com/azure/frontdoor/front-door-overview
+[AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
+[WAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
+[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
+[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
+[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
+[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
+[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
+[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
+[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
+[WebApps]: https://docs.microsoft.com/azure/app-service/
+[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
+[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
+[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

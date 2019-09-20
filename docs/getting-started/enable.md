@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837782"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023440"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Habilitación del éxito en cualquier recorrido de adopción de la nube
 
@@ -22,12 +22,12 @@ Microsoft Cloud Adoption Framework para Azure se proporciona como una herramient
 
 A lo largo de este marco, la habilitación es un tema básico. La siguiente lista de comprobación contiene una serie de temas que se deben incluir en cualquier trabajo de adopción de la nube para asegurarse de que el recorrido sea un éxito a los ojos de TI y de la empresa:
 
-- **Planeamiento:** establezca [resultados empresariales](../business-strategy/business-outcomes/index.md) claros, un [plan de patrimonio digital](../digital-estate/index.md) definido y [trabajos pendientes de adopción](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien entendidos.
+- **Planeamiento:** establezca [resultados empresariales](../strategy/business-outcomes/index.md) claros, un [plan de patrimonio digital](../digital-estate/index.md) definido y [trabajos pendientes de adopción](../migrate/migration-considerations/prerequisites/migration-backlog-review.md) bien entendidos.
 - **Listo:** garantice la preparación del personal mediante [planes de aptitudes y aprendizaje](../ready/technical-skills.md).
 - **Operaciones:** defina un modelo operativo administrable para guiar las actividades durante y después de la adopción.
-  - **[Organizar](../organization/index.md):** alinear a personas y equipos para que las operaciones y la adopción de la nube se lleven a cabo de manera adecuada.
-  - **Gobernanza:** alinee las [materias de gobernanza](../governance/index.md) adecuadas para aplicar de forma coherente la administración de costos, la mitigación de riesgos, el cumplimiento normativo y las bases de referencia de la seguridad en toda la adopción de la nube.
-  - **Administración:** [operaciones](../operations/index.md) continuas de la cartera de TI para minimizar las interrupciones en los procesos empresariales y garantizar la estabilidad de la cartera de TI.
+  - **[Organizar](../organize/index.md):** alinear a personas y equipos para que las operaciones y la adopción de la nube se lleven a cabo de manera adecuada.
+  - **Gobernanza:** alinee las [materias de gobernanza](../govern/index.md) adecuadas para aplicar de forma coherente la administración de costos, la mitigación de riesgos, el cumplimiento normativo y las bases de referencia de la seguridad en toda la adopción de la nube.
+  - **Administración:** [Administración operativa](../manage/index.md) continua de la cartera de TI para minimizar las interrupciones en los procesos empresariales y garantizar la estabilidad de la cartera de TI.
   - **Soporte técnico:** alinee las [opciones de asociación y soporte técnico](../migrate/migration-considerations/assess/partnership-options.md) adecuadas.
 
 ## <a name="additional-tools"></a>Herramientas adicionales
@@ -38,7 +38,7 @@ Además de Cloud Adoption Framework, Microsoft cubre temas adicionales que puede
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

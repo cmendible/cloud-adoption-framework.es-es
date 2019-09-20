@@ -8,9 +8,9 @@ Las siguientes decisiones proceden de equipos fuera del equipo de gobernanza de 
 ### <a name="identity-baseline"></a>Línea de base de identidad
 
 La línea de base de identidad es el punto de partida fundamental para toda gobernanza. Antes de intentar aplicar la gobernanza, se debe establecer la identidad. A continuación, las soluciones de gobernanza harán cumplir la estrategia de identidad establecida.
-En esta guía de gobernanza, el equipo de administración de identidades implementa el patrón de **[sincronización de directorios](/azure/architecture/cloud-adoption/decision-guides/identity/overview#directory-synchronization)** :
+En esta guía de gobernanza, el equipo de administración de identidades implementa el patrón de **[sincronización de directorios](../../../../decision-guides/identity/index.md#directory-synchronization)** :
 
-- Azure Active Directory (Azure AD) proporcionará RBAC, mediante la sincronización de directorios o el "mismo inicio de sesión" que se implementó durante la migración de la empresa a Office 365. Para una guía sobre la implementación, consulte [Arquitectura de referencia para Integración de Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+- Azure Active Directory (Azure AD) proporcionará RBAC, mediante la sincronización de directorios o el "mismo inicio de sesión" que se implementó durante la migración de la empresa a Office 365. Para una guía sobre la implementación, consulte [Arquitectura de referencia para Integración de Azure AD](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
 - El inquilino de Azure AD también regirá la autenticación y el acceso a los recursos implementados en Azure.
 
 En el producto viable mínimo de gobernanza, el equipo de gobernanza hará cumplir la aplicación del inquilino replicado mediante herramientas de gobernanza de la suscripción que se describen más adelante en este artículo. En iteraciones futuras, el equipo de gobernanza podría también aplicar herramientas enriquecidas de Azure AD para ampliar esta funcionalidad.
@@ -19,9 +19,9 @@ En el producto viable mínimo de gobernanza, el equipo de gobernanza hará cumpl
 
 Una red definida por software es un aspecto inicial importante de la línea de base de seguridad. Establecer el MVP de gobernanza depende de decisiones tempranas por parte del equipo de administración de seguridad para definir cómo se pueden configurar con seguridad las redes.
 
-Debido a la falta de requisitos, el equipo de seguridad de TI busca protección y ha solicitado un patrón de **[nube DMZ](/azure/architecture/cloud-adoption/decision-guides/software-defined-network/cloud-dmz)** . Esto significa que la gobernanza de las implementaciones de Azure mismas será muy ligero.
+Debido a la falta de requisitos, el equipo de seguridad de TI busca protección y ha solicitado un patrón de **[nube DMZ](../../../../decision-guides/software-defined-network/cloud-dmz.md)** . Esto significa que la gobernanza de las implementaciones de Azure mismas será muy ligero.
 
-- Las suscripciones de Azure pueden conectarse a un centro de datos existente mediante VPN, pero deben seguir todas las directivas locales de gobernanza de TI con respecto a la conexión de una zona desmilitarizada a los recursos protegidos. Para una guía de implementación con respecto a la conectividad VPN, consulte [Arquitectura de referencia sobre VPN](/azure/architecture/reference-architectures/hybrid-networking/vpn).
+- Las suscripciones de Azure pueden conectarse a un centro de datos existente mediante VPN, pero deben seguir todas las directivas locales de gobernanza de TI con respecto a la conexión de una zona desmilitarizada a los recursos protegidos. Para una guía de implementación con respecto a la conectividad VPN, consulte [Arquitectura de referencia sobre VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
 - Actualmente se están aplazando las decisiones con respecto a subredes, firewalls y enrutamiento a cada cliente potencial de aplicación y carga de trabajo.
 - Se requiere un análisis adicional antes de la publicación de datos protegidos o cargas de trabajo críticas.
 
@@ -32,14 +32,14 @@ El equipo de gobernanza de la nube ha invitado activamente a los miembros de los
 ### <a name="security-baseline-encryption"></a>Base de referencia de seguridad: Cifrado
 
 El cifrado es otra decisión fundamental en la materia de línea de base de seguridad. Dado que la empresa actualmente todavía no almacena ningún dato protegido en la nube, el equipo de seguridad ha decidido un patrón menos agresivo para el cifrado.
-En este momento, se sugiere un **[patrón nativo de la nube para el cifrado](/azure/architecture/cloud-adoption/decision-guides/encryption/overview#key-management)** , pero no es obligatorio para ningún equipo de desarrollo.
+En este momento, se sugiere un **[patrón nativo de la nube para el cifrado](../../../../decision-guides/encryption/index.md#key-management)** , pero no es obligatorio para ningún equipo de desarrollo.
 
 - No se han establecido requisitos de gobernanza con respecto al uso de cifrado, ya que la actual directiva corporativa no permite datos críticos ni protegidos en la nube.
 - Serán necesarios análisis adicionales antes de la publicación de datos protegidos o cargas de trabajo críticas.
 
 ## <a name="policy-enforcement"></a>Aplicación de directivas
 
-La primera decisión que se deberá tomar en cuanto a la aceleración de la implementación es el patrón para el cumplimiento. En esta narración, el equipo de gobernanza ha decidido implementar el patrón de **[cumplimiento automatizado](/azure/architecture/cloud-adoption/decision-guides/policy-enforcement/overview#automated-enforcement)** .
+La primera decisión que se deberá tomar en cuanto a la aceleración de la implementación es el patrón para el cumplimiento. En esta narración, el equipo de gobernanza ha decidido implementar el patrón de **[cumplimiento automatizado](../../../../decision-guides/policy-enforcement/index.md#automated-enforcement)** .
 
 - Azure Security Center estará disponible para que los equipos de seguridad e identidad supervisen los riesgos de seguridad. También es probable que ambos equipos usen Security Center para identificar los nuevos riesgos y mejorar la directiva corporativa.
 - RBAC se requiere en todas las suscripciones para controlar el cumplimiento de autenticación.
