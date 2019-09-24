@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026458"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223631"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guía de decisiones sobre registros e informes
 
@@ -69,7 +69,7 @@ Hipótesis solo&ndash;en un entorno local:
 
 ### <a name="gateway-aggregation"></a>Agregación de puerta de enlace
 
-En los escenarios en que hay gran cantidad de datos de telemetría basados en la nube o en que los sistemas de supervisión locales necesitan modificar los datos de registro para poder procesarlos, puede que sea necesario un servicio de [agregación de puerta de enlace](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md) para datos de registro.
+En los escenarios en que hay gran cantidad de datos de telemetría basados en la nube o en que los sistemas de supervisión locales necesitan modificar los datos de registro para poder procesarlos, puede que sea necesario un servicio de [agregación de puerta de enlace](/azure/architecture/patterns/gateway-aggregation) para datos de registro.
 
 Se implementa un servicio de puerta de enlace en el proveedor de servicios en la nube. A continuación, se configuran las aplicaciones o los servicios pertinentes para que envíen datos de telemetría a la puerta de enlace en lugar de a un sistema de registro predeterminado. A continuación, la puerta de enlace puede procesar los datos: agregarlos, combinarlos o darles formato antes de enviarlos al servicio de supervisión para su ingesta y análisis.
 

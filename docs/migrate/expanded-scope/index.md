@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lista de comprobación del ámbito ampliado de la migración a la nube
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817339"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224357"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Ámbito ampliado para la migración a la nube
 
@@ -27,7 +27,7 @@ En la siguiente lista de verificación se describen las áreas comunes de comple
 
 - **Cambios en el ámbito orientados a los negocios:**
   - [Equilibrio de la cartera](./balance-the-portfolio.md)
-  - [Compatibilidad con los mercados internacionales](./multiple-regions.md)
+  - [Compatibilidad con los mercados internacionales](../../decision-guides/regions/index.md)
   - Conciencia de costos durante una migración *(A partir del 3T de 2019)*
 - **Cambios en el ámbito orientados a las referencias culturales:**
   - Administración de cambios y procesos de aprobación *(A partir del 3T de 2019)*
