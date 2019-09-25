@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024030"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224125"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Rehospedaje de una aplicación local en VM de Azure
 
@@ -95,7 +95,7 @@ Contoso migrará las máquinas virtuales de front-end de aplicaciones y de base 
 
 **Servicio** | **Descripción** | **Costee**
 --- | --- | ---
-[Azure Migrate Server Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | El servicio orquesta y administra la migración de las aplicaciones y cargas de trabajo locales, y las instancias de máquina virtual de AWS/GCP. | Durante la replicación en Azure, se incurre en gastos de Azure Storage. Las máquinas virtuales de Azure se crean, e incurren en gastos, cuando se produce una conmutación por error. [Más información](https://azure.microsoft.com/pricing/details/azure-migrate/) sobre cargos y precios.
+[Azure Migrate Server Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | El servicio orquesta y administra la migración de las aplicaciones y cargas de trabajo locales, y las instancias de máquina virtual de AWS/GCP. | Durante la replicación en Azure, se incurre en gastos de Azure Storage. Las máquinas virtuales de Azure se crean, e incurren en gastos, cuando se produce una conmutación por error. [Más información](https://azure.microsoft.com/pricing/details/azure-migrate) sobre cargos y precios.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -144,7 +144,7 @@ Se deben configurar como se muestra a continuación:
 
 **¿Necesita más ayuda?**
 
-[Más información](https://docs.microsoft.com/azure/migrate/) sobre cómo configurar la herramienta Azure Migrate Server Migration.
+[Más información](https://docs.microsoft.com/azure/migrate) sobre cómo configurar la herramienta Azure Migrate Server Migration.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparación para la conexión a las máquinas virtuales de Azure después de la conmutación por error
 

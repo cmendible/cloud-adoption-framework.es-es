@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031217"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220172"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guía de gobernanza para empresas complejas: Mejora de la materia de administración de costos
 
@@ -66,14 +66,14 @@ Los siguientes cambios en la directiva le ayudarán a corregir los nuevos riesgo
 En esta sección del artículo se mejorará el diseño de un producto viable mínimo de gobernanza para que incluya nuevas directivas de Azure y una implementación de Azure Cost Management. Juntos, estos dos cambios de diseño cumplirán con las nuevas declaraciones de directiva corporativa.
 
 1. Cambie Azure Enterprise Portal para facturar al administrador del departamento para la implementación canadiense.
-1. Implemente Azure Cost Management.
+2. Implemente Azure Cost Management.
     1. Establezca el nivel adecuado de ámbito de acceso para alinearlo con el patrón de suscripción y el patrón de agrupación de recursos. Asumiendo la alineación con el producto viable mínimo de gobernanza definido en artículos anteriores, esto requeriría acceso al **ámbito de la cuenta de inscripción** para que el equipo de gobernanza de la nube ejecute el informe detallado. Los equipos adicionales fuera de la gobernanza, como el equipo de adquisiciones canadiense, requerirá acceso al **ámbito del grupo de recursos**.
-    1. Establezca un presupuesto en Azure Cost Management.
-    1. Revise las recomendaciones iniciales y actúe sobre ellas. Se recomienda establecer un proceso periódico compatible con el proceso de generación de informes.
-    1. Configure y ejecute los informes de Azure Cost Management, al inicio y de manera periódica.
-1. Actualice Azure Policy.
+    2. Establezca un presupuesto en Azure Cost Management.
+    3. Revise las recomendaciones iniciales y actúe sobre ellas. Se recomienda establecer un proceso periódico compatible con el proceso de generación de informes.
+    4. Configure y ejecute los informes de Azure Cost Management, al inicio y de manera periódica.
+3. Actualice Azure Policy.
     1. Audite los valores de etiquetado, grupo de administración, suscripción y grupo de recursos para identificar cualquier desviación.
-    1. Establezca las opciones de tamaño de SKU para limitar las implementaciones a las SKU que aparecen en la documentación de la planeación de implementación.
+    2. Establezca las opciones de tamaño de SKU para limitar las implementaciones a las SKU que aparecen en la documentación de la planeación de implementación.
 
 ## <a name="conclusion"></a>Conclusión
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032094"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221386"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guía sobre la supervisión en la nube: Alertas
 
@@ -94,7 +94,7 @@ Dicho esto, hay algunas notas al pie importantes para esta regla.
 
 La **telemetría del sistema operativo invitado** tiene una serie de rutas de acceso para entrar en el sistema.
 
-- La forma más rápida de alertar sobre estos datos es importarlos como métricas personalizadas. Para ello, use la extensión de Azure Diagnostics y, luego, utilice una alerta de métrica. Sin embargo, las métricas personalizadas se encuentran actualmente en versión preliminar y son [más caras que otras opciones](https://azure.microsoft.com/pricing/details/monitor/).
+- La forma más rápida de alertar sobre estos datos es importarlos como métricas personalizadas. Para ello, use la extensión de Azure Diagnostics y, luego, utilice una alerta de métrica. Sin embargo, las métricas personalizadas se encuentran actualmente en versión preliminar y son [más caras que otras opciones](https://azure.microsoft.com/pricing/details/monitor).
 
 - El método más económico pero más lento es enviarlas al almacén de Kusto de registros de Azure. Ejecutar el agente Log Analytics en la máquina virtual es la mejor manera de obtener todos los datos de registro y métricas del sistema operativo invitado de este almacén.
 
@@ -113,9 +113,9 @@ Si no usa Azure Monitor para VM, explore las siguientes características para fa
 
 - [Umbrales dinámicos](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Los umbrales dinámicos examinan la actividad del recurso durante un período de tiempo y crean umbrales de "comportamiento normal" superiores e inferiores. Cuando la métrica que se supervisa está fuera de estos umbrales, recibe una alerta.
 
-- [Alertas de varias señales](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Puede crear una alerta de métrica que use la combinación de dos entradas diferentes de dos tipos de recursos diferentes. Por ejemplo, si quiere activar una alerta cuando la CPU de una máquina virtual supere el 90 por ciento y el número de mensajes en una determinada cola de Azure Service Bus que alimenta esa máquina virtual supera una cantidad determinada, puede hacerlo sin crear una consulta de registro. Esta situación solo funciona con dos señales. Si tiene una consulta más compleja, suministre los datos de métricas al almacén de registros de Azure Monitor y use una consulta de registro.
+- [Alertas de varias señales](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Puede crear una alerta de métrica que use la combinación de dos entradas diferentes de dos tipos de recursos diferentes. Por ejemplo, si quiere activar una alerta cuando la CPU de una máquina virtual supere el 90 por ciento y el número de mensajes en una determinada cola de Azure Service Bus que alimenta esa máquina virtual supera una cantidad determinada, puede hacerlo sin crear una consulta de registro. Esta situación solo funciona con dos señales. Si tiene una consulta más compleja, suministre los datos de métricas al almacén de registros de Azure Monitor y use una consulta de registro.
 
-- [Alertas de varios recursos](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Azure Monitor permite una única regla de alertas de métricas que se aplica a todos los recursos de máquina virtual. Esta característica puede ahorrar tiempo, ya que no es necesario crear alertas individuales para cada máquina virtual. Los precios de este tipo de alerta son los mismos. Lo mismo cuesta crear 50 alertas para supervisar el uso de CPU de 50 máquinas virtuales que 1 alerta para supervisar el uso de CPU de las 50 máquinas virtuales. También puede usar estos tipos de alertas en combinación con umbrales dinámicos.
+- [Alertas de varios recursos](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Azure Monitor permite una única regla de alertas de métricas que se aplica a todos los recursos de máquina virtual. Esta característica puede ahorrar tiempo, ya que no es necesario crear alertas individuales para cada máquina virtual. Los precios de este tipo de alerta son los mismos. Lo mismo cuesta crear 50 alertas para supervisar el uso de CPU de 50 máquinas virtuales que 1 alerta para supervisar el uso de CPU de las 50 máquinas virtuales. También puede usar estos tipos de alertas en combinación con umbrales dinámicos.
 
 En conjunto, estas características pueden ahorrar tiempo al minimizar las notificaciones de alerta y la administración de las alertas subyacentes.
 

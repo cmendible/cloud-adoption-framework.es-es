@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 459d4255a959d2911f56dd08186b92c4e89317dd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031460"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221467"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: Planeamiento de los requisitos previos de los servicios de administración de servidores de Azure
 
@@ -48,7 +48,7 @@ Los ejemplos que se describen en esta guía dan por hecho que hay una implementa
 
 Al preparar las áreas de trabajo y las cuentas que cree para incorporar los servicios de administración, consulte las siguientes discusiones de problemas:
 
-- **Zonas geográficas de Azure y cumplimiento normativo**. Las regiones de Azure se organizan por *zonas geográficas*. Una [zona geográfica de Azure](https://azure.microsoft.com/global-infrastructure/geographies/) garantiza que se cumplan los requisitos de residencia, soberanía, cumplimiento normativo y resistencia de los datos dentro de las fronteras geográficas. Si las cargas de trabajo están sujetas a la soberanía de datos u otros requisitos de cumplimiento, las cuentas de Azure Automation y el área de trabajo deben implementarse en regiones dentro de la misma ubicación geográfica de Azure que los recursos de la carga de trabajo a los que corresponden.
+- **Zonas geográficas de Azure y cumplimiento normativo**. Las regiones de Azure se organizan por *zonas geográficas*. Una [zona geográfica de Azure](https://azure.microsoft.com/global-infrastructure/geographies) garantiza que se cumplan los requisitos de residencia, soberanía, cumplimiento normativo y resistencia de los datos dentro de las fronteras geográficas. Si las cargas de trabajo están sujetas a la soberanía de datos u otros requisitos de cumplimiento, las cuentas de Azure Automation y el área de trabajo deben implementarse en regiones dentro de la misma ubicación geográfica de Azure que los recursos de la carga de trabajo a los que corresponden.
 - **Número de áreas de trabajo**. Como regla general, cree el número mínimo de áreas de trabajo necesarias por ubicación geográfica de Azure. Se recomienda al menos un área de trabajo para cada zona geográfica de Azure donde se encuentren los recursos de proceso o almacenamiento. Esta alineación inicial ayuda a evitar problemas normativos futuros al migrar datos a zonas geográficas diferentes.
 - **Límite y retención de los datos**. También es posible que deba tener en cuenta las directivas de retención de datos o los requisitos de límite de datos al crear áreas de trabajo o cuentas de Azure Automation. Para más información sobre los principios y las consideraciones adicionales que conlleva el planeamiento de las áreas de trabajo, consulte [Administración de los datos de registro y las áreas de trabajo en Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
 - **Asignación de región**. Solo se puede vincular un área de trabajo de Log Analytics y una cuenta de Azure Automation entre determinadas regiones de Azure. Por ejemplo, si el área de trabajo de Log Analytics se hospeda en la región *EastUS*, la cuenta de Azure Automation vinculada se debe crear en la región *EastUS2* para poder usarse con los servicios de administración. Si tiene una cuenta de Azure Automation creada en otra región, no podrá vincularla a un área de trabajo en *EastUS*. La elección de la región de implementación puede afectar significativamente a los requisitos de zona geográfica de Azure. Consulte la [tabla de asignación de regiones](https://docs.microsoft.com/azure/automation/how-to/region-mappings) para decidir qué región debe hospedar las áreas de trabajo y las cuentas de Automation.

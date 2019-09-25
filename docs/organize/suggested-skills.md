@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031266"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224292"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Ruta de preparación de aptitudes durante la fase de preparación de una migración
 
@@ -44,9 +44,9 @@ Durante la fase de preparación, el personal técnico tiene que crear una zona d
 
 Durante la fase de preparación, los arquitectos tienen que diseñar soluciones que abarquen todos los entornos de Azure. Los siguientes recursos pueden prepararles para estas tareas:
 
-- [Fundamentos de la arquitectura en la nube](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): curso de PluralSight para ayudar a los arquitectos a encontrar las soluciones básicas adecuadas.
-- [Arquitectura de Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): curso de PluralSight para asentar a los arquitectos en la arquitectura de Azure.
-- [Diseño de migraciones para Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): curso de PluralSight para ayudar a los arquitectos a diseñar una solución de migración.
+- [Fundamentos de la arquitectura en la nube](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso de PluralSight para ayudar a los arquitectos a encontrar las soluciones básicas adecuadas.
+- [Arquitectura de Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso de PluralSight para asentar a los arquitectos en la arquitectura de Azure.
+- [Diseño de migraciones para Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso de PluralSight para ayudar a los arquitectos a diseñar una solución de migración.
 
 ## <a name="deeper-skills-exploration"></a>Exploración en profundidad de las aptitudes
 
@@ -75,4 +75,4 @@ Estos son algunos ejemplos de rutas de aprendizaje específicas de roles en Micr
 
 - Los [desarrolladores](/learn/browse/?roles=developer&term=infrastructure) pueden usar los recursos de Learn para ayudar durante las actividades de diseño, gobernanza y modernización.
 
-Para más información sobre las rutas de aprendizaje, examine el [catálogo de Microsoft Learn](/learn/browse/). Use el filtro Roles para alinear las rutas de aprendizaje con su rol.
+Para más información sobre las rutas de aprendizaje, examine el [catálogo de Microsoft Learn](/learn/browse). Use el filtro Roles para alinear las rutas de aprendizaje con su rol.

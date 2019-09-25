@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023411"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223061"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introducción al recorrido de migración a la nube
 
@@ -84,7 +84,7 @@ Como se ilustra en la imagen de arriba, este marco alinea las decisiones estrat�
 - **[Listo](../ready/index.md):** preparar la empresa, la cultura, la gente y el entorno para los cambios venideros conduce al éxito de cada trabajo y acelera los proyectos de implementación y cambio.
 - **Adopción:** garantizar la correcta implementación de los cambios deseados, en los procesos empresariales y de TI, para lograr los resultados empresariales.
   - **[Migración](../migrate/index.md):** ejecución iterativa de la [metodología de implementación en la nube](#cloud-implementation) que se adhiere al proceso probado de evaluar, migrar, optimizar, proteger y administrar a fin de crear un proceso repetible para la migración de las cargas de trabajo.
-- **[Operaciones](../operating-model/index.md):** defina un modelo operativo administrable para guiar las actividades durante y después de la adopción.
+- **[Operaciones](../operate/index.md):** defina un modelo operativo administrable para guiar las actividades durante y después de la adopción.
   - **[Organizar](../organize/index.md):** alinear a personas y equipos para que las operaciones y la adopción de la nube se lleven a cabo de manera adecuada.
   - **[Control](../govern/index.md):** alinear las directivas corporativas con los riesgos tangibles, que se pueden mitigar mediante directivas, procesos y herramientas de gobernanza basadas en la nube.
   - **[Administrar](../manage/index.md):** expandir las operaciones de TI para garantizar que las soluciones basadas en la nube pueden funcionar mediante procesos seguros y rentables por medio de modernas herramientas de operaciones que tienen como prioridad la nube.

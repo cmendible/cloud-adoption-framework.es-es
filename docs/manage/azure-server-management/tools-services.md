@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032168"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221424"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Servicios y herramientas de administración de servidores de Azure
 
@@ -96,4 +96,4 @@ Para obtener información sobre los precios de los servicios de administración 
 - [Azure File Sync](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> La solución Azure Update Management es gratuita, pero hay un pequeño costo relacionado con la ingesta de datos. Como regla general, los primeros 5 GB al mes de ingesta de datos son gratuitos. Hemos observado que habitualmente cada equipo usa unos 25 MB al mes. Por lo tanto, se incluyen de forma gratuita 200 máquinas al mes. Para cada servidor adicional, multiplique el número de servidores adicionales por 25 MB al mes. Multiplique esto por el costo de almacenamiento para la cantidad total de almacenamiento necesaria. [Los costos de almacenamiento están disponibles aquí](https://azure.microsoft.com/pricing/details/storage/). Cada servidor adicional debe tener un impacto nominal en el costo.
+> La solución Azure Update Management es gratuita, pero hay un pequeño costo relacionado con la ingesta de datos. Como regla general, los primeros 5 GB al mes de ingesta de datos son gratuitos. Hemos observado que habitualmente cada equipo usa unos 25 MB al mes. Por lo tanto, se incluyen de forma gratuita 200 máquinas al mes. Para cada servidor adicional, multiplique el número de servidores adicionales por 25 MB al mes. Multiplique esto por el costo de almacenamiento para la cantidad total de almacenamiento necesaria. [Los costos de almacenamiento están disponibles aquí](https://azure.microsoft.com/pricing/details/storage). Cada servidor adicional debe tener un impacto nominal en el costo.

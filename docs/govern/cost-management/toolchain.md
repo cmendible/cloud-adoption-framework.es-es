@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Herramientas de Cost Management en Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 230e36d1ca59c208109eedbbdf7466f6373f4b00
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032284"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222634"
 ---
 # <a name="cost-management-tools-in-azure"></a>Herramientas de Cost Management en Azure
 
@@ -31,6 +31,6 @@ A continuación, se muestra una lista de herramientas nativas de Azure que puede
 |Control del gasto en un único recurso     | Sí: ajuste de tamaño manual         | Sí         | Sin         | Sí         |
 |Aplicación del gasto en varios recursos    | Sin         | Sí         | Sin         | Sí         |
 |Aplicar los metadatos de contabilidad a los recursos    | Sin         | No         | No         | Sí         |
-|Supervisión y detección de tendencias     | Sí: limitadas         | Sí        | Sí         | Sin         |
+|Supervisión y detección de tendencias     | Sí          | Sí        | Sí         | Sin         |
 |Detección de anomalías en el gasto     | Sin         | Sí        | Sí         | Sin        |
 |Socialización de desviaciones     | Sin        | Sí        | Sí        | Sin        |

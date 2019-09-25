@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda a mejorar gradualmente la base de gobernanza de la nube inicial.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/03/2019
+ms.date: 09/13/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d4a0338daa65ea4269077f15acee05cd99a5fb10
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7e4c0516e1c52f1fc6ddd8b42485902cb24d58e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031160"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223643"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Mejora de una base de gobernanza de la nube inicial
 
@@ -28,14 +28,14 @@ En cualquier momento, se pueden aplicar las siguientes guías prescriptivas a la
 > [!IMPORTANT]
 > La organización de los recursos puede afectar al modo en que se aplica esta guía prescriptiva. Es importante comenzar con las recomendaciones que mejor se adapten a la base de gobernanza de la nube inicial que implementó en el paso anterior.
 
-|Riesgo o necesidad | Pequeña y mediana empresa | Gran empresa |
+|Riesgo o necesidad | Empresa estándar | Empresa compleja |
 |---|---|---|
 |Información confidencial en la nube|[Guía prescriptiva](./guides/standard/security-baseline-improvement.md)|[Guía prescriptiva](./guides/complex/security-baseline-improvement.md)|
 |Aplicaciones críticas en la nube|[Guía prescriptiva](./guides/standard/resource-consistency-improvement.md)|[Guía prescriptiva](./guides/complex/resource-consistency-improvement.md)|
 |Administración de costos de la nube|[Guía prescriptiva](./guides/standard/cost-management-improvement.md)|[Guía prescriptiva](./guides/complex/cost-management-improvement.md)|
 |Nube múltiple|[Guía prescriptiva](./guides/standard/multicloud-improvement.md)|[Guía prescriptiva](./guides/complex/multicloud-improvement.md)|
-|Administración de identidades compleja o heredada|         |[Guía prescriptiva](./guides/complex/identity-baseline-improvement.md)|
-|Varias capas de gobernanza|         |[Guía prescriptiva](./guides/complex/multiple-layers-of-governance.md)|
+|Administración de identidades compleja o heredada|N/D|[Guía prescriptiva](./guides/complex/identity-baseline-improvement.md)|
+|Varias capas de gobernanza|N/D|[Guía prescriptiva](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Pasos siguientes
 

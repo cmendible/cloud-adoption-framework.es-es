@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032082"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222319"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guía de gobernanza para empresas complejas: Mejora de la materia de línea de base de identidad
 
@@ -79,14 +79,14 @@ Estos son los nuevos procedimientos recomendados:
 - **Plano técnico de red virtual híbrida segura:** El lado local de la red híbrida debe configurarse para permitir la comunicación entre la siguiente solución y los servidores locales de Active Directory. Este procedimiento recomendado requiere una DMZ para habilitar Active Directory Domain Services más allá de los límites de la red.
 - **Plantillas de Azure Resource Manager:**
     1. Defina un grupo de seguridad de red para bloquear el tráfico externo y permitir el interno.
-    1. Implemente dos máquinas virtuales de Active Directory en un par con equilibrio de carga basado en una imagen maestra. En el primer arranque, esa imagen ejecuta un script de PowerShell para unirse al dominio y registrarse en los servicios de dominio. Para más información, consulte [Extensión de Active Directory Domain Services (AD DS) a Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Implemente dos máquinas virtuales de Active Directory en un par con equilibrio de carga basado en una imagen maestra. En el primer arranque, esa imagen ejecuta un script de PowerShell para unirse al dominio y registrarse en los servicios de dominio. Para más información, consulte [Extensión de Active Directory Domain Services (AD DS) a Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Aplique el NSG a todos los recursos.
 - Plano técnico de Azure:
     1. Cree un plano técnico denominado `active-directory-virtual-machines`.
-    1. Agregue cada una de las directivas y plantillas de Active Directory al plano técnico.
-    1. Publique el plano técnico en cualquier grupo de administración correspondiente.
-    1. Aplique el plano técnico a cualquier suscripción que requiera autenticación multifactor de terceros o heredada.
-    1. Ahora se puede usar la instancia de Active Directory que se ejecuta en Azure como extensión de la solución local de Active Directory, lo que le permite integrarse en la herramienta de autenticación multifactor existente y proporcionar autenticación basada en notificaciones, ambas a través de la funcionalidad de Active Directory existente.
+    2. Agregue cada una de las directivas y plantillas de Active Directory al plano técnico.
+    3. Publique el plano técnico en cualquier grupo de administración correspondiente.
+    4. Aplique el plano técnico a cualquier suscripción que requiera autenticación multifactor de terceros o heredada.
+    5. Ahora se puede usar la instancia de Active Directory que se ejecuta en Azure como extensión de la solución local de Active Directory, lo que le permite integrarse en la herramienta de autenticación multifactor existente y proporcionar autenticación basada en notificaciones, ambas a través de la funcionalidad de Active Directory existente.
 
 ## <a name="conclusion"></a>Conclusión
 
