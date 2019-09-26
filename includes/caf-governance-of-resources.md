@@ -53,6 +53,7 @@ Hasta que la confianza en el entorno de nube está completamente establecida es 
     1. La [arquitectura de referencia de la VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) establece un patrón y un modelo de implementación para crear una instancia de VPN Gateway en Azure.
     2. Compruebe que los mecanismos locales de seguridad y administración del tráfico traten las redes en la nube conectadas como recursos que no son de confianza. Los recursos y servicios hospedados en la nube solo deben tener acceso a los servicios locales autorizados.
     3. Valide que el dispositivo de extremo local que se encuentra en el centro de datos local es compatible con los [requisitos de Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) y está configurado para acceder a la red Internet pública.
+    4. Tenga en cuenta que los túneles de VPN no deben considerarse circuitos preparados para producción salvo para las cargas de trabajo más simples. Todo lo que sea más de unas cuantas cargas de trabajo sencillas que requieren conectividad local deberían emplear Azure ExpressRoute.
 1. En el grupo de administración raíz, cree una segunda definición del plano técnico llamada `secure-hybrid-vnet`.
     1. Agregue la plantilla de Resource Manager para la instancia de VPN Gateway como un artefacto para la definición del plano técnico.
     2. Agregue la plantilla de Resource Manager para la red virtual como un artefacto para la definición del plano técnico.

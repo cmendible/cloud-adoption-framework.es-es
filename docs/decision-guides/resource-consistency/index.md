@@ -2,19 +2,19 @@
 title: Guía de decisiones de la coherencia de recursos
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Obtenga información acerca de la coherencia de recursos al planear una migración de Azure.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023794"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221114"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guía de decisiones de la coherencia de recursos
 
@@ -32,16 +32,22 @@ Con el aumento de la importancia de estos factores, las ventajas de garantizar l
 
 En Azure, los [grupos de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) son un mecanismo principal de organización de recursos para agrupar lógicamente los recursos dentro de una suscripción.
 
-Los grupos de recursos actúan como contenedores para los recursos con un ciclo de vida común o restricciones de administración compartidas, como la directiva o los requisitos de control de acceso basado en rol (RBAC). Los grupos de recursos no pueden anidarse, y los recursos solo pueden pertenecer a un solo grupo de recursos. Algunas acciones pueden aplicarse a todos los recursos de un grupo de recursos. Por ejemplo, al eliminar un grupo de recursos, se quitan todos los recursos de ese grupo. Los patrones habituales para crear grupos de recursos normalmente se dividen en dos categorías:
+Los grupos de recursos actúan como contenedores para los recursos con un ciclo de vida común Y restricciones de administración compartidas, como la directiva o los requisitos de control de acceso basado en rol (RBAC). Los grupos de recursos no pueden anidarse, y los recursos solo pueden pertenecer a un único grupo de recursos. Todas las acciones del plano de control actúan sobre todos los recursos de un grupo de recursos. Por ejemplo, al eliminar un grupo de recursos, también se eliminan todos los recursos de ese grupo. El patrón preferido para la administración del grupo de recursos debe tener en cuenta lo siguiente:
 
-- **Cargas de trabajo de TI tradicionales:** se suelen agrupar por elementos dentro del mismo ciclo de vida, como una aplicación. Si se agrupan las aplicaciones, se podrán administrar las aplicaciones de forma individual.
-- **Cargas de trabajo de TI ágiles:** se centran en las aplicaciones en la nube orientadas a los clientes externos. Estos grupos de recursos suelen reflejar las capas funcionales de implementación (por ejemplo, el nivel web y el de aplicaciones) y administración.
+1. ¿Se desarrollan los contenidos del grupo de recursos de forma conjunta?
+1. ¿Se administran, actualizan y supervisan de forma conjunta los contenidos del grupo de recursos? ¿Realizan esas operaciones las mismas personas o equipos?
+1. ¿Se retiran los contenidos del grupo de recursos de forma conjunta?
+
+Si respondió _NO_ a cualquiera de las preguntas anteriores, el recurso en cuestión debe colocarse en otra parte, en otro grupo de recursos.
+
+> [!IMPORTANT]
+> Los grupos de recursos también son específicos de una región; sin embargo, es habitual que los recursos estén en regiones diferentes aunque dentro del mismo grupo de recursos, ya que se administran de forma conjunta como se describió anteriormente. Consulte [esto](../regions/index.md) para más información sobre la selección de la región.
 
 ## <a name="deployment-consistency"></a>Coherencia de implementación
 
 Creadas sobre el mecanismo de agrupación de recursos base, la plataforma de Azure proporciona un sistema para usar plantillas para implementar los recursos en el entorno en la nube. Puede usar plantillas para crear convenciones de nomenclatura y organización coherentes al implementar cargas de trabajo, reforzando esos aspectos del diseño de la implementación y la administración de recursos.
 
-Las [plantillas de Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) permiten implementar repetidamente los recursos en un estado coherente mediante una estructura de grupos de recursos y una configuración predeterminada. Las plantillas de Resource Manager ayudan a definir un conjunto de estándares como punto de partida para las implementaciones.
+Las [plantillas de Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) permiten implementar repetidamente los recursos en un estado coherente mediante una estructura de grupos de recursos y una configuración predeterminada. Las plantillas de Resource Manager ayudan a definir un conjunto de estándares como punto de partida para las implementaciones.
 
 Por ejemplo, puede tener una plantilla estándar para la implementación de una carga de trabajo de servidor web que contiene dos máquinas virtuales como servidores web combinadas con un equilibrador de carga para distribuir el tráfico entre los servidores. A continuación, puede volver a usar esta plantilla para crear un conjunto de máquinas virtuales y un equilibrador de carga estructuralmente idénticos cada vez que se necesita este tipo de carga de trabajo, solo cambiando el nombre de la implementación y las direcciones IP implicadas.
 

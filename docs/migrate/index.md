@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816404"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224383"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migración a la nube en Cloud Adoption Framework
 
-Cualquier [plan de adopción de nube](../plan/index.md) a escala empresarial incluirá cargas de trabajo que no justifican la realización de inversiones significativas en la creación de la nueva lógica de negocios. Estas cargas de trabajo se pueden mover a la nube mediante diversos métodos: migración mediante lift-and-shift, lift-and-optimize o Modernización. Cada uno de los cuales se considera una migración. Los ejercicios siguientes le ayudarán a establecer los procesos iterativos para evaluar, migrar, optimizar, proteger y administrar esas cargas de trabajo.
+Cualquier [plan de adopción de nube](../plan/index.md) a escala empresarial incluirá cargas de trabajo que no justifican la realización de inversiones significativas en la creación de la nueva lógica de negocios. Estas cargas de trabajo se pueden mover a la nube mediante diversos métodos: migración mediante lift-and-shift, lift-and-optimize o modernización. Cada uno de estos enfoques se considera una migración. Los ejercicios siguientes le ayudarán a establecer los procesos iterativos para evaluar, migrar, optimizar, proteger y administrar esas cargas de trabajo.
 
 ## <a name="getting-started"></a>Introducción
 

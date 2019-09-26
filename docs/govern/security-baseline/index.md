@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Información general sobre la materia de base de referencia de seguridad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3d193a2fd71ffcda2b117d722603b08c27144aa3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026280"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221753"
 ---
 # <a name="security-baseline-discipline-overview"></a>Información general sobre la materia de base de referencia de seguridad
 
@@ -54,7 +54,7 @@ Los seis pasos siguientes ofrecen ejemplos y posibles opciones que se deben tene
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Plantilla de base de referencia de seguridad</h3>
-                        <p class="x-hidden-focus">Descargue la plantilla para documentar una materia de base de referencia de seguridad</p>
+                        <p class="x-hidden-focus">Descargue la plantilla para documentar una materia de base de referencia de seguridad.</p>
                     </div>
                 </div>
             </div>

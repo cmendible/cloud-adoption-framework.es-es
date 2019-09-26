@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99e5deee6551d7e4db3a0404c6dd0e81deffe35d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024686"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224036"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modelo de migración de Cloud Adoption Framework
 
@@ -26,7 +26,7 @@ La migración a la nube es un esfuerzo de administración de carteras, disfrazad
 El modelo de migración de Cloud Adoption Framework depende de que la organización haya completado un proceso de preparación empresarial para la adopción de la nube. Asegúrese de que ha revisado la guía de [planeación](../../strategy/index.md) y [preparación](../../ready/index.md) en Cloud Adoption Framework para determinar las motivaciones empresariales u otra justificación para una migración a la nube, así como cualquier planeamiento organizativo o aprendizaje necesario antes de ejecutar un proceso de migración a escala.
 
 > [!NOTE]
-> Mientras que el planeamiento empresarial es importante, una mentalidad de crecimiento es igualmente importante. Paralelamente a los esfuerzos de planeamiento empresarial más amplios del equipo de estrategia en la nube, se sugiere que el equipo de adopción de la nube comience a migrar una primera carga de trabajo como precursor de los esfuerzos de migración a mayor escala. Esta migración inicial permitirá que el equipo adquiera experiencia práctica con las cuestiones comerciales y técnicas que implica una migración.
+> Mientras que el planeamiento empresarial es importante, una mentalidad de crecimiento es igualmente importante. Paralelamente a los esfuerzos de planeamiento empresarial más amplios del equipo de estrategia en la nube, se sugiere que el equipo de adopción de la nube comience a migrar una primera carga de trabajo como precursora de los esfuerzos de migración a mayor escala. Esta migración inicial permitirá que el equipo adquiera experiencia práctica con las cuestiones comerciales y técnicas que implica una migración.
 
 ## <a name="envision-an-end-state"></a>Previsión de un estado final
 

@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicación del concepto de base de referencia de identidad en relación con la gobernanza de la nube
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026341"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222249"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Información general sobre la materia de base de referencia de identidad
 
@@ -26,7 +26,7 @@ La base de referencia de identidad es una de las [cinco materias de la gobernanz
 
 En esta sección de Cloud Adoption Framework se describe el enfoque de desarrollo de una materia de base de referencia de identidad como parte de la estrategia de gobernanza en la nube. La principal audiencia a la que se dirigen estas instrucciones son los arquitectos de nube de su organización y otros miembros de su equipo de gobernanza en la nube. Sin embargo, las decisiones, las directivas y los procesos que emergen de esta materia deben implicar la involucración y discusiones con miembros pertinentes de los equipos de TI responsables de la implementación y administración de soluciones de administración de identidad de su organización.
 
-Si su organización carece de conocimientos internos sobre la base de referencia de identidad y seguridad, considere la posibilidad de involucrar a consultores externos como parte de esta materia. Considere también la posibilidad de involucrar a [Servicios de consultoría de Microsoft](https://www.microsoft.com/enterprise/services), el servicio de adopción de la nube [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) u otros expertos en adopción de la nube externos para determinar los problemas relacionados con esta materia.
+Si su organización carece de conocimientos internos sobre la base de referencia de identidad y seguridad, considere la posibilidad de involucrar a consultores externos como parte de esta materia. Considere también la posibilidad de involucrar a [Servicios de consultoría de Microsoft](https://www.microsoft.com/enterprise/services), el servicio de adopción de la nube [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) u otros asociados externos de adopción de la nube para determinar los problemas relacionados con esta materia.
 
 ## <a name="policy-statements"></a>Policy statements
 
@@ -54,7 +54,7 @@ Los seis pasos siguientes ofrecen ejemplos y posibles opciones que se deben tene
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Plantilla de base de referencia de identidad</h3>
-                        <p class="x-hidden-focus">Descargue la plantilla para documentar una materia de base de referencia de identidad</p>
+                        <p class="x-hidden-focus">Descargue la plantilla para documentar una materia de base de referencia de identidad.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ Los seis pasos siguientes ofrecen ejemplos y posibles opciones que se deben tene
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Cadena de herramientas</h3>
-                        <p class="x-hidden-focus">Servicios de Azure que se pueden implementar para admitir la materia de base de referencia de identidad.</p>
+                        <p class="x-hidden-focus">Servicios de Azure que se pueden implementar para apoyar la materia de base de referencia de identidad.</p>
                     </div>
                 </div>
             </div>

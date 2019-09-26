@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025877"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222394"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guía de gobernanza para empresas estándar
 
@@ -41,8 +41,9 @@ Todas las aplicaciones deben implementarse en el área adecuada de la jerarquía
 
 1. Un grupo de administración para cada tipo de entorno (por ejemplo, producción, desarrollo y pruebas).
 2. Dos suscripciones, una para producción y otra para fines no relacionados con producción.
-3. Grupos de recursos adecuados con aplicación del control de acceso basado en rol en estas suscripciones.
-4. Debe aplicarse una [nomenclatura coherente](../../../ready/considerations/naming-and-tagging.md) en cada nivel de esta jerarquía de agrupación.
+3. Debe aplicarse una [nomenclatura coherente](../../../ready/considerations/naming-and-tagging.md) en cada nivel de esta jerarquía de agrupación.
+4. Los grupos de recursos se deben implementar de forma que se tenga en cuenta el ciclo de vida de su contenido: todo lo que se desarrolla conjuntamente, se administra conjuntamente y se retira conjuntamente. Para más información sobre los procedimientos recomendados de los grupos de recursos, [consulte esto](../../../decision-guides/resource-consistency/index.md).
+5. La [selección de región](../../../decision-guides/regions/index.md) es sumamente importante y se debe tener muy en cuenta para que las redes, la supervisión y la auditoría estén en vigor para la conmutación por error o la conmutación por recuperación así como para la confirmación de que las [SKU necesarias están disponibles en las regiones preferidas](https://azure.microsoft.com/global-infrastructure/services).
 
 A continuación, se indica un ejemplo de este patrón de uso:
 

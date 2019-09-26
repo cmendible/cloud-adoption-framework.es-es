@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816234"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224240"
 ---
 # <a name="landing-zone-considerations"></a>Consideraciones sobre la zona de aterrizaje
 
@@ -48,5 +48,5 @@ Los artículos siguientes pueden ayudarle a tomar decisiones relacionadas con la
 - **Requisitos de costos**. Según la motivación de una organización en relación con los compromisos operativos y de adopción de la nube respecto a su entorno, es posible que sea necesario cambiar varias configuraciones de administración de costos para la zona de aterrizaje.
 - **Decisiones sobre la supervisión**. En función de los requisitos operativos para una zona de aterrizaje, se pueden implementar varias herramientas de supervisión. El artículo sobre la toma de decisiones relacionadas con la supervisión le puede ayudar a determinar las herramientas más adecuadas que puede implementar.
 - **Uso del control de acceso basado en rol**. El [control de acceso basado en rol (RBAC)](../azure-best-practices/roles.md) de Azure ofrece administración de acceso específico basado en grupos para recursos organizados en torno a roles de usuario.
-- **Decisiones sobre directivas**. Los ejemplos de plano técnico de Azure proporcionan planos técnicos de cumplimiento previamente creados, cada uno con iniciativas de directivas predefinidas. Las decisiones sobre directivas le informan sobre una selección del mejor plano técnico o iniciativa de directiva según sus requisitos y restricciones.
+- **Decisiones sobre directivas**. Los [ejemplos de plano técnico de Azure](https://docs.microsoft.com/azure/governance/blueprints/samples) proporcionan planos técnicos de cumplimiento previamente creados, cada uno con iniciativas de directivas predefinidas. Las decisiones sobre directivas le informan sobre una selección del mejor plano técnico o iniciativa de directiva según sus requisitos y restricciones.
 - **[Creación de coherencia en la nube híbrida](../../infrastructure/misc/hybrid-consistency.md)** . Cree soluciones de nube híbrida que ofrezcan a su organización las ventajas de la innovación en la nube conservando muchas de las comodidades de la administración local.

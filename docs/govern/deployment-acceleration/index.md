@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicación de la aceleración de la implementación con respecto a la gobernanza de la nube.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 55dc7554e72f5ca1e2a19a29cf93f8b075b93c9b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026345"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222713"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Introducción a la materia de aceleración de la implementación
 
@@ -54,7 +54,7 @@ Los seis pasos siguientes le ayudarán a definir las directivas de gobernanza pa
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Plantilla de aceleración de la implementación</h3>
-                        <p class="x-hidden-focus">Descargue la plantilla para documentar una materia de aceleración de la implementación</p>
+                        <p class="x-hidden-focus">Descargue la plantilla para documentar una materia de aceleración de la implementación.</p>
                     </div>
                 </div>
             </div>
