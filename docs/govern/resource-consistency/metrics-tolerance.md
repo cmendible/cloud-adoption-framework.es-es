@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas, indicadores y tolerancia al riesgo de la coherencia de los recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032272"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222945"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores y tolerancia al riesgo de la coherencia de los recursos
 
-El objetivo de este artículo es ayudar a cuantificar la tolerancia al riesgo del negocio en relación con la coherencia de los recursos. Definir las métricas y los indicadores servirá de ayuda para crear un modelo de negocio con el fin de calcular la inversión en la materia sobre la coherencia de los recursos.
+Este artículo le ayudará a cuantificar la tolerancia al riesgo de la empresa en relación con la coherencia de los recursos. Definir las métricas y los indicadores servirá de ayuda para crear un modelo de negocio con el fin de calcular la inversión en la materia sobre la coherencia de los recursos.
 
 ## <a name="metrics"></a>Métricas
 
@@ -33,7 +33,7 @@ Cada organización tiene diferentes escenarios operativos, pero los elementos si
 - **Antigüedad de los recursos.** Tiempo transcurrido desde que el recurso se implementó o se modificó por última vez.
 - **Máquinas virtuales en condición crítica.** Número de máquinas virtuales implementadas en las que se ha detectado uno o varios problemas críticos que deben solucionarse para restaurar la funcionalidad normal.
 - **Alertas por gravedad.** Número total de alertas en un recurso implementado, desglosado por gravedad.
-- **Vínculos de subred incorrectos.** Número de recursos con problemas de conectividad de red.
+- **Vínculos de red incorrectos.** Número de recursos con problemas de conectividad de red.
 - **Puntos de conexión de servicio incorrectos.** Número de problemas con los puntos de conexión de red externos.
 - **Incidencias de estado de mantenimiento del servicio del proveedor de nube.** Número de interrupciones o incidencias de rendimiento causados por el proveedor de servicios en la nube.
 - **Contratos de nivel de servicio.** Pueden incluir tanto los compromisos de Microsoft correspondientes al tiempo de actividad y conectividad de los servicios de Azure como los compromisos adquiridos por la empresa con sus clientes externos e internos.

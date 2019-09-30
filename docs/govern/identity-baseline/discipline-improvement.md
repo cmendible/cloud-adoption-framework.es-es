@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Mejora de la materia sobre la base de referencia de la identidad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031809"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220491"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Mejora de la materia sobre la base de referencia de la identidad
 
@@ -46,7 +46,7 @@ Esta fase del desarrollo de la gobernanza permite salvar las diferencias entre l
 - Defina los roles y asignaciones que gobernarán la administración de la identidad y el acceso en la nube.
 - Defina los grupos locales y asígnelos a los roles correspondientes basados en la nube.
 - Proveedores de identidades de inventario (incluidas las identidades controladas por bases de datos que utilizan las aplicaciones personalizadas).
-- Tenga en cuenta las opciones de consolidación o integración de los proveedores de identidades en los que existe una duplicación para simplificar la solución global de identidad.
+- Consolide e integre a los proveedores de identidades en los que existe una duplicación para simplificar la solución global de identidad y reducir el riesgo.
 - Evalúe la compatibilidad híbrida de los proveedores de identidades existentes.
 - Para aquellos proveedores de identidades que no presentan esta compatibilidad, evalúe las opciones de consolidación o reemplazo.
 
@@ -98,7 +98,7 @@ La migración es un proceso incremental que se centra en el traslado, las prueba
 - Compruebe y refine la [estrategia de identidad híbrida](../../decision-guides/identity/index.md).
 - Cerciórese de que todas las aplicaciones o cargas de trabajo siguen alineadas con la estrategia de identidad antes de la publicación.
 - Compruebe que el inicio de sesión único (SSO) y el SSO de conexión directa funcionan según lo previsto en las aplicaciones.
-- Reduzca el número de almacenes de identidades alternativos o elimine algunos de ellos cuando sea posible.
+- Reduzca el número de almacenes de identidades alternativos o elimine algunos de ellos.
 - Examine la necesidad de almacenes de identidades en aplicaciones o en bases de datos. Las identidades que se encuentran fuera de un proveedor de identidades adecuado (propias o de terceros) pueden suponer un riesgo para la aplicación y para los usuarios.
 - Habilite el acceso condicional para las [aplicaciones federadas locales](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Distribuya la identidad entre las regiones globales en varios centros con sincronización entre regiones.
@@ -120,6 +120,7 @@ Una vez completada la transformación, la gobernanza y las operaciones deben est
 **Actividades potenciales:**
 
 - Realice auditorías periódicas de las directivas de identidad y de los procedimientos de cumplimiento.
+- Asegúrese de que las cuentas de usuario confidenciales (CEO, CFO, VP, etc.) estén siempre habilitadas para la autenticación multifactor y la detección de inicios de sesión anómalos.
 - Examine en busca de actores malintencionados y vulneraciones de seguridad de los datos de forma periódica, especialmente aquellas relacionadas con los fraudes de identidad como, por ejemplo, posibles apropiaciones de cuentas de administrador.
 - Configure una herramienta de supervisión e informes.
 - Considere la posibilidad de una integración más estrecha con los sistemas de seguridad y prevención de fraudes.

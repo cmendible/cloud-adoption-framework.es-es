@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3659f5e965e5a80c3b490f8b106a4cc30f1711a9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: badf03f3616de8e6612221282aa24996f0b6e8f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031346"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221133"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guía sobre la supervisión en la nube: estrategia de supervisión para los modelos de implementación en la nube
 
@@ -35,7 +35,7 @@ En la tabla siguiente se resume el enfoque recomendado para supervisar cada nive
 
 <!-- markdownlint-disable MD033 -->
 
-Nivel | Recurso | Ámbito | Método
+Nivel | Resource | Ámbito | Método
 ---|---|---|----
 Application | Aplicación basada en web que se ejecuta en la plataforma .NET, .NET Core, Java, JavaScript y Node.js en una instancia de Azure VM, Azure App Service, Azure Service Fabric, Azure Functions y Azure Cloud Services | Supervisa una aplicación web activa para detectar automáticamente anomalías de rendimiento, identificar problemas y excepciones de código, y recopilar telemetría de facilidad de uso. |  Application Insights
 Contenedores | Instancias de Azure Kubernetes Service o Azure Container Instances | Supervisa la capacidad, la disponibilidad y el rendimiento de las cargas de trabajo que se ejecutan en contenedores e instancias de contenedor. | Azure Monitor para contenedores
@@ -50,7 +50,7 @@ Inquilino de Azure|Azure Active Directory || Habilita el registro de diagnóstic
 
 ## <a name="hybrid-cloud-monitoring"></a>Supervisión de la nube híbrida
 
-Esta sección está actualmente en desarrollo para ofrecer un conjunto completo de recomendaciones pensadas para responder a su interés sobre este modelo de nube; estará disponible en breve.  
+Esta sección está actualmente en desarrollo para ofrecer un conjunto completo de recomendaciones que respondan a su interés sobre este modelo de nube y estará disponible en breve.  
 
 ## <a name="private-cloud-monitoring"></a>Supervisión de la nube privada
 

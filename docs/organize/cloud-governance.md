@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bb40dc63fcf125548e2734cc18edf36adacb2570
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031474"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224006"
 ---
 # <a name="cloud-governance-capabilities"></a>Funcionalidades de gobernanza de la nube
 

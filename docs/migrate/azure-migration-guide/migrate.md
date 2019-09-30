@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022784"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224075"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migración de recursos (infraestructura, aplicaciones y datos)
 
@@ -196,6 +196,14 @@ Para más información, consulte:
 
 - [Información general del Asistente para experimentación con bases de datos](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview).
 
+## <a name="cosmos-db-data-migration-tool"></a>Herramienta de migración de datos de Cosmos DB
+
+La herramienta de migración de datos de Azure Cosmos DB puede importar datos desde diversos orígenes a colecciones y tablas de Azure Cosmos DB. Puede importar archivos JSON, archivos CSV, SQL, MongoDB, Azure Table Storage, Amazon DynamoDB e incluso colecciones de SQL API de Azure Cosmos DB. También se puede utilizar la herramienta de migración de datos al migrar de una colección de partición única a una colección de varias particiones de la API de SQL.
+
+Para más información, consulte:
+
+- [Herramienta de migración de datos de Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Herramientas de migración de terceros](#tab/third-party-tools).
 
 Hay varias herramientas de migración de terceros y servicios de ISV que pueden ayudarlo con el proceso de migración. Cada uno ofrece distintas ventajas y fortalezas. Estas herramientas son:
@@ -224,16 +232,28 @@ Movere es una solución de detección que proporciona los datos y la informació
 
 [Más información](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Asociados de Cosmos DB
+
+Puede elegir entre una amplia variedad de expertos asociados y herramientas de integración de sistemas para respaldar las migraciones de Azure Cosmos DB para que cumplan con los requisitos de base de datos NoSQL.
+
+[Más información](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Visite el [Azure Migration Center](https://azure.microsoft.com/migration/support) para descubrir las organizaciones que ofrecen soluciones de tecnología de asociados listas para usar que se ajustan a sus escenarios de migración y obtener información sobre servicios de soporte técnico y herramientas de migración de terceros adicionales.
+
+Visite la [Guía sobre la migración de Azure Database](https://datamigration.microsoft.com) para ver la gama de opciones de migración de bases de datos e instrucciones detalladas sobre herramientas nativas y de asociados.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Herramientas de administración de proyectos](#tab/project-management-tools)
 
-Los proyectos que no se controlan ni administran tienen más probabilidades de tener problemas. Para garantizar un resultado correcto, creemos que es importante que use una herramienta de administración de proyectos. Hay muchas herramientas distintas disponibles y es posible que los jefes de proyecto de su organización ya tengan su favorita. Microsoft ofrece las siguientes herramientas de administración de proyectos, que pueden trabajar en conjunto para brindar funcionalidades más amplias:
+Los proyectos que no se controlan ni administran tienen más probabilidades de tener problemas. Para garantizar un resultado correcto, creemos que es importante que use una herramienta de administración de proyectos. Hay muchas herramientas distintas disponibles y es posible que los jefes de proyecto de su organización ya tengan su favorita.
+
+Azure DevOps es la herramienta sugerida para la administración de proyectos durante una migración en la nube. Para acelerar el uso de Azure DevOps, Cloud Adoption Framework incluye una herramienta para implementar automáticamente una plantilla de proyecto. Esa plantilla incluye las tareas que se ejecutan normalmente durante un esfuerzo de migración. Implemente la plantilla mediante [estas instrucciones](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Después, puede modificar la plantilla para que refleje las [cargas de trabajo](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) y los [recursos](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) que se van a migrar.
+
+Microsoft ofrece también las siguientes herramientas de administración de proyectos que pueden funcionar de forma conjunta para brindar funcionalidades más amplias:
 
 - [Microsoft Planner](https://tasks.office.com): una manera visual sencilla para organizar el trabajo en equipo.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Project and Portfolio Management, Resource Capacity Management, Financial Management, Timesheet and Schedule Management.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): herramienta de comunicación y colaboración en equipo. Teams también integra Planner y otras herramientas para mejorar la colaboración.
-- [Azure DevOps](https://dev.azure.com): con Azure DevOps, puede administrar la infraestructura como código o usar los elementos de trabajo y paneles para realizar la administración de proyectos. A medida que madura, su organización puede aprovechar las funcionalidades de CI/CD.
+- [Azure DevOps](https://dev.azure.com): La plantilla de planeación de Cloud Adoption Framework no es necesaria para usar Azure DevOps. Puede usar este servicio sin la plantilla para administrar la infraestructura como código o usar los elementos de trabajo y paneles para realizar la administración de proyectos. A medida que madura, su organización puede aprovechar las funcionalidades de CI/CD.
 
 Estas no son las únicas herramientas disponibles. Muchas otras herramientas de terceros se usan ampliamente en la comunidad de administración de proyectos.
 

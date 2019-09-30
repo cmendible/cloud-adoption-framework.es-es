@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ¿Qué es la clasificación de datos?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032344"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223572"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ La siguiente es una lista de clasificaciones que usa Microsoft. Según su sector
 
 ## <a name="tagging-data-classification-in-azure"></a>Etiquetado de la clasificación de datos en Azure
 
-Todos los proveedores de servicios en la nube deben ofrecer un mecanismo para registrar los metadatos sobre cualquier recurso. En el caso de Azure, las etiquetas de recursos son el enfoque sugerido para el almacenamiento de metadatos; estas etiquetas se pueden usar para aplicar información de clasificación de datos a recursos implementados. Aunque el etiquetado de los recursos en la nube por clasificación no sustituye a un proceso de clasificación de datos formal, proporciona una valiosa herramienta para administrar recursos y aplicar directivas.
+Las etiquetas de recursos son el enfoque sugerido para el almacenamiento de metadatos; estas etiquetas se pueden usar para aplicar información de clasificación de datos a recursos implementados. Aunque el etiquetado de los recursos en la nube por clasificación no sustituye a un proceso de clasificación de datos formal, proporciona una valiosa herramienta para administrar recursos y aplicar directivas. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) es una solución excelente para ayudarle a clasificar _datos_ independientemente de dónde esté instalada (en el entorno local, en Azure, en alguna otra ubicación) y se debería tener en cuenta como parte de una estrategia de clasificación general.
 
 Para obtener más información acerca del etiquetado de recursos, consulte el artículo sobre el [uso de etiquetas para organizar los recursos de Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

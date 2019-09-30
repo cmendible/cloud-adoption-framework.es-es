@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas, indicadores y tolerancia al riesgo de la línea de base de identidad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032528"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220438"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores y tolerancia al riesgo de la línea de base de identidad
 
-Este artículo está pensado para ayudarle a cuantificar la tolerancia al riesgo del negocio en relación con la línea de base de identidad. La definición de métricas e indicadores le ayudará a crear un caso de negocio de inversión en la madurez de la materia de línea de base de identidad.
+Este artículo le ayudará a cuantificar la tolerancia al riesgo de la empresa en relación con la línea de base de identidad. La definición de métricas e indicadores le ayudará a crear un caso de negocio de inversión en la madurez de la materia de línea de base de identidad.
 
 ## <a name="metrics"></a>Métricas
 
@@ -34,7 +34,7 @@ Los siguientes son ejemplos de métricas útiles que debe reunir para ayudar a e
 - **Unidades organizativas implementadas en la nube.** Número de unidades organizativas de Active Directory implementadas en la nube.
 - **Extensión de la federación.** Número de sistemas de línea de base de identidad federados con sistemas de la organización.
 - **Usuarios con privilegios.** Número de cuentas de usuario con acceso con privilegios elevados a recursos o herramientas de administración.
-- **Uso del control de acceso basado en rol.** Número de suscripciones, grupos de recursos o recursos individuales que no se administran a través del control de acceso basado en roles (RBAC).
+- **Uso del control de acceso basado en rol.** Número de suscripciones, grupos de recursos o recursos individuales que no se administran mediante el control de acceso basado en rol (RBAC) a través de los grupos.
 - **Notificaciones de autenticación.** Número de intentos de autenticación de usuario correctos e incorrectos.
 - **Notificaciones de autorización.** Número de intentos correctos e incorrectos de los usuarios por acceder a los recursos.
 - **Cuentas en peligro.** Número de cuentas de usuario que podrían estar en peligro.
@@ -56,7 +56,7 @@ Una vez que tenga una base de referencia, establezca bancos de pruebas mínimos 
 - **Desencadenador de RBAC.** Una empresa con menos del _x %_ de los recursos con métodos de control de acceso basado en roles debería plantearse invertir en la materia de línea de base de identidad para identificar maneras optimizadas de asignar el acceso de los usuarios a los recursos.
 - **Desencadenador de errores de autenticación.** Una empresa donde los errores de autenticación representan más del _x %_ de los intentos debe invertir en la materia de línea de base de identidad para asegurarse de que los métodos de autenticación no estén bajo un ataque externo, y de que los usuarios puedan usar los métodos de autenticación correctamente.
 - **Desencadenador de errores de autorización.** Una empresa donde los intentos de acceso se rechazan más del _x %_ de las veces debe invertir en la materia de línea de base de identidad para mejorar la aplicación y la actualización de los controles de acceso, e identificar intentos de acceso potencialmente malintencionados.
-- **Desencadenador de cuentas en peligro.** Una empresa con más de _x_ cuentas en peligro debe invertir en la materia de línea de base de identidad para mejorar la eficacia y la seguridad de los mecanismos de autenticación, y mejorar los mecanismos para remediar los riesgos relacionados con las cuentas en peligro.
+- **Desencadenador de cuentas en peligro.** Una empresa con más de 1 cuenta en peligro debe invertir en la materia de línea de base de identidad para mejorar la eficacia y la seguridad de los mecanismos de autenticación, y mejorar los mecanismos para remediar los riesgos relacionados con las cuentas en peligro.
 
 Las métricas y desencadenadores exactos que use para medir la tolerancia al riesgo y el nivel de inversión en la materia de línea de base de identidad serán específicos para su organización, pero los ejemplos anteriores deberían servir como base útil para las conversaciones con su equipo de gobernanza de la nube.
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicación de la administración de costos en relación con la gobernanza de la nube
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be1d4456ac8924c87241089c637fa3aacc38fb47
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031692"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220966"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores y tolerancia al riesgo de la administración de costos
 
-Este artículo está pensado para ayudarle a cuantificar la tolerancia al riesgo del negocio en relación con la administración de costos. Definir las métricas y los indicadores servirá de ayuda para crear un modelo de negocio con el fin de calcular la inversión en la materia sobre la administración de costos.
+Este artículo le ayudará a cuantificar la tolerancia al riesgo de la empresa en relación con la administración de costos. Definir las métricas y los indicadores servirá de ayuda para crear un modelo de negocio con el fin de calcular la inversión en la materia sobre la administración de costos.
 
 ## <a name="metrics"></a>Métricas
 

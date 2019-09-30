@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Declaraciones de directivas de ejemplo de base de referencia de identidad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032527"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222135"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Declaraciones de directivas de ejemplo de base de referencia de identidad
 
@@ -67,7 +67,7 @@ Las siguientes declaraciones de la directiva de ejemplo abordan algunos riesgos 
 
 **Declaración de directiva**: la implementación de las aplicaciones que requieren autenticación de cliente debe usar un proveedor de identidades aprobado que sea compatible con el proveedor de identidades principal para usuarios internos.
 
-**Opciones de diseño posibles:** implemente la [federación con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre los proveedores de identidades internos y de cliente.
+**Opciones de diseño posibles:** implemente la [federación con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre los proveedores de identidades internos y de cliente, o utilice [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
 ## <a name="identity-reviews"></a>Revisiones de identidad
 

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032095"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221378"
 ---
 # <a name="automate-onboarding"></a>Automatizar la incorporación
 
@@ -21,7 +21,7 @@ Para mejorar la eficacia de la implementación de los servicios de administraci�
 
 ## <a name="onboarding-by-using-automation"></a>Incorporación mediante Automation
 
-Esta guía incluye un repositorio de código de ejemplo de GitHub de apoyo, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), que proporciona scripts y plantillas de Azure Resource Manager de ejemplo con los que será más fácil automatizar la implementación de los servicios de administración de servidores de Azure.
+Esta guía incluye un repositorio de código de ejemplo de GitHub de apoyo, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), que proporciona scripts y plantillas de Azure Resource Manager de ejemplo con los que será más fácil automatizar la implementación de los servicios de administración de servidores de Azure.
 
 En estos archivos de ejemplo se muestra cómo usar los cmdlets de Azure PowerShell para automatizar estas tareas:
 
@@ -33,7 +33,7 @@ En estos archivos de ejemplo se muestra cómo usar los cmdlets de Azure PowerShe
 
 4. Habilitar Update Management y Change Tracking e inventario para el área de trabajo.
 
-5. Incorporar las máquinas virtuales de Azure mediante Azure Policy (una directiva instala Dependency Agent y el agente de Log Analytics en las máquinas virtuales de Azure).
+5. Incorporar máquinas virtuales de Azure mediante Azure Policy (una directiva instala Dependency Agent y el agente de Log Analytics en las máquinas virtuales de Azure).
 
 6. Incorporar los servidores locales mediante la instalación del agente de Log Analytics en ellos.
 

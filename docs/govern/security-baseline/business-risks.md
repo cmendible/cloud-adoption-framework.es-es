@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivaciones y riesgos empresariales de la base de referencia de la seguridad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031462"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222283"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motivaciones y riesgos empresariales de la base de referencia de la seguridad
 
@@ -22,7 +22,7 @@ En este artículo se describen las razones por las que los clientes normalmente 
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>¿Es pertinente una base de referencia de la seguridad?
+## <a name="security-baseline-relevancy"></a>Importancia de la línea de base de seguridad
 
 La seguridad es una preocupación clave en cualquier organización de TI. Las implementaciones en la nube se enfrentan a los mismos riesgos para la seguridad que las cargas de trabajo hospedadas en los centros de datos locales tradicionales. Sin embargo, por su naturaleza, las plataformas de nube pública no poseen la propiedad directa del hardware físico que almacena y ejecuta las cargas de trabajo, lo que implica que la seguridad en la nube necesita sus propias directivas y procesos.
 

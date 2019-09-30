@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Mejora de la disciplina de aceleración de la implementación
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032085"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220748"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Mejora de la disciplina de aceleración de la implementación
 
@@ -52,6 +52,7 @@ Esta fase del desarrollo de la gobernanza permite salvar las diferencias entre l
 
 - Para las nuevas aplicaciones basadas en la nube, introduzca implementaciones totalmente automatizadas al principio del proceso de desarrollo. Esta inversión mejorará la confiabilidad de sus procesos de prueba y garantizará la coherencia en sus entornos de desarrollo, el control de calidad y la producción.
 - Almacene todos los artefactos de implementación, como las plantillas de implementación o los scripts de configuración, mediante una plataforma de control de origen como GitHub o Azure DevOps.
+- Almacene todos los secretos, contraseñas, certificados y cadenas de conexión en [Azure Key Vault](https://docs.microsoft.com/azure/key-vault).
 - Considere la posibilidad de realizar una prueba piloto antes de implementar su [cadena de herramientas para la aceleración de la implementación](./toolchain.md); así se asegurará de que se optimizan sus implementaciones tanto como sea posible. Aplique los comentarios de las pruebas piloto durante la fase previa a la implementación, repitiendo el proceso según sea necesario.
 - Evalúe la arquitectura lógica y física de sus aplicaciones e identifique las oportunidades para automatizar la implementación de los recursos de la aplicación o mejorar partes de la arquitectura con otros recursos basados en la nube.
 - Actualice el documento de directrices de arquitectura para que incluya los planes de implementación y adopción por parte del usuario, y distribúyalo a las partes interesadas clave.

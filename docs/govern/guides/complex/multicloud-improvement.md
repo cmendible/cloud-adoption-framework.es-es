@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guía para grandes empresas: Mejora de la nube múltiple'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032215"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220614"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>Guía para grandes empresas: Mejora de la nube múltiple
 
 ## <a name="advancing-the-narrative"></a>Continuación de la historia
 
-Microsoft reconoce que los clientes están adoptando varias nubes para propósitos específicos. La empresa ficticia de esta guía no es una excepción. Paralelamente al recorrido de adopción de Azure, el éxito del negocio ha llevado a la adquisición de una empresa pequeña, pero complementaria. Ese negocio ejecuta todas sus operaciones de TI en un proveedor de servicios en la nube diferente.
+Microsoft reconoce que los clientes pueden adoptar varias nubes para propósitos específicos. La empresa ficticia de esta guía no es una excepción. Paralelamente al recorrido de adopción de Azure, el éxito del negocio ha llevado a la adquisición de una empresa pequeña, pero complementaria. Ese negocio ejecuta todas sus operaciones de TI en un proveedor de servicios en la nube diferente.
 
 En este artículo se describen cómo cambian las cosas cuando se integra la nueva organización. A efectos de la narrativa, asumimos que esta empresa ha completado cada una de las iteraciones de gobernanza descritas en esta guía de gobernanza.
 
@@ -64,23 +64,23 @@ En esta sección del artículo se mejora el diseño de un producto viable mínim
 
 1. Conecte las redes. Esta instrucción la ejecutan los equipos de redes y seguridad de TI, respaldados por el equipo de gobernanza.
     1. La adición de una conexión desde el proveedor de líneas alquiladas o MPLS a la nueva nube integrará las redes. La adición de tablas de enrutamiento y configuraciones de firewall controlará el acceso y el tráfico entre los entornos.
-1. Consolide los proveedores de identidades. Dependiendo de las cargas de trabajo que se hospeden en la nube secundaria, hay una variedad de opciones para la consolidación de proveedores de identidades. Estos son algunos ejemplos:
+2. Consolide los proveedores de identidades. Dependiendo de las cargas de trabajo que se hospeden en la nube secundaria, hay una variedad de opciones para la consolidación de proveedores de identidades. Estos son algunos ejemplos:
     1. Para las aplicaciones que se autentican mediante OAuth 2, los usuarios de Active Directory en la nube secundaria podrían replicarse simplemente al inquilino de Azure AD existente.
-    1. En el otro extremo, la federación entre los dos proveedores de identidades locales permitiría la replicación de los usuarios de los nuevos dominios de Active Directory en Azure.
-1. Agregue recursos a Azure Site Recovery.
+    2. En el otro extremo, la federación entre los dos proveedores de identidades locales permitiría la replicación de los usuarios de los nuevos dominios de Active Directory en Azure.
+3. Agregue recursos a Azure Site Recovery.
     1. Azure Site Recovery se ha diseñado desde el principio como una herramienta híbrida o de varias nubes.
-    1. Las máquinas virtuales en la nube secundaria podrían estar protegidas por los mismos procesos de Azure Site Recovery utilizados para proteger los recursos locales.
-1. Agregue recursos a Azure Cost Management.
+    2. Las máquinas virtuales en la nube secundaria podrían estar protegidas por los mismos procesos de Azure Site Recovery utilizados para proteger los recursos locales.
+4. Agregue recursos a Azure Cost Management.
     1. Azure Cost Management se ha diseñado desde el principio como una herramienta de varias nubes.
-    1. Las máquinas virtuales en la nube secundaria podrían ser compatibles con Azure Cost Management para algunos proveedores de servicios en la nube. Se pueden aplicar costos adicionales.
-1. Agregue recursos a Azure Monitor.
+    2. Las máquinas virtuales en la nube secundaria podrían ser compatibles con Azure Cost Management para algunos proveedores de servicios en la nube. Se pueden aplicar costos adicionales.
+5. Agregue recursos a Azure Monitor.
     1. Azure Monitor se ha diseñado desde el principio como una herramienta de nube híbrida.
-    1. Las máquinas virtuales en la nube secundaria podrían ser compatibles con los agentes de Azure Monitor, lo que permite incluirlas en Azure Monitor para la supervisión operativa.
-1. Herramientas de cumplimiento de gobernanza.
+    2. Las máquinas virtuales en la nube secundaria podrían ser compatibles con los agentes de Azure Monitor, lo que permite incluirlas en Azure Monitor para la supervisión operativa.
+6. Herramientas de cumplimiento de gobernanza.
     1. El cumplimiento de gobernanza es específico de la nube.
-    1. Las directivas corporativas establecidas en la guía de gobernanza no son específicas de la nube. Aunque la implementación puede variar de una nube a otra, las declaraciones de directivas pueden aplicarse al proveedor secundario.
+    2. Las directivas corporativas establecidas en la guía de gobernanza no son específicas de la nube. Aunque la implementación puede variar de una nube a otra, las declaraciones de directivas pueden aplicarse al proveedor secundario.
 
-A medida que crece la adopción de varias nubes, el diseño de la gobernanza continuará evolucionando.
+La adopción de varias nubes se debe implementar donde sea necesaria en función de necesidades técnicas o requisitos empresariales específicos. A medida que progresa la adopción de varias nubes, aumenta la complejidad y los riesgos de seguridad.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

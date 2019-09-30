@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Establezca procesos para garantizar el cumplimiento de las directivas corporativas.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031333"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222049"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Establecimiento de procesos de adhesión a directivas
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Después de establecer las instrucciones de la directiva de la nube y redactar una guía de diseño, deberá crear una estrategia para garantizar que su implementación de la nube cumpla con los requisitos de la directiva. Esta estrategia debe abarcar los procesos de comunicación y revisión en curso del equipo de gobernanza de la nube, establecer criterios para cuando las infracciones de las directivas requieran medidas y definir los requisitos para los sistemas automatizados de supervisión y cumplimiento que van a detectar las infracciones y desencadenar las medidas correctoras.
 
@@ -57,6 +53,8 @@ Planee la evaluación de nuevos riesgos potenciales y la actualización de las d
 El cumplimiento de las directivas requiere que el personal de TI y los desarrolladores comprendan los requisitos de las directivas que afectan a sus áreas de responsabilidad. Planee dedicar recursos a documentar las decisiones y los requisitos, y eduque a todos los equipos pertinentes sobre las guías de diseño que respaldan los requisitos de la directiva.
 
 A medida que cambien las directivas, actualice regularmente la documentación y los materiales de aprendizaje, y asegúrese de que los esfuerzos educativos comuniquen los requisitos actualizados y la guía al personal de TI pertinente.
+
+En varias fases del recorrido en la nube, es posible que le resulte más conveniente consultar con asociados y programas de aprendizaje profesional para mejorar la formación de su equipo, técnica y procedimentalmente. Además, muchos consideran los certificados formales como una valiosa adición a la cartera de formación que se debe tener en cuenta.
 
 ### <a name="establish-escalation-paths"></a>Establecimiento de las rutas de escalado
 

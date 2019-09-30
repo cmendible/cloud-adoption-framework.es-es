@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025255"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224271"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Gobernanza, seguridad y cumplimiento en Azure
 
@@ -69,7 +69,7 @@ Para publicar artefactos de un plano técnico en su suscripción:
 1. Vaya a **Planos técnicos - Definiciones del plano técnico**.
 1. Seleccione el plano técnico que creó en los pasos anteriores.
 1. Revise la definición del plano técnico y seleccione **Publicar plano técnico**.
-1. Proporcione una **Versión** (por ejemplo, 1.0) y **Notas de cambios** y, después, seleccione **Publicar**.
+1. Proporcione una **versión** (por ejemplo, _1.0_) y **notas de cambios** y, después, seleccione **Publicar**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Para publicar artefactos de un plano técnico en su suscripción:
 1. Vaya a [Planos técnicos - Definiciones del plano técnico](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Seleccione el plano técnico que creó en los pasos anteriores.
 1. Revise la definición del plano técnico y seleccione **Publicar plano técnico**.
-1. Proporcione una **Versión** (por ejemplo, 1.0) y **Notas de cambios** y, después, seleccione **Publicar**.
+1. Proporcione una **versión** (por ejemplo, _1.0_) y **notas de cambios** y, después, seleccione **Publicar**.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Para obtener más información, consulte:
 
 - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Plataforma de adopción de la nube: Guía de decisiones de la coherencia de recursos](../../decision-guides/resource-consistency/index.md)
-- [Ejemplos de planos técnicos basados en estándares](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [Ejemplos de planos técnicos basados en estándares](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 

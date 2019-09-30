@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas de aceleración de la implementación, indicadores y tolerancia al riesgo
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032167"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220711"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Métricas de aceleración de la implementación, indicadores y tolerancia al riesgo
 
-Este artículo está pensado para ayudarle a cuantificar la tolerancia al riesgo del negocio en relación con la aceleración de la implementación. La definición de métricas e indicadores le ayudará a crear un caso de negocio de inversión en el desarrollo de la disciplina de aceleración de la implementación.
+Este artículo le ayudará a cuantificar la tolerancia al riesgo de la empresa en relación con la aceleración de la implementación. La definición de métricas e indicadores le ayudará a crear un caso de negocio de inversión en el desarrollo de la disciplina de aceleración de la implementación.
 
 ## <a name="metrics"></a>Métricas
 
@@ -34,7 +34,7 @@ Los riesgos relacionados con la aceleración de la implementación están, en gr
 
 <!-- "en-us" location is required for the URL below. -->
 
-Considere la posibilidad de adoptar una cultura organizativa DevOps o [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) al principio del proceso de adopción de la nube. A menudo, las organizaciones de TI corporativas tradicionales han aislado las operaciones, la seguridad y los equipos de desarrollo que no suelen colaborar o que incluso se encuentran enfrentados. Reconocer estos desafíos al principio e integrar partes interesadas clave de cada uno de los equipos puede ayudar a garantizar la agilidad en la adopción de la nube, mientras permanecen protegidos y bien controlados.
+A menudo, las organizaciones de TI corporativas tradicionales han aislado las operaciones, la seguridad y los equipos de desarrollo que no suelen colaborar o que incluso se encuentran enfrentados. Reconocer estos desafíos al principio e integrar partes interesadas clave de cada uno de los equipos puede ayudar a garantizar la agilidad en la adopción de la nube, mientras permanecen protegidos y bien controlados. Por tanto, debería considerar la posibilidad de adoptar una cultura organizativa DevOps o [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) al principio del proceso de adopción de la nube. 
 
 Trabaje con el equipo de DevSecOps y las partes interesadas de la empresa para identificar los [riesgos del negocio](./business-risks.md) relacionados con la configuración, luego determine una línea de base aceptable para la tolerancia al riesgo de la configuración. En esta sección de la guía Cloud Adoption Framework se proporcionan ejemplos, pero los riesgos y las bases de referencia específicos de su empresa o sus implementaciones serán diferentes.
 

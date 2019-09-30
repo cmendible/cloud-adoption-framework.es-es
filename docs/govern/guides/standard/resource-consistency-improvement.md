@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031453"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222226"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guía para empresa estándar: Mejora de la coherencia de los recursos
 
@@ -84,31 +84,31 @@ Los siguientes cambios en la directiva le ayudarán a corregir los nuevos riesgo
 En esta sección del artículo se cambiará el diseño del producto viable mínimo de gobernanza para incluir nuevas directivas de Azure y una implementación de Azure Cost Management. Juntos, estos dos cambios de diseño cumplirán con las nuevas declaraciones de directiva corporativa.
 
 1. El equipo de operaciones de la nube definirá las herramientas de supervisión operativa y las herramientas de corrección automáticas. El equipo de gobernanza de la nube apoyará estos procesos de detección. En este caso de uso, el equipo de operaciones de la nube eligió Azure Monitor como herramienta principal para la supervisión de aplicaciones críticas.
-1. Cree un repositorio en Azure DevOps para almacenar y editar todas las plantillas de Resource Manager pertinentes y las configuraciones con script.
-1. Implementación en Azure Vault:
-    1. Defina e implemente Azure Vault para los procesos de copia de seguridad y recuperación.
-    1. Cree una plantilla de Resource Manager para crear un almacén en cada suscripción.
-1. Actualice Azure Policy en todas las suscripciones:
+2. Cree un repositorio en Azure DevOps para almacenar y editar todas las plantillas de Resource Manager pertinentes y las configuraciones con script.
+3. Implementación del almacén de Azure Recovery Services:
+    1. Defina e implemente el almacén de Azure Recovery Services para los procesos de copia de seguridad y recuperación.
+    2. Cree una plantilla de Resource Manager para crear un almacén en cada suscripción.
+4. Actualice Azure Policy en todas las suscripciones:
     1. Audite y exija la clasificación de datos y la importancia en todas las suscripciones, para identificar aquellas que tienen recursos críticos.
-    1. Audite y exija el uso de imágenes aprobadas únicamente.
-1. Implementación de Azure Monitor:
-    1. Una vez que se identifica una suscripción crítica, cree un área de trabajo de Azure Monitor con PowerShell. Se trata de un proceso anterior a la implementación.
-    1. Durante las pruebas de implementación, el equipo de operaciones de la nube implementa la detección de pruebas y los agentes necesarios.
-1. Actualice Azure Policy en todas las suscripciones que contengan aplicaciones críticas.
+    2. Audite y exija el uso de imágenes aprobadas únicamente.
+5. Implementación de Azure Monitor:
+    1. Una vez que se identifique una carga de trabajo crítica, cree un área de trabajo de Azure Monitor.
+    2. Durante las pruebas de implementación, el equipo de operaciones de la nube implementa la detección de pruebas y los agentes necesarios.
+6. Actualice Azure Policy en todas las suscripciones que contengan aplicaciones críticas.
     1. Audite y exija la aplicación de un NSG a todos los NIC y subredes. Los equipos de redes y seguridad de TI definen los NSG.
-    1. Audite y exija el uso de redes virtuales y subredes de red aprobadas para cada interfaz de red.
-    1. Audite y exija que se aplique la limitación de las tablas de enrutamiento que defina el usuario.
-    1. Audite y exija la implementación de agentes de Azure Monitor para todas las máquinas virtuales.
-    1. Audite y exija la existencia de Azure Vault en la suscripción.
-1. Configuración del firewall:
+    2. Audite y exija el uso de redes virtuales y subredes de red aprobadas para cada interfaz de red.
+    3. Audite y exija que se aplique la limitación de las tablas de enrutamiento que defina el usuario.
+    4. Audite y exija la implementación de agentes de Azure Monitor para todas las máquinas virtuales.
+    5. Audite y exija que existan almacenes de Azure Recovery Services en la suscripción.
+7. Configuración del firewall:
     1. Identifique una configuración de Azure Firewall que cumpla los requisitos de seguridad. También puede identificar un dispositivo de terceros que sea compatible con Azure.
     1. Cree una plantilla de Resource Manager para implementar el firewall con las configuraciones necesarias.
-1. Plano técnico de Azure:
+8. Plano técnico de Azure:
     1. Cree un plano técnico de Azure denominado `protected-data`.
-    1. Agregue el firewall y las plantillas de Azure Vault al plano técnico.
-    1. Agregue las nuevas directivas para suscripciones de datos protegidos.
-    1. Publique el plano técnico en cualquier grupo de administración destinado a hospedar aplicaciones críticas.
-    1. Aplique el nuevo plano técnico a cada suscripción afectada, además de los planos técnicos existentes.
+    2. Agregue el firewall y las plantillas de Azure Vault al plano técnico.
+    3. Agregue las nuevas directivas para suscripciones de datos protegidos.
+    4. Publique el plano técnico en cualquier grupo de administración que vaya a hospedar aplicaciones críticas.
+    5. Aplique el nuevo plano técnico a cada suscripción afectada, además de los planos técnicos existentes.
 
 ## <a name="conclusion"></a>Conclusión
 

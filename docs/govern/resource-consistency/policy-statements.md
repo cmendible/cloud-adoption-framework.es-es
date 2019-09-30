@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instrucciones de directiva de ejemplo de coherencia de recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031150"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221974"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Instrucciones de directiva de ejemplo de coherencia de recursos
 
@@ -74,8 +74,8 @@ Las siguientes declaraciones de directiva de ejemplo abordan riesgos empresarial
 
 **Declaración de directiva**: se implementarán las siguientes directivas:
 
-- Las herramientas de gobernanza deben validar que todos los recursos relacionados con aplicaciones críticas o datos protegidos se incluyen en la supervisión de la disminución y optimización de recursos.
-- Las herramientas de gobernanza deben validar que se recopila el nivel adecuado de datos de registro para todas las aplicaciones críticas o datos protegidos.
+- Las herramientas de gobernanza deben validar que todos los recursos se incluyen en la supervisión de la disminución, seguridad, cumplimiento y optimización de los recursos.
+- Las herramientas de gobernanza deben validar que se recopila el nivel adecuado de datos de registro para todas las aplicaciones y datos.
 
 **Opciones de diseño posibles:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) es el servicio de supervisión predeterminado de Azure y puede aplicarse supervisión coherente a través de [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) al implementar recursos.
 
@@ -85,7 +85,7 @@ Las siguientes declaraciones de directiva de ejemplo abordan riesgos empresarial
 
 **Declaración de directiva**: Todas las aplicaciones críticas y los datos protegidos deben tener implementadas soluciones de copia de seguridad y recuperación para minimizar el impacto en el negocio de las interrupciones o errores del sistema.
 
-**Opciones de diseño posibles:** El servicio [Azure Site Recovery] proporciona capacidades de copia de seguridad, recuperación y replicación diseñadas para minimizar la duración de la interrupción en escenarios de recuperación ante desastres y continuidad del negocio (BCDR).
+**Opciones de diseño posibles:** El servicio [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) proporciona funcionalidades de copia de seguridad, recuperación y replicación que minimizan la duración de la interrupción en escenarios de recuperación ante desastres y continuidad del negocio (BCDR).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

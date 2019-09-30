@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ¿Qué guía de seguridad ofrece Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032008"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222922"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>¿Qué guía de seguridad ofrece Microsoft?
+# <a name="microsoft-security-guidance"></a>Guía de seguridad de Microsoft
 
-## <a name="security-guidance-and-tools"></a>Guía y herramientas de seguridad
+## <a name="tools"></a>Herramientas
 
 Microsoft presentó la [plataforma de confianza del servicio](https://servicetrust.microsoft.com) y el administrador de cumplimiento para ayudar con lo siguiente:
 
@@ -52,7 +52,7 @@ La **plataforma de confianza del servicio (STP)** proporciona información detal
 
 ## <a name="unique-intelligent-insights"></a>Conclusiones inteligentes exclusivas
 
-A medida que crece el volumen y complejidad de las señales de seguridad, determinar si esas señales constituyen amenazas verdaderas y, posteriormente, actuar en consecuencia, lleva demasiado tiempo. Microsoft ofrece una variedad sin precedentes en lo que respecta a inteligencia de seguridad que se ofrece a escala en la nube para ayudarle a detectar y solucionar rápidamente las amenazas.
+A medida que crece el volumen y complejidad de las señales de seguridad, determinar si esas señales constituyen amenazas verdaderas y, posteriormente, actuar en consecuencia, lleva demasiado tiempo. Microsoft ofrece una variedad sin precedentes en lo que respecta a inteligencia de seguridad que se ofrece a escala en la nube para ayudarle a detectar y solucionar rápidamente las amenazas. [Más información](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Inteligencia de Azure sobre amenazas
 

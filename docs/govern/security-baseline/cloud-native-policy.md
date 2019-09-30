@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Directiva de base de referencia de seguridad nativa para la nube
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032006"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222902"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Directivas de línea de base de seguridad nativas en la nube
 
 La [base de referencia de seguridad](./index.md) es una de las [cinco materias de gobernanza en la nube](../governance-disciplines.md). Esta materia se centra en temas de seguridad generales que incluyen la protección de la red, los recursos digitales, los datos, etc. Como se ha indicado en la [guía de revisión de directivas](../policy-compliance/cloud-policy-review.md), el Marco de adopción de la nube incluye tres niveles de **directivas de ejemplo**: nativa en la nube, enterprise y conforme con los principios de diseño de la nube para cada una de las materias. En este artículo se trata la directiva de ejemplo nativa en la nube para la materia de línea de base de seguridad.
 
 > [!NOTE]
-> Microsoft no es quien debe dictar las directivas corporativas o de TI. Este artículo está pensado para ayudarle a prepararse para una revisión de directivas interna. Se supone que este ejemplo de directiva se ampliará, validará y probará con sus directivas corporativas antes de intentar utilizarla. El uso de este ejemplo de directiva tal y como está, no es recomendable.
+> Microsoft no es quien debe dictar las directivas corporativas o de TI. Este artículo le ayudará a prepararse para una revisión de directivas interna. Se supone que este ejemplo de directiva se ampliará, validará y probará con sus directivas corporativas antes de intentar utilizarla. El uso de este ejemplo de directiva tal y como está, no es recomendable.
 
 ## <a name="policy-alignment"></a>Alineación de la directiva
 
@@ -54,10 +54,10 @@ El control de las redes incluye la configuración, administración y protección
 
 Una directiva nativa en la nube para los controles de red puede incluir requisitos como los siguientes:
 
-- Las conexiones híbridas a recursos locales (aunque técnicamente posibles en Azure) podrían no estar permitidas en una directiva nativa en la nube. Si se comprueba la necesidad de una conexión híbrida, puede que un ejemplo de directiva de seguridad Enterprise más sólida resulte más adecuada.
+- Las conexiones híbridas a recursos locales podrían no estar permitidas en una directiva nativa en la nube. Si se comprueba la necesidad de una conexión híbrida, puede que un ejemplo de directiva de seguridad Enterprise más sólida resulte más adecuada.
 - Los usuarios pueden establecer conexiones seguras con Azure y dentro de este mediante redes virtuales y grupos de seguridad de red.
-- Windows Azure Firewall nativo protege los hosts de tráfico malintencionado limitando el acceso a los puertos. Un buen ejemplo de esta directiva es un requisito de bloquear (o no habilitar) el tráfico directo a una máquina virtual a través del puerto 3389 de RDP - TCP/UDP.
-- Servicios como el firewall de aplicaciones web (WAF) Azure Application Gateway y Azure DDoS Protection protegen las aplicaciones y garantizan la disponibilidad de las máquinas virtuales que se ejecutan en Azure. No se deberían deshabilitar estas características ni realizar un uso indebido de ellas.
+- Windows Azure Firewall nativo protege los hosts de tráfico malintencionado limitando el acceso a los puertos. Un buen ejemplo de esta directiva es un requisito para bloquear (o no habilitar) el tráfico directo a una máquina virtual a través de SSH/RDP.
+- Servicios como el firewall de aplicaciones web (WAF) Azure Application Gateway y Azure DDoS Protection protegen las aplicaciones y garantizan la disponibilidad de las máquinas virtuales que se ejecutan en Azure. No se deberían deshabilitar estas características.
 
 ### <a name="data-protection"></a>Protección de datos
 
@@ -65,8 +65,8 @@ Uno de los elementos clave para la protección de datos en la nube consiste en t
 
 - Los controles de cifrado de datos están integrados en los servicios, desde Virtual Machines a Storage y SQL Database.
 - A medida que se trasladan los datos entre nubes y clientes, estos se pueden proteger mediante protocolos de cifrado estándar.
-- Azure Key Vault permite a los usuarios proteger y controlar claves criptográficas y otros secretos usados por aplicaciones y servicios en la nube.
-- Azure Information Protection le ayudará a clasificar, etiquetar y proteger la información confidencial en las aplicaciones.
+- Azure Key Vault permite a los usuarios proteger y controlar las claves criptográficas, contraseñas, cadenas de conexión y certificados que usan las aplicaciones y servicios en la nube.
+- Azure Information Protection le ayudará a clasificar, etiquetar y proteger la información confidencial de las aplicaciones.
 
 Aunque estas características están integradas en Azure, cada una de ellas requiere configuración y esto podría aumentar los costos. Se recomienda la alineación de cada característica nativa en la nube con una [estrategia de clasificación de datos](../policy-compliance/data-classification.md).
 
@@ -78,6 +78,7 @@ La supervisión de seguridad es una estrategia proactiva que audita los recursos
 - Evaluaciones de seguridad y supervisión continuas para garantizar el cumplimiento y corregir las vulnerabilidades.
 - Herramientas interactivas e inteligencia de amenazas contextual para una investigación optimizada.
 - Registro completo e integración con la información de seguridad existente.
+- Reduce la necesidad de soluciones de seguridad únicas, caras y no integradas.
 
 ### <a name="extending-cloud-native-policies"></a>Extensión de las directivas nativas en la nube
 
@@ -87,7 +88,9 @@ Pero incluso con esta inversión en una línea de base de seguridad nativa en la
 
 - **Proteger las máquinas virtuales.** La seguridad debería ser la prioridad principal de todas las organizaciones, y lograr que esta sea eficaz requiere varias cosas. Debe evaluar el estado de la seguridad, protegerse contra amenazas de seguridad y, posteriormente, detectar y responder rápidamente a las amenazas que ya se están produciendo.
 - **Proteger los contenidos de las máquinas virtuales.** La configuración de copias de seguridad automatizadas regulares es fundamental para protegerse frente a errores del usuario. Sin embargo, esto no es suficiente. También hay que asegurarse de que las copias de seguridad están protegidas frente a ciberataques y que están disponibles para cuando las necesita.
-- **Supervisar las máquinas virtuales y las aplicaciones.** Este patrón abarca varias tareas, entre las que se incluye la obtención de información sobre el estado de las máquinas virtuales, la descripción de las interacciones entre ellas y el establecimiento de maneras de supervisar las aplicaciones que estas máquinas virtuales ejecutan. Todas estas tareas son fundamentales para mantener sus aplicaciones en ejecución ininterrumpidamente.
+- **Supervisión de aplicaciones.** Este patrón abarca varias tareas, entre las que se incluye la obtención de información sobre el estado de las máquinas virtuales, la descripción de las interacciones entre ellas y el establecimiento de maneras de supervisar las aplicaciones que estas máquinas virtuales ejecutan. Todas estas tareas son fundamentales para mantener sus aplicaciones en ejecución ininterrumpidamente.
+- **Protección y auditoría del acceso a los datos.** Las organizaciones deben auditar todos los accesos a los datos y aprovechar las funcionalidades avanzadas de aprendizaje automático para resaltar las desviaciones de los patrones de acceso normales.
+- **Procedimiento de conmutación por error.** Las operaciones en la nube que tienen baja tolerancia a errores deben ser capaces de realizar una conmutación por error o por recuperación después de un incidente de ciberseguridad o de la plataforma. Estos procedimientos no solo se deben documentar sino que también se deben practicar con carácter trimestral.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

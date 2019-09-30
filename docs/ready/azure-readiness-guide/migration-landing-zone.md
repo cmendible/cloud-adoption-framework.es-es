@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025218"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223927"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implementación de una zona de aterrizaje para la migración
 
@@ -33,7 +33,7 @@ En la imagen siguiente se muestra el plano técnico de la zona de aterrizaje de 
 ![Alineación del plano técnico](../../_images/ready/blueprint-overview.png)
 
 - La letra A se encuentra dentro de una línea curva que marca el ámbito de este plano técnico. Ese ámbito está destinado a transmitir que este plano técnico abarca una complejidad limitada de la arquitectura, pero se basa en unos requisitos de cumplimiento de un nivel relativamente intermedio.
-- Los clientes que tienen un alto grado de complejidad y estrictos requisitos de cumplimiento podrían recibir un mejor servicio mediante el plano técnico extendido de un asociado o uno de los [ejemplos de plano técnico basados en estándares](https://docs.microsoft.com/azure/governance/blueprints/samples/).
+- Los clientes que tienen un alto grado de complejidad y estrictos requisitos de cumplimiento podrían recibir un mejor servicio mediante el plano técnico extendido de un asociado o uno de los [ejemplos de plano técnico basados en estándares](https://docs.microsoft.com/azure/governance/blueprints/samples).
 - La mayoría de las necesidades de los clientes se encontrarán entre estos dos extremos. La letra B representa el proceso que se describe en los artículos de [consideraciones sobre zonas de aterrizaje](../considerations/index.md). Para los clientes de este espacio, puede usar las guías de decisión que se encuentran en estos artículos para identificar los nodos que se van a agregar al plano técnico de la zona de aterrizaje de migración de la CAF. Este enfoque permite personalizar el plano técnico para ajustarse a sus necesidades.
 
 ## <a name="use-this-blueprint"></a>Uso de este plano técnico
@@ -65,7 +65,7 @@ Las siguientes decisiones se representan en el plano técnico de la zona de ater
 |Detalles de la suscripción|N/A: diseñado para una sola suscripción de producción|[Escalado de suscripciones](../considerations/scaling-subscriptions.md)|
 |Grupos de administración|N/A: diseñado para una sola suscripción de producción|[Escalado de suscripciones](../considerations/scaling-subscriptions.md)         |
 |Grupos de recursos|N/A: diseñado para una sola suscripción de producción|[Escalado de suscripciones](../considerations/scaling-subscriptions.md)         |
-|Datos|N/D|[Elección de la opción correcta de SQL Server en Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Datos|N/D|[Elección de la opción correcta de SQL Server en Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) y [Guía sobre Azure Data Lake Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|N/D|[Guía de Azure Storage](../considerations/storage-guidance.md)         |
 |Estándares de nomenclatura y etiquetado|N/D|[Procedimientos recomendados de nomenclatura y etiquetado](../considerations/naming-and-tagging.md)         |
 |Administración de costos|N/D|[Seguimiento de costos](../azure-best-practices/track-costs.md)|
@@ -73,7 +73,7 @@ Las siguientes decisiones se representan en el plano técnico de la zona de ater
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personalización o implementación de una zona de aterrizaje a partir de este plano técnico
 
-Obtenga más información y descargue un ejemplo de referencia del plano técnico de la zona de aterrizaje de migración de la plataforma de adopción de la nube para realizar operaciones de implementación o personalización a partir de [ejemplos de Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples/index).
+Obtenga más información y descargue un ejemplo de referencia del plano técnico de la zona de aterrizaje de migración de la plataforma de adopción de la nube para realizar operaciones de implementación o personalización a partir de [ejemplos de Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
 Los ejemplos de plano técnico también están disponibles en el portal. Para más información sobre cómo implementar un plano técnico, consulte [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 

@@ -8,12 +8,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 88944a786bb783d1a2e4bf651c142b8148b0dd2e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 52789f374b619a974181ed3dbd15e2206e9afdad
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031233"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223968"
 ---
 # <a name="building-a-cost-conscious-organization"></a>Creación de una organización con control de costos
 

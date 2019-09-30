@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031944"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220655"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Guía de gobernanza para empresas complejas: Guías prescriptivas explicadas
 
@@ -59,13 +59,17 @@ La decisión sobre qué diseño de suscripción usar determina cómo se estructu
 
 ### <a name="resource-consistency"></a>Coherencia de recursos
 
-Las decisiones relacionadas con la coherencia de los recursos determinan las herramientas, los procesos y el esfuerzo necesarios para garantizar que los recursos de Azure se implementan, configuran y administran de forma coherente dentro de una suscripción. En este caso, se ha elegido el patrón **[Coherencia jerárquica](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** como el principal patrón de coherencia de los recursos.
+Las decisiones relacionadas con la coherencia de los recursos determinan las herramientas, los procesos y el esfuerzo necesarios para garantizar que los recursos de Azure se implementan, configuran y administran de forma coherente dentro de una suscripción. En este caso, se ha elegido el patrón **[coherencia de la implementación](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** como el principal patrón de coherencia de los recursos.
 
-- Deben crearse grupos de recursos para cada aplicación. Deben crearse grupos de administración para cada arquetipo de aplicación. Azure Policy se debe aplicar a todas las suscripciones en el grupo de administración asociado.
-- Como parte del proceso de implementación, las plantillas de coherencia de recursos para todos los recursos deben almacenarse en el control de código fuente.
-- Cada grupo de recursos debe alinearse con una aplicación o carga de trabajo específica.
-- La jerarquía de grupos de administración de Azure definida debe representar responsabilidad de facturación y la titularidad de la aplicación mediante grupos anidados.
-- La amplia implementación de Azure Policy podría superar los compromisos temporales del equipo, y es posible que no proporcione mucho valor en este momento. Sin embargo, debe crearse una directiva predeterminada simple y aplicarse a cada grupo de recursos para hacer cumplir las primeras instrucciones de la directiva de gobernanza en la nube. Esto sirve para definir la implementación de los requisitos de gobernanza específicos. Esas implementaciones pueden aplicarse a todos los recursos implementados.
+- Se crean grupos de recursos para las aplicaciones mediante el enfoque del ciclo de vida: todo lo que se crea, se mantiene y se retira de forma conjunta debe residir en un único grupo de recursos. Para más información sobre los grupos de recursos, consulte [aquí](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Azure Policy se debe aplicar a todas las suscripciones del grupo de administración asociado.
+- Como parte del proceso de implementación, las plantillas de coherencia de recursos de Azure para el grupo de recursos deben almacenarse en el control de código fuente.
+- Cada grupo de recursos se asocia con una aplicación o carga de trabajo específica que se basa en el enfoque del ciclo de vida que se indicó anteriormente.
+- Los grupos de administración de Azure permiten actualizar los diseños de gobernanza a medida que madura la directiva corporativa.
+- La amplia implementación de Azure Policy podría superar los compromisos temporales del equipo, y es posible que no proporcione mucho valor en este momento. Sin embargo, debe crearse una directiva predeterminada simple y aplicarse a cada grupo de administración para hacer cumplir el pequeño número de instrucciones de la directiva de gobernanza en la nube. Esta directiva definirá la implementación de los requisitos de gobernanza específicos. Esas implementaciones pueden aplicarse a todos los recursos implementados.
+
+>[!IMPORTANT]
+>Siempre que un recurso de un grupo deje de compartir el mismo ciclo de vida, se debe trasladar a otro grupo de recurso. Entre los ejemplos se incluyen bases de datos y componentes de red habituales. Aunque pueden servir a la aplicación que se está desarrollando, también pueden servir para otros fines y, por tanto, existir en otros grupos de recursos.
 
 ### <a name="resource-tagging"></a>Etiquetado de recursos
 
@@ -122,7 +126,7 @@ Si cualquiera de los patrones seleccionados en esta guía de gobernanza no se ad
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Una vez que se implemente esta guía, cada equipo de adopción de la nube puede continuar con una base sólida de gobernanza. El equipo de gobernanza de la nube trabajará en paralelo para actualizar continuamente las directivas corporativas y las materias de gobernanza.
+Una vez que se implemente esta guía, cada equipo de adopción de la nube puede continuar con una base sólida de gobernanza. Al mismo tiempo, el equipo de gobernanza de la nube trabajará para actualizar continuamente las directivas corporativas y las materias de gobernanza.
 
 Ambos equipos usarán los indicadores de tolerancia para identificar el próximo conjunto de mejoras necesario para seguir impulsando la adopción de la nube. El siguiente paso para la empresa es la mejora gradual de su línea de base de gobernanza para dar servicio a aplicaciones con requisitos de autenticación multifactor heredada o de terceros.
 

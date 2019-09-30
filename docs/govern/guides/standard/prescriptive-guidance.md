@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032213"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223837"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Guía para empresa estándar: Guías prescriptivas explicadas
 
@@ -61,7 +61,7 @@ La decisión sobre qué diseño de suscripción usar determina cómo se estructu
 
 Las decisiones relacionadas con la coherencia de los recursos determinan las herramientas, los procesos y el esfuerzo necesarios para garantizar que los recursos de Azure se implementan, configuran y administran de forma coherente dentro de una suscripción. En este caso, se ha elegido el patrón **[coherencia de la implementación](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** como el principal patrón de coherencia de los recursos.
 
-- Se crean grupos de recursos para las aplicaciones mediante el enfoque del ciclo de vida: todo lo que se crea unido, se mantiene unido y se retira unido puede residir en un único grupo de recursos.
+- Se crean grupos de recursos para las aplicaciones mediante el enfoque del ciclo de vida: todo lo que se crea, se mantiene y se retira de forma conjunta debe residir en un único grupo de recursos. Para más información sobre los grupos de recursos, consulte [aquí](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy se debe aplicar a todas las suscripciones del grupo de administración asociado.
 - Como parte del proceso de implementación, las plantillas de coherencia de recursos de Azure para el grupo de recursos deben almacenarse en el control de código fuente.
 - Cada grupo de recursos se asocia con una aplicación o carga de trabajo específica que se basa en el enfoque del ciclo de vida que se indicó anteriormente.
@@ -116,7 +116,7 @@ Si cualquiera de los patrones seleccionados en esta guía de gobernanza no se ad
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Una vez que se implemente esta guía, cada equipo de adopción de la nube puede continuar con una base sólida de gobernanza. El equipo de gobernanza de la nube trabajará en paralelo para actualizar continuamente las directivas corporativas y las materias de gobernanza.
+Una vez que se implemente esta guía, cada equipo de adopción de la nube puede continuar con una base sólida de gobernanza. Al mismo tiempo, el equipo de gobernanza de la nube trabajará para actualizar continuamente las directivas corporativas y las materias de gobernanza.
 
 Los dos equipos usarán los indicadores de tolerancia para identificar el próximo conjunto de mejoras necesario para seguir impulsando la adopción de la nube. Para la empresa ficticia de esta guía, el siguiente paso es mejorar la base de referencia de la seguridad para respaldar la migración de datos protegidos a la nube.
 

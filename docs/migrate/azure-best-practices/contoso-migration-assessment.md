@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025033"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221456"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Valoración de cargas de trabajo locales para migrarlas a Azure
 
@@ -242,8 +242,8 @@ Para configurar un proyecto nuevo de Azure Migrate, siga los pasos que se indica
 
 6. En *Detalles del proyecto*, especifique el nombre del proyecto y la geografía en que desea crearlo. Se admiten Estados Unidos, Asia, Europa, Australia, Reino Unido, Canadá, India y Japón.
 
-    * La geografía del proyecto solo se utiliza para almacenar los metadatos que se recopilan de las máquinas virtuales locales.
-    * Al realizar una migración se puede seleccionar cualquier región de destino.
+    - La geografía del proyecto solo se utiliza para almacenar los metadatos que se recopilan de las máquinas virtuales locales.
+    - Al realizar una migración se puede seleccionar cualquier región de destino.
 
 7. Haga clic en **Next**.
 
@@ -312,14 +312,13 @@ Ahora, Contoso ejecuta el recopilador para detectar las máquinas virtuales. Ten
 
     ![Azure Migrate Collector: comprobar requisitos previos](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Inicie sesión en su **cuenta de Azure**, seleccione la suscripción y migre el proyecto que creó anteriormente. Escriba un nombre para el **dispositivo** para poder identificarlo en Azure Portal. 
-7. En **Especificar los detalles de vCenter Server**, Contoso especifica el nombre completo (FQDN) o la dirección IP de la instancia de vCenter Server y las credenciales de solo lectura que se usan para la detección.
-8. Contoso selecciona un ámbito para la detección de máquinas virtuales. El recopilador solo puede detectar máquinas virtuales dentro del ámbito especificado. El ámbito se puede establecer en una carpeta, un centro de datos o un clúster específicos. 
+5. Inicie sesión en su **cuenta de Azure**, seleccione la suscripción y migre el proyecto que creó anteriormente. Escriba un nombre para el **dispositivo** para poder identificarlo en Azure Portal.
+6. En **Especificar los detalles de vCenter Server**, Contoso especifica el nombre completo (FQDN) o la dirección IP de la instancia de vCenter Server y las credenciales de solo lectura que se usan para la detección.
+7. Contoso selecciona un ámbito para la detección de máquinas virtuales. El recopilador solo puede detectar máquinas virtuales dentro del ámbito especificado. El ámbito se puede establecer en una carpeta, un centro de datos o un clúster específicos.
 
     ![Especificar los detalles de vCenter Server](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. El recopilador comenzará a detectar y recopilar la información sobre el entorno de Contoso. 
+8. El recopilador comenzará a detectar y recopilar la información sobre el entorno de Contoso.
 
     ![Ver el progreso de la recopilación](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,7 +348,7 @@ Para conservar una copia de las máquinas virtuales antes de modificarlas, Conto
 
 1. En **Máquinas**, Contoso selecciona la máquina. En la columna **Dependencias**, Contoso selecciona **Requiere instalación**.
 2. En el panel **Detectar máquinas**, Contoso:
-    - Descarga Microsoft Monitoring Agent (MMA) y Dependency Agent para cada máquina virtual Windows.
+    - Descarga Microsoft Monitoring Agent (MMA) y Microsoft Dependency Agent para cada máquina virtual Windows.
     - Descarga MMA y Dependency Agent para cada máquina virtual Linux.
 3. Contoso copia la clave y el identificador de área de trabajo. Necesita el identificador de área de trabajo y la clave cuando instala el agente MMA.
 
@@ -389,9 +388,11 @@ Contoso ejecuta la instalación en cada máquina virtual.
 1. Contoso instala la biblioteca ctypes de Python en cada máquina virtual con el comando siguiente:
 
     `sudo apt-get install python-ctypeslib`
+
 2. Contoso debe ejecutar el comando para instalar al agente MMA como usuario raíz. Para ser usuario raíz, se debe ejecutar el siguiente comando y escribir la contraseña raíz:
 
     `sudo -i`
+
 3. Contoso instala el agente MMA:
     - Contoso especifica el identificador y la clave del área de trabajo en el comando.
     - Los comandos son para 64 bits.
@@ -404,7 +405,7 @@ Contoso ejecuta la instalación en cada máquina virtual.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Instalación de Dependency Agent en máquinas virtuales Linux
 
-Después instalar el agente MMA, Contoso puede instalar Dependency Agent en las máquinas virtuales Linux.
+Después instalar el agente MMA, Contoso puede instalar Dependency Agent en las máquinas virtuales Linux:
 
 1. Dependency Agent se instala en equipos Linux con InstallDependencyAgent-Linux64.bin, un script de shell que tiene un archivo binario autoextraíble. Contoso ejecuta el archivo con sh o agregar permisos de ejecución al propio archivo.
 

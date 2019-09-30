@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Declaraciones de directiva de ejemplo de la base de referencia de la seguridad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031952"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221659"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Declaraciones de directiva de ejemplo de la base de referencia de la seguridad
 
@@ -40,7 +40,7 @@ Las siguientes instrucciones de directiva de ejemplo abordan algunos riesgos emp
 
 **Declaración de directiva**: todos los datos protegidos deben estar cifrados cuando están en reposo.
 
-**Opción de diseño posible**: consulte el artículo [Introducción al cifrado de Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) para ver cómo se realiza el cifrado de los datos en reposo en la plataforma Azure.
+**Opción de diseño posible**: consulte el artículo [Introducción al cifrado de Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) para ver cómo se realiza el cifrado de los datos en reposo en la plataforma Azure. También se deben tener en cuenta controles adicionales, como el cifrado de datos de la cuenta y el control sobre cómo se puede cambiar la configuración de la cuenta de almacenamiento.
 
 ## <a name="network-isolation"></a>Aislamiento de red
 
@@ -54,17 +54,17 @@ Las siguientes instrucciones de directiva de ejemplo abordan algunos riesgos emp
 
 **Riesgo técnico**: permitir el acceso a las cargas de trabajo desde la red pública de Internet presenta un riesgo de intrusión y, como consecuencia, una exposición no autorizada de los datos o la interrupción del negocio.
 
-**Declaración de directiva**: no se podrá acceder directamente desde Internet a ninguna subred que contenga datos protegidos, ni desde un centro de datos a otro. El acceso a esas subredes debe enrutarse mediante trabajos de subred intermedios. Todo el acceso a esas subredes debe realizarse a través de una solución de firewall que pueda realizar funciones de análisis y bloqueo de paquetes.
+**Declaración de directiva**: no se podrá acceder directamente desde Internet a ninguna subred que contenga datos protegidos, ni desde un centro de datos a otro. El acceso a esas subredes debe enrutarse a través de subredes intermedias. Todo el acceso a esas subredes debe realizarse a través de una solución de firewall que pueda realizar funciones de análisis y bloqueo de paquetes.
 
-**Opción de diseño posible**: en Azure, proteja los puntos de conexión públicos mediante la implementación de una [red perimetral entre la red pública de Internet y su red en la nube](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Opción de diseño posible**: en Azure, proteja los puntos de conexión públicos mediante la implementación de una [red perimetral entre la red pública de Internet y su red en la nube](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Considere la posibilidad de realizar la implementación, configuración y automatización de [Azure Firewall](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>Protección contra DDOS
 
 **Riesgo técnico**: los ataques por denegación de servicio distribuido (DDoS) pueden provocar una interrupción del negocio.
 
-**Declaración de directiva**: implemente mecanismos automatizados de mitigación de ataques DDoS en todos los puntos de conexión de red accesibles públicamente.
+**Declaración de directiva**: implemente mecanismos automatizados de mitigación de ataques DDoS en todos los puntos de conexión de red accesibles públicamente. No se debe exponer a Internet ningún sitio web público con respaldo de IaaS sin DDoS.
 
-**Opción de diseño posible**: use [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) para minimizar las interrupciones causadas por ataques DDoS.
+**Opción de diseño posible**: use [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Estándar para minimizar las interrupciones causadas por ataques DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Protección de la conectividad local
 
@@ -88,7 +88,7 @@ Las siguientes instrucciones de directiva de ejemplo abordan algunos riesgos emp
 
 **Declaración de directiva**: el equipo de seguridad debe revisar periódicamente las tendencias y vulnerabilidades que podrían afectar a las implementaciones en la nube para proporcionar actualizaciones a las herramientas de la base de referencia de la seguridad que se usan en la nube.
 
-**Opción de diseño posible**: establezca una reunión periódica para revisar la seguridad, que incluya a los miembros pertinentes de los equipos de TI y gobernanza. Revise las métricas y los datos de seguridad existentes para identificar deficiencias en las herramientas y la directiva de la base de referencia de la seguridad, y actualice la directiva para poner remedio a los nuevos riesgos.
+**Opción de diseño posible**: establezca una reunión periódica para revisar la seguridad, que incluya a los miembros pertinentes de los equipos de TI y gobernanza. Revise las métricas y los datos de seguridad existentes para identificar deficiencias en las herramientas y la directiva de la base de referencia de la seguridad, y actualice la directiva para poner remedio a los nuevos riesgos. Utilice [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) y [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) para obtener información útil sobre las amenazas emergentes específicas de las implementaciones.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

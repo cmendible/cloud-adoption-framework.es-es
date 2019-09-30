@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031149"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223986"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Scaffold de Azure Enterprise: Gobernanza de suscripción prescriptiva
 
@@ -168,7 +168,7 @@ Una de las primeras preguntas, y la más importante, que se plantea al empezar a
 
 Para proteger el acceso a los recursos, primero deberá configurar el proveedor de identidades y luego los roles y el acceso. Azure Active Directory (Azure AD), conectado a su entorno local de Active Directory, es la base de la identidad de Azure. Dicho esto, Azure AD *no* es igual que Active Directory local, y es importante comprender qué es un inquilino de Azure AD y qué relación guarda con la inscripción de Azure. Revise la [información](../govern/resource-consistency/resource-access-management.md) disponible para obtener una base sólida sobre Azure AD y Active Directory local. Para conectar y sincronizar Active Directory con Azure AD, instale y configure la [herramienta Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) en el entorno local.
 
-![Diagrama de la arquitectura](../_images/reference/ad-architecture.png)
+![Diagrama de la arquitectura de AD](../_images/reference/ad-architecture.png)
 
 Cuando se publicó inicialmente Azure, los controles de acceso a una suscripción eran básicos: administrador o coadministrador. Acceder una suscripción del modelo clásico implicaba hacerlo a todos los recursos del portal. Esta falta de un control específico provocó una proliferación de suscripciones que proporcionaban un nivel de control de acceso razonable a una inscripción de Azure. Esta proliferación de suscripciones ya no es necesaria. Con el control de acceso basado en rol (RBAC), puede asignar usuarios a roles estándar que proporcionan acceso común como "propietario", "colaborador" o "lector" o incluso crear roles propios.
 

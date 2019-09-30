@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introducción al cumplimiento normativo
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031152"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222033"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introducción al cumplimiento normativo
 
-Este es un artículo introductorio acerca del cumplimiento normativo; por lo tanto, su finalidad no es implementar una estrategia de cumplimiento. Sirve solo para brindar conocimiento general. Encontrará información más detallada sobre las [ofertas de cumplimiento de Azure](https://aka.ms/allcompliance) en el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Además, toda la documentación que se puede descargar está disponible para determinados clientes de Azure en [Microsoft Service Trust Portal](https://servicetrust.microsoft.com).
+Este es un artículo introductorio acerca del cumplimiento normativo; por lo tanto, su finalidad no es implementar una estrategia de cumplimiento. Encontrará información más detallada sobre las [ofertas de cumplimiento de Azure](https://aka.ms/allcompliance) en el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Además, toda la documentación que se puede descargar está disponible para determinados clientes de Azure en [Microsoft Service Trust Portal](https://servicetrust.microsoft.com).
 
 Por cumplimiento normativo se entiende la materia y el proceso consistente en garantizar que una empresa cumple la legislación establecida por las administraciones públicas en su ubicación geográfica, o las normas del sector adoptadas voluntariamente. En el caso del cumplimiento normativo de TI, los usuarios o los procesos supervisan los sistemas de la empresa en un esfuerzo por detectar y evitar las infracciones de las directivas y los procedimientos que establecen la legislación y los reglamentos existentes. Esto se aplica a su vez a un área muy amplia de los procesos de supervisión y aplicación. En función del sector y de la ubicación geográfica, estos procesos pueden ser bastante largos y complejos.
 
@@ -42,7 +42,7 @@ La información personal es cualquier dato que se puede utilizar para identifica
 
 ## <a name="gdpr"></a>GDPR
 
-Uno de los desarrollos más importantes en esta área es la reciente promulgación por parte de la Comisión Europea del Reglamento General de Protección de Datos (RGPD), diseñada para reforzar la protección de los datos de los ciudadanos de la Unión Europea. El RGPD requiere que los datos personales (como "el nombre, la dirección particular, la fotografía, la dirección de correo electrónico, los datos bancarios, las publicaciones en los sitios de redes sociales, la información médica o la dirección IP de un equipo"), se mantengan en servidores que se encuentren dentro de la UE y no transfieran fuera de ella. También requiere que las empresas envíen notificaciones a los usuarios si se produce cualquier vulneración de sus datos y exige que haya un responsable de la protección de los datos. Otros países tienen tipos similares de regulaciones o los están desarrollando.
+Uno de los desarrollos más importantes en esta área es el Reglamento General de Protección de Datos (RGPD), diseñado para reforzar la protección de los datos de los ciudadanos de la Unión Europea. El RGPD requiere que los datos personales (como "el nombre, la dirección particular, la fotografía, la dirección de correo electrónico, los datos bancarios, las publicaciones en los sitios de redes sociales, la información médica o la dirección IP de un equipo"), se mantengan en servidores que se encuentren dentro de la UE y no transfieran fuera de ella. También requiere que las empresas envíen notificaciones a los usuarios si se produce cualquier vulneración de sus datos y exige que haya un responsable de la protección de los datos. Otros países tienen tipos similares de regulaciones o los están desarrollando.
 
 ## <a name="compliant-foundation-in-azure"></a>Base de cumplimiento en Azure
 

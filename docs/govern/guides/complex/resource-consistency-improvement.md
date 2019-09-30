@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guía de gobernanza para empresas complejas: Mejora de la materia de coherencia de los recursos'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031813"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223811"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guía de gobernanza para empresas complejas: Mejora de la materia de coherencia de los recursos
 
@@ -65,7 +65,7 @@ Los siguientes cambios en la directiva le ayudarán a corregir los nuevos riesgo
 5. Las herramientas de gobernanza deben validar que se recopila el nivel adecuado de datos de registro para todas las aplicaciones críticas o datos protegidos.
 6. El proceso de gobernanza debe validar que la copia de seguridad, la recuperación y el cumplimiento de los Acuerdos de Nivel de Servicios se implementen correctamente para aplicaciones críticas y datos protegidos.
 7. Las herramientas de gobernanza deben limitar la implementación de máquina virtual a solo las imágenes aprobadas.
-8. Las herramientas de gobernanza deben hacer cumplir que las actualizaciones automáticas se **impidan** en todos los recursos implementados que admitan aplicaciones críticas. Las infracciones deben revisarse con los equipos de administración de operaciones y corregirse de acuerdo con las directivas de operaciones. Los recursos que no se actualicen automáticamente deben incluirse en procesos que sean propiedad de operaciones de TI.
+8. Las herramientas de gobernanza deben hacer cumplir que las actualizaciones automáticas se **impidan** en todos los recursos implementados que admitan aplicaciones críticas. Las infracciones deben revisarse con los equipos de administración de operaciones y corregirse de acuerdo con las directivas de operaciones. Los recursos que no se actualicen automáticamente deben incluirse en procesos que sean propiedad del departamento de operaciones de TI para actualizar de forma rápida y eficaz esos servidores.
 9. Las herramientas de gobernanza deben validar el etiquetado relacionado con el costo, la importancia, el Acuerdo de Nivel de Servicio, la aplicación y la clasificación de los datos. Todos los valores deben alinearse con los valores predefinidos que administra el equipo de gobernanza de la nube.
 10. Los procesos de gobernanza deben incluir auditorías en el punto de implementación y en ciclos regulares para garantizar la coherencia entre todos los recursos.
 11. El equipo de seguridad debe revisar periódicamente las tendencias y vulnerabilidades que podrían afectar a las implementaciones en la nube para proporcionar actualizaciones a las herramientas de línea de base de seguridad que se usan en la nube.
@@ -85,25 +85,25 @@ Después de la experiencia de este ejemplo ficticio, se supone que ya se han pro
 
 1. Como una dependencia externa, el equipo de operaciones de la nube deberá definir herramientas de supervisión operativa, herramientas de continuidad empresarial y recuperación ante desastres y herramientas de corrección automatizadas. El equipo de gobernanza de la nube podrá entonces dar servicio a los procesos de detección necesarios.
     1. En este caso de uso, el equipo de operaciones de la nube eligió Azure Monitor como herramienta principal para la supervisión de aplicaciones críticas.
-    1. El equipo eligió también Azure Site Recovery como herramienta principal de continuidad empresarial y recuperación ante desastres.
-1. Implementación de Azure Site Recovery.
-    1. Defina e implemente Azure Vault para los procesos de copia de seguridad y recuperación.
-    1. Cree una plantilla de Azure Resource Manager para crear un almacén en cada suscripción.
-1. Implementación de Azure Monitor.
-    1. Una vez que se identifica una suscripción crítica, se puede crear un área de trabajo de análisis de registro utilizando PowerShell. Se trata de un proceso anterior a la implementación.
+    2. El equipo eligió también Azure Site Recovery como herramienta principal de continuidad empresarial y recuperación ante desastres.
+2. Implementación de Azure Site Recovery.
+    1. Defina e implemente el almacén de Azure Site Recovery para los procesos de copia de seguridad y recuperación.
+    2. Cree una plantilla de Azure Resource Manager para crear un almacén en cada suscripción.
+3. Implementación de Azure Monitor.
+    1. Una vez que se identifica una suscripción crítica, se puede crear un área de trabajo de análisis de registro.
 
 **Suscripción de adopción de la nube individual**: con el proceso siguiente se asegurará que cada suscripción sea detectable por la solución de supervisión y esté lista para incluirse en las prácticas de continuidad empresarial y recuperación ante desastres.
 
 1. Azure Policy para nodos críticos:
     1. Audite y aplique solo el uso de roles estándar.
-    1. Audite y aplique la aplicación de cifrado para todas las cuentas de almacenamiento.
-    1. Audite y aplique el uso de la subred de red aprobada y red virtual por interfaz de red.
-    1. Audite y aplique la limitación de las tablas de enrutamiento definidas por el usuario.
-    1. Audite y aplique la implementación de agentes de Log Analytics para máquinas virtuales Windows y Linux.
+    2. Audite y aplique la aplicación de cifrado para todas las cuentas de almacenamiento.
+    3. Audite y aplique el uso de la subred de red aprobada y red virtual por interfaz de red.
+    4. Audite y aplique la limitación de las tablas de enrutamiento definidas por el usuario.
+    5. Audite y aplique la implementación de agentes de Log Analytics para máquinas virtuales Windows y Linux.
 2. Plano técnico de Azure:
     1. Cree un plano técnico denominado `mission-critical-workloads-and-protected-data`. Este plano técnico aplicará recursos además del plano técnico de datos protegidos.
-    1. Agregue las nuevas directivas de Azure al plano técnico.
-    1. Aplique el plano técnico a las suscripciones que se espera que alojen una aplicación crítica.
+    2. Agregue las nuevas directivas de Azure al plano técnico.
+    3. Aplique el plano técnico a las suscripciones que se espera que alojen una aplicación crítica.
 
 ## <a name="conclusion"></a>Conclusión
 

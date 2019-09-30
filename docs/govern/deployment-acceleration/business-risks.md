@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Obtenga más información acerca de la materia sobre la aceleración de la implementación como parte de una estrategia de gobernanza de la nube.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031946"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220725"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivaciones y riesgos empresariales de la aceleración de la implementación
 
@@ -22,7 +22,7 @@ En este artículo se describen las razones por las que los clientes normalmente 
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>¿Es pertinente la plantilla de aceleración de la implementación?
+## <a name="deployment-acceleration-relevancy"></a>Importancia de la aceleración de la implementación
 
 Los sistemas locales a menudo se implementan mediante imágenes de base referencia o scripts de instalación. Por lo general, es necesaria una configuración adicional, que puede implicar múltiples pasos o la intervención humana. Estos procesos manuales son propensos a errores y a menudo dan lugar a un "desfase de configuración", lo que requiere tareas de solución de problemas y de corrección que necesitan mucho tiempo.
 

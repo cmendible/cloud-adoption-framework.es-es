@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Mejora de la materia de coherencia de recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031801"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223011"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Mejora de la materia de coherencia de recursos
 
@@ -101,7 +101,7 @@ La migración es un proceso incremental que se centra en el traslado, las prueba
 - Determine si su organización requiere una alineación financiera más clara con P&Ls para las unidades de negocio.
 - Para las organizaciones globales, implemente sus requisitos de soberanía o cumplimiento del Acuerdo de Nivel de Servicio.
 - Para la agregación de la nube, implemente una solución de puerta de enlace en un proveedor de nube.
-- Para las herramientas que no permiten opciones de puerta de enlace o híbridas, acople estrechamente la supervisión con una herramienta de supervisión operativa.
+- Para las herramientas que no permiten opciones de puerta de enlace o híbridas, asocie estrechamente la supervisión con una herramienta de supervisión operativa que abarque todos los centros de datos y nubes.
 
 ## <a name="operate-and-post-implementation"></a>Funcionamiento y fase posterior a la implementación
 

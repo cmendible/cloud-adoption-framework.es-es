@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guía para empresa estándar: Mejora de la materia de base de referencia de la seguridad'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031274"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223783"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Guía para empresa estándar: Mejora de la materia de base de referencia de la seguridad
 
@@ -71,7 +71,7 @@ Los siguientes cambios en la directiva le ayudarán a corregir los nuevos riesgo
 
 1. Todos los recursos implementados deben categorizarse por importancia y clasificación de datos. El equipo de gobernanza de la nube y el propietario de la aplicación deben revisar las clasificaciones antes de la implementación en la nube.
 2. Las aplicaciones que almacenan u obtienen acceso a datos protegidos se deben administrar de manera diferente a las demás. Como mínimo, deben segmentarse para evitar el acceso no intencionado de los datos protegidos.
-3. Todos los datos protegidos deben estar cifrados cuando están en reposo.
+3. todos los datos protegidos deben estar cifrados cuando están en reposo. Aunque este es el valor predeterminado para todas las cuentas de Azure Storage, es posible que se necesiten estrategias de cifrado adicionales, incluido el cifrado de los datos de la cuenta de almacenamiento, el cifrado de las máquinas virtuales y el cifrado en el nivel de bases de datos si se usa SQL en una máquina virtual (cifrado de datos transparente y de columnas).
 4. Los permisos elevados en los segmentos que contienen datos protegidos deben ser una excepción. Estas excepciones se registrarán con el equipo de gobernanza de la nube y se auditarán periódicamente.
 5. las subredes que contengan datos protegidos deben aislarse de las otras subredes. El tráfico de red entre subredes de datos protegidos se auditará periódicamente.
 6. No se podrá tener acceso a ninguna subred que contenga datos protegidos directamente a través de Internet o centros de datos. El acceso a esas subredes debe enrutarse a través de subredes intermedias. Todo acceso a esas subredes debe realizarse a través de una solución de firewall que pueda realizar funciones de análisis y bloqueo de paquetes.
@@ -93,35 +93,35 @@ Los siguientes cambios en la directiva le ayudarán a corregir los nuevos riesgo
 El diseño de un producto viable mínimo de gobernanza cambiará para incluir nuevas directivas de Azure y una implementación de Azure Cost Management. Juntos, estos dos cambios de diseño cumplirán con las nuevas declaraciones de directiva corporativa.
 
 1. Los equipos de redes y seguridad de TI definirán los requisitos de la red. El equipo de gobernanza de la nube admitirá la conversación.
-1. Los equipos de identidad y de seguridad de TI definirán los requisitos de identidad y realizarán los cambios necesarios en la implementación local de Active Directory. El equipo de gobernanza de la nube revisará los cambios.
-1. Cree un repositorio en Azure DevOps para almacenar y edite todas las plantillas de Azure Resource Manager pertinentes y configuraciones con script.
-1. Implementación de Azure Security Center:
+2. Los equipos de identidad y de seguridad de TI definirán los requisitos de identidad y realizarán los cambios necesarios en la implementación local de Active Directory. El equipo de gobernanza de la nube revisará los cambios.
+3. Cree un repositorio en Azure DevOps para almacenar y edite todas las plantillas de Azure Resource Manager pertinentes y configuraciones con script.
+4. Implementación de Azure Security Center:
     1. Configure Azure Security Center para cualquier grupo de administración que contenga clasificaciones de datos protegidos.
-    1. Active de forma predeterminada el aprovisionamiento automático para garantizar el cumplimiento de la aplicación de revisiones.
-    1. Establezca configuraciones de seguridad del sistema operativo. El equipo de seguridad de TI definirá la configuración.
-    1. Admita el equipo de seguridad de TI en el uso inicial de Security Center. Realice la transición del uso de Security Center al equipo de seguridad de TI, pero conserve el acceso con el fin de mejorar continuamente la gobernanza.
-    1. Cree una plantilla de Resource Manager que refleje los cambios necesarios para la configuración de Security Center dentro de una suscripción.
-1. Actualice las directivas de Azure para todas las suscripciones:
+    2. Active de forma predeterminada el aprovisionamiento automático para garantizar el cumplimiento de la aplicación de revisiones.
+    3. Establezca configuraciones de seguridad del sistema operativo. El equipo de seguridad de TI definirá la configuración.
+    4. Admita el equipo de seguridad de TI en el uso inicial de Security Center. Realice la transición del uso de Security Center al equipo de seguridad de TI, pero conserve el acceso con el fin de mejorar continuamente la gobernanza.
+    5. Cree una plantilla de Resource Manager que refleje los cambios necesarios para la configuración de Security Center dentro de una suscripción.
+5. Actualice las directivas de Azure para todas las suscripciones:
     1. Audite y exija la clasificación de datos y la importancia en todos los grupos de administración y suscripciones, para identificar las suscripciones con clasificaciones de datos protegidos.
-    1. Audite y exija el uso de imágenes aprobadas únicamente.
-1. Actualice las directivas de Azure para todas las suscripciones que contengan clasificaciones de datos protegidos:
+    2. Audite y exija el uso de imágenes aprobadas únicamente.
+6. Actualice las directivas de Azure para todas las suscripciones que contengan clasificaciones de datos protegidos:
     1. Audite y exija el uso de roles RBAC de Azure únicamente.
-    1. Audite y exija el cifrado para todas las cuentas de almacenamiento y los archivos en reposo en nodos individuales.
-    1. Audite y exija la aplicación de un NSG a todos los NIC y subredes. Los equipos de redes y seguridad de TI definirán los NSG.
-    1. Audite y exija el uso de la subred de red aprobada y vNet por interfaz de red.
-    1. Audite y exija la limitación de las tablas de enrutamiento definidas por el usuario.
-    1. Aplique las directivas integradas para la configuración de invitado de la manera siguiente:
+    2. Audite y exija el cifrado para todas las cuentas de almacenamiento y los archivos en reposo en nodos individuales.
+    3. Audite y exija la aplicación de un NSG a todos los NIC y subredes. Los equipos de redes y seguridad de TI definirán los NSG.
+    4. Audite y exija el uso de la subred de red aprobada y vNet por interfaz de red.
+    5. Audite y exija la limitación de las tablas de enrutamiento definidas por el usuario.
+    6. Aplique las directivas integradas para la configuración de invitado de la manera siguiente:
         1. Confirme que los servidores web de Windows usan protocolos de comunicación segura.
-        1. Confirme que la configuración de seguridad de contraseñas es correcta en máquinas de Linux y Windows.
-1. Configuración del firewall:
+        2. Confirme que la configuración de seguridad de contraseñas es correcta en máquinas de Linux y Windows.
+7. Configuración del firewall:
     1. Identifique una configuración de Azure Firewall que cumpla los requisitos de seguridad necesarios. También puede identificar un dispositivo de terceros compatible, que sea compatible con Azure.
-    1. Cree una plantilla de Resource Manager para implementar el firewall con las configuraciones necesarias.
-1. Azure Blueprint
+    2. Cree una plantilla de Resource Manager para implementar el firewall con las configuraciones necesarias.
+8. Azure Blueprint
     1. Cree un nuevo plano técnico denominado `protected-data`.
-    1. Agregue el firewall y las plantillas de Azure Security Center al plano técnico.
-    1. Agregue las nuevas directivas para suscripciones de datos protegidos.
-    1. Publique el plano técnico en cualquier grupo de administración que planee actualmente el hospedaje de datos protegidos.
-    1. Aplique el nuevo plano técnico a cada suscripción afectada, además de los planos técnicos existentes.
+    2. Agregue el firewall y las plantillas de Azure Security Center al plano técnico.
+    3. Agregue las nuevas directivas para suscripciones de datos protegidos.
+    4. Publique el plano técnico en cualquier grupo de administración que planee actualmente el hospedaje de datos protegidos.
+    5. Aplique el nuevo plano técnico a cada suscripción afectada, además de los planos técnicos existentes.
 
 ## <a name="conclusion"></a>Conclusión
 

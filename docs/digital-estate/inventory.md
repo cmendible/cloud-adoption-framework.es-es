@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023497"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222607"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Recopilación de datos de inventario de un patrimonio digital
 
@@ -28,6 +28,9 @@ El inventario que posibilita un patrimonio digital cambia en función de la tran
 - **Innovación en las aplicaciones.** Durante un esfuerzo de innovación en aplicaciones habilitadas para la nube, el inventario comienza con el usuario. Un buen lugar para comenzar es la asignación de la experiencia del cliente de principio a fin. La alineación de dicha asignación con las aplicaciones, API, datos y otros recursos produce un inventario detallado para el análisis.
 
 - **Innovación en los datos.** Los esfuerzos de innovación en datos habilitados para la nube se centran en el producto o servicio. Un inventario incluye también una asignación de las oportunidades para romper el mercado, así como las funcionalidades necesarias.
+
+- **Seguridad:** El inventario proporciona seguridad para ayudar a evaluar, proteger y supervisar los recursos de la organización.
+
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Precisión e exhaustividad de un inventario
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicación del concepto de línea de base de seguridad en relación con la gobernanza de la nube.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031285"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222814"
 ---
 # <a name="security-baseline-template"></a>Plantilla de base de referencia de seguridad
 
-El primer paso para implementar un cambio es comunicar el cambio deseado. Lo mismo sucede cuando se cambian los procedimientos de gobernanza. La plantilla genérica siguiente proporciona un punto de partida para documentar y comunicar declaraciones de directivas que controlan problemas relacionados con la seguridad en la nube.
+El primer paso para implementar un cambio es comunicar lo que se pretende. Lo mismo sucede cuando se cambian los procedimientos de gobernanza. La plantilla siguiente proporciona un punto de partida para documentar y comunicar declaraciones de directivas que controlan problemas relacionados con la seguridad en la nube.
 
 A medida que las conversaciones avancen, use la estructura de esta plantilla como modelo para capturar los riesgos empresariales, las tolerancias a los riesgos, los procesos de cumplimiento y las herramientas necesarias para definir las declaraciones de las directivas de Línea de base de seguridad de la organización.
 

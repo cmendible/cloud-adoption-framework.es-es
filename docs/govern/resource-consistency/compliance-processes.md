@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procesos de cumplimiento de directivas de coherencia de recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031287"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223706"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesos de cumplimiento de directivas de coherencia de recursos
 
@@ -60,6 +60,7 @@ Los siguientes desencadenadores y acciones de cumplimiento son ejemplos que pued
 - **Recurso infraaprovisionado detectado.** cuando se detectan recursos que utilizan más del 80 % de CPU o de capacidad de memoria, es necesario escalar verticalmente o aprovisionar automáticamente recursos adicionales para proporcionar más capacidad.
 - **Creación de recursos sin etiquetas.** todas las solicitudes para crear un recurso sin las etiquetas META necesarias se rechazarán automáticamente.
 - **Interrupción de recursos crítica detectada.** el personal de TI recibe una notificación de todas las interrupciones críticas detectadas. Si la interrupción no se puede resolver inmediatamente, el personal escala el problema e informa a los propietarios de las cargas de trabajo y al equipo de gobernanza de la nube. El equipo de gobernanza de la nube realiza un seguimiento del problema hasta la resolución y actualiza las instrucciones si se necesita la revisión de las directivas para prevenir futuros incidentes.
+- **Desfase de configuración.** Los recursos detectados que no se ajustan a las líneas de base establecidas deben desencadenar alertas y corregirse automáticamente mediante herramientas de administración de configuración como Azure Automation, Chef, Puppet, Ansible, etc.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

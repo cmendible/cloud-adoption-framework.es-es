@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031588"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224345"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro de excelencia de la nube
 
@@ -32,7 +32,7 @@ CCoE requiere la colaboración entre cada una de las siguientes funcionalidades:
 
 ## <a name="impact-and-cultural-change"></a>Impacto y cambio cultural
 
-Si se admite esta función y se estructura correctamente, los participantes pueden acelerar los esfuerzos de innovación y migración a la vez que reducen el costo total de los cambios y aumentan la agilidad empresarial. Cuando se implementa correctamente, esta función puede reducir notablemente el tiempo de comercialización. A medida que los procedimientos del equipo se consolidan, se pueden observar mejoras en los indicadores de calidad, entre los que se incluyen la confiabilidad, el rendimiento, la seguridad, el mantenimiento y la satisfacción del cliente. Estas mejoras en eficacia, agilidad y calidad son especialmente importantes si la empresa tiene previsto implementar esfuerzos de migración a la nube a gran escala o desea emplear la nube para impulsar las innovaciones asociadas a la diferenciación de mercado.
+Si se admite esta función y se estructura correctamente, los participantes pueden acelerar los esfuerzos de innovación y migración a la vez que reducen el costo total de los cambios y aumentan la agilidad empresarial. Cuando se implementa correctamente, esta función puede reducir notablemente el tiempo de comercialización. A medida que los procedimientos del equipo se consolidan, los indicadores de calidad mejoran. Entre estos indicadores, se incluye la confiabilidad, el rendimiento, la seguridad, el mantenimiento y la satisfacción del cliente. Estas mejoras en eficacia, agilidad y calidad son especialmente importantes si la empresa tiene previsto implementar esfuerzos de migración a la nube a gran escala o desea emplear la nube para impulsar las innovaciones asociadas a la diferenciación de mercado.
 
 Si se realiza correctamente, el modelo de CCoE supondrá un cambio cultural significativo en el equipo de TI. La premisa fundamental de un enfoque con un CCoE es que el departamento de TI actúa como un agente, asociado o representante para la empresa. Este modelo representa un cambio de paradigma que se aleja de la consideración tradicional de TI como una unidad de operaciones o un nivel de abstracción entre la empresa y los recursos de TI.
 

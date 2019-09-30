@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 055c50ca2a934000b7e8d11927bc5ba1d4f95494
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031932"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224197"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Compilación de una justificación comercial para la migración a la nube
 

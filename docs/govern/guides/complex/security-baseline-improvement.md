@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031597"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220556"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guía de gobernanza para empresas complejas: Mejora de la materia de base de referencia de la seguridad
 
@@ -105,26 +105,26 @@ Las nuevas recomendaciones se dividen en dos categorías: TI de empresa (Hub) y 
 **Establecimiento de una suscripción de tipo hub-and-spoke de TI empresarial para centralizar de base de referencia de la seguridad:** En este procedimiento recomendado, la capacidad de gobernanza existente está encapsulada mediante una [topología de tipo hub-and-spoke con servicios compartidos](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), además de algunas adiciones clave del equipo de gobernanza de la nube.
 
 1. Repositorio de Azure DevOps. Cree un repositorio en Azure DevOps para almacenar y edite todas las plantillas de Azure Resource Manager pertinentes y configuraciones con script.
-1. Plantilla de topología de red en estrella tipo hub-and-spoke:
+2. Plantilla de topología de red en estrella tipo hub-and-spoke:
     1. La guía de la arquitectura de referencia sobre la [topología de red en estrella tipo hub-and-spoke con servicios compartidos](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) se puede usar para generar plantillas de Resource Manager para los recursos necesarios de un centro de TI de empresa.
-    1. Gracias a esas plantillas, esta estructura puede repetirse como parte de una estrategia de gobernanza central.
-    1. Además de la arquitectura de referencia actual, le recomendamos que cree una plantilla de grupo de seguridad de red que capture los requisitos de bloqueo de puertos o listas blancas, para que la red virtual pueda hospedar el firewall. Este grupo de seguridad de red difiere de los grupos anteriores, porque será el primer grupo de seguridad de red que permita el tráfico público hacia una red virtual.
-1. Crear directivas de Azure. Cree una directiva denominada `Hub NSG Enforcement` para aplicar la configuración del grupo de seguridad de red asignado a cualquier red virtual creada en esta suscripción. Aplique las directivas integradas para la configuración de invitado de la manera siguiente:
+    2. Gracias a esas plantillas, esta estructura puede repetirse como parte de una estrategia de gobernanza central.
+    3. Además de la arquitectura de referencia actual, le recomendamos que cree una plantilla de grupo de seguridad de red que capture los requisitos de bloqueo de puertos o listas blancas, para que la red virtual pueda hospedar el firewall. Este grupo de seguridad de red difiere de los grupos anteriores, porque será el primer grupo de seguridad de red que permita el tráfico público hacia una red virtual.
+3. Crear directivas de Azure. Cree una directiva denominada `Hub NSG Enforcement` para aplicar la configuración del grupo de seguridad de red asignado a cualquier red virtual creada en esta suscripción. Aplique las directivas integradas para la configuración de invitado de la manera siguiente:
     1. Confirme que los servidores web de Windows usan protocolos de comunicación segura.
-    1. Confirme que la configuración de seguridad de contraseñas es correcta en máquinas de Linux y Windows.
-1. Plano técnico de TI de empresa
+    2. Confirme que la configuración de seguridad de contraseñas es correcta en máquinas de Linux y Windows.
+4. Plano técnico de TI de empresa
     1. Cree un plano técnico de Azure denominado `corporate-it-subscription`.
-    1. Agregue las plantillas de la topología en estrella tipo hub-and-spoke y la directiva `Hub NSG Enforcement`.
-1. Ampliar la jerarquía inicial del grupo de administración.
+    2. Agregue las plantillas de la topología en estrella tipo hub-and-spoke y la directiva `Hub NSG Enforcement`.
+5. Ampliar la jerarquía inicial del grupo de administración.
     1. Para cada grupo de administración que ha solicitado soporte técnico para los datos protegidos, el plano técnico `corporate-it-subscription-blueprint` proporciona una solución de centro acelerada.
-    1. Debido a que los grupos de administración en este ejemplo ficticio incluyen una jerarquía regional además de una jerarquía de unidades de negocio, este plano técnico se implementará en cada región.
-    1. Cree una suscripción denominada `Corporate IT Subscription` para cada región de la jerarquía del grupo de administración.
-    1. Aplique el plano técnico `corporate-it-subscription-blueprint` a cada instancia regional.
-    1. Esto establecerá un centro para cada unidad de negocio de cada región. Nota: Se podrían lograr mayores ahorros de costos, pero para ello debe compartir centros en las unidades de negocio de cada región.
-1. Integre los objetos de directivas de grupo (GPO) mediante Desired State Configuration (DSC):
+    2. Debido a que los grupos de administración en este ejemplo ficticio incluyen una jerarquía regional además de una jerarquía de unidades de negocio, este plano técnico se implementará en cada región.
+    3. Cree una suscripción denominada `Corporate IT Subscription` para cada región de la jerarquía del grupo de administración.
+    4. Aplique el plano técnico `corporate-it-subscription-blueprint` a cada instancia regional.
+    5. Esto establecerá un centro para cada unidad de negocio de cada región. Nota: Se podrían lograr mayores ahorros de costos, pero para ello debe compartir centros en las unidades de negocio de cada región.
+6. Integre los objetos de directivas de grupo (GPO) mediante Desired State Configuration (DSC):
     1. Convierta GPO en DSC: el [proyecto de Microsoft de administración de línea de base](https://github.com/Microsoft/BaselineManagement) en GitHub puede acelerar este proceso. * Asegúrese de guardar DSC en el repositorio en paralelo con las plantillas de Resource Manager.
-    1. Implemente la configuración de estado de Azure Automation en cualquier instancia de la suscripción de TI de empresa. Azure Automation se puede usar para aplicar DSC en máquinas virtuales implementadas en las suscripciones compatibles del grupo de administración.
-    1. En el plan de desarrollo actual se planea habilitar directivas personalizadas de configuración de invitados. Cuando esa característica esté disponible, ya no será necesario usar Azure Automation en este procedimiento recomendado.
+    2. Implemente la configuración de estado de Azure Automation en cualquier instancia de la suscripción de TI de empresa. Azure Automation se puede usar para aplicar DSC en máquinas virtuales implementadas en las suscripciones compatibles del grupo de administración.
+    3. En el plan de desarrollo actual se planea habilitar directivas personalizadas de configuración de invitados. Cuando esa característica esté disponible, ya no será necesario usar Azure Automation en este procedimiento recomendado.
 
 **Aplicación de una gobernanza adicional a una suscripción de adopción de la nube (Spoke)** : Sobre la base que ofrece `Corporate IT Subscription`, los cambios menores en el producto viable mínimo de gobernanza aplicados a cada suscripción dedicada al apoyo de arquetipos de aplicaciones pueden producir rápidas mejoras.
 
@@ -132,38 +132,38 @@ En cambios iterativos anteriores del procedimiento recomendado, se definieron gr
 
 1. Plantilla de emparejamiento de redes. Esta plantilla emparejará la red virtual de cada suscripción con la red virtual del centro en la suscripción TI de empresa.
     1. En la arquitectura de referencia de la sección anterior, [Topología en estrella de tipo hub-and-spoke con servicios compartidos](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) se generó una plantilla de Resource Manager para habilitar el emparejamiento de redes virtuales.
-    1. Esa plantilla se puede usar como guía para modificar la plantilla de DMZ de la iteración de gobernanza anterior.
-    1. Es decir, ahora estamos agregando la opción de emparejamiento de red virtual a la red virtual de DMZ que se conectó previamente al dispositivo perimetral local a través de VPN.
-    1. *** También le recomendamos que elimine la VPN de esta plantilla para garantizar que no se enrute el tráfico directamente al centro de datos local, sin pasar por la solución de Firewall y la suscripción de TI de empresa.
-    1. Azure Automation solicitará la [configuración de red](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) adicional para aplicar DSC a las máquinas virtuales hospedadas.
-1. Modifique el grupo de seguridad de red. Bloquee todo el tráfico local público **y** directo en el grupo de seguridad de red. El único tráfico entrante debe venir a través del homólogo de la red virtual en la suscripción correspondiente al TI de empresa.
+    2. Esa plantilla se puede usar como guía para modificar la plantilla de DMZ de la iteración de gobernanza anterior.
+    3. Ahora estamos agregando la opción de emparejamiento de red virtual a la red virtual de DMZ que se conectó previamente al dispositivo perimetral local a través de VPN.
+    4. *** También le recomendamos que elimine la VPN de esta plantilla para garantizar que no se enrute el tráfico directamente al centro de datos local, sin pasar por la solución de Firewall y la suscripción de TI de empresa. También puede establecer esta VPN como un circuito de conmutación por error en caso de una interrupción del circuito de ExpressRoute.
+    5. Azure Automation solicitará la [configuración de red](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) adicional para aplicar DSC a las máquinas virtuales hospedadas.
+2. Modifique el grupo de seguridad de red. Bloquee todo el tráfico local público **y** directo en el grupo de seguridad de red. El único tráfico entrante debe venir a través del homólogo de la red virtual en la suscripción correspondiente al TI de empresa.
     1. En la iteración anterior, se creó un grupo de seguridad de red que bloqueaba todo el tráfico público y que incluía en la lista blanca todo el tráfico interno. Ahora queremos cambiar este grupo de seguridad de red un poco.
-    1. La nueva configuración del grupo de seguridad de red debería bloquear todo el tráfico público y todo el tráfico del centro de datos local.
-    1. El tráfico que entra a esta red virtual solo debe provenir de la red virtual que se encuentra en el otro lado del homólogo de la red virtual.
-1. Implementación de Azure Security Center:
+    2. La nueva configuración del grupo de seguridad de red debería bloquear todo el tráfico público y todo el tráfico del centro de datos local.
+    3. El tráfico que entra a esta red virtual solo debe provenir de la red virtual que se encuentra en el otro lado del homólogo de la red virtual.
+3. Implementación de Azure Security Center:
     1. Configure Azure Security Center para cualquier grupo de administración que contenga clasificaciones de datos protegidos.
-    1. Active de forma predeterminada el aprovisionamiento automático para garantizar el cumplimiento de la aplicación de revisiones.
-    1. Establezca configuraciones de seguridad del sistema operativo. Seguridad de TI para definir la configuración.
-    1. Habilite el soporte técnico para la seguridad de TI al usar por primera vez Azure Security Center. Cambie el uso de Security Center a la seguridad de TI, pero mantenga el acceso para poder mejorar continuamente la gobernanza.
-    1. Cree una plantilla de Resource Manager que refleje los cambios necesarios para la configuración de Azure Security Center de una suscripción.
-1. Actualice Azure Policy en todas las suscripciones.
+    2. Active de forma predeterminada el aprovisionamiento automático para garantizar el cumplimiento de la aplicación de revisiones.
+    3. Establezca configuraciones de seguridad del sistema operativo. Seguridad de TI para definir la configuración.
+    4. Habilite el soporte técnico para la seguridad de TI al usar por primera vez Azure Security Center. Cambie el uso de Security Center a la seguridad de TI, pero mantenga el acceso para poder mejorar continuamente la gobernanza.
+    5. Cree una plantilla de Resource Manager que refleje los cambios necesarios para la configuración de Azure Security Center de una suscripción.
+4. Actualice Azure Policy en todas las suscripciones.
     1. Audite y exija la clasificación de datos y la importancia en todos los grupos de administración y suscripciones, para identificar las suscripciones con clasificaciones de datos protegidos.
-    1. Audite y exija el uso exclusivo de imágenes del sistema operativo que se hayan aprobado.
-    1. Audite y exija el uso de las configuraciones de los huéspedes según los requisitos de seguridad de cada nodo.
-1. Actualice Azure Policy en todas las suscripciones que contengan clasificaciones de datos protegidos.
+    2. Audite y exija el uso exclusivo de imágenes del sistema operativo que se hayan aprobado.
+    3. Audite y exija el uso de las configuraciones de los huéspedes según los requisitos de seguridad de cada nodo.
+5. Actualice Azure Policy en todas las suscripciones que contengan clasificaciones de datos protegidos.
     1. Audite y aplique solo el uso de roles estándar.
-    1. Audite y exija la aplicación del cifrado en todas las cuentas de almacenamiento y los archivos en reposo de los nodos individuales.
-    1. Audite y fuerce la aplicación de la nueva versión del grupo de seguridad de red de DMZ.
-    1. Audite y exija el uso de la subred de red aprobada y la red virtual por interfaz de red.
-    1. Audite y exija que se aplique la limitación de las tablas de enrutamiento que defina el usuario.
-1. Plano técnico de Azure:
+    2. Audite y exija la aplicación del cifrado en todas las cuentas de almacenamiento y los archivos en reposo de los nodos individuales.
+    3. Audite y fuerce la aplicación de la nueva versión del grupo de seguridad de red de DMZ.
+    4. Audite y exija el uso de la subred de red aprobada y la red virtual por interfaz de red.
+    5. Audite y exija que se aplique la limitación de las tablas de enrutamiento que defina el usuario.
+6. Plano técnico de Azure:
     1. Cree un plano técnico de Azure denominado `protected-data`.
-    1. Agregue las plantillas de la red virtual homóloga, del grupo de seguridad de red y de Azure Security Center al plano técnico.
-    1. Asegúrese de que la plantilla de Active Directory correspondiente a la iteración anterior **no** esté incluida en el plano técnico. Cualquier dependencia de Active Directory la proporcionará la suscripción de TI de empresa.
-    1. Finalice todas las máquinas virtuales de Active Directory implementadas en la iteración anterior.
-    1. Agregue las nuevas directivas para suscripciones de datos protegidos.
-    1. Publique el plano técnico en cualquier grupo de administración destinado a hospedar datos protegidos.
-    1. Aplique el nuevo plano técnico a cada suscripción afectada, además de los planos técnicos existentes.
+    2. Agregue las plantillas de la red virtual homóloga, del grupo de seguridad de red y de Azure Security Center al plano técnico.
+    3. Asegúrese de que la plantilla de Active Directory correspondiente a la iteración anterior **no** esté incluida en el plano técnico. Cualquier dependencia de Active Directory la proporcionará la suscripción de TI de empresa.
+    4. Finalice todas las máquinas virtuales de Active Directory implementadas en la iteración anterior.
+    5. Agregue las nuevas directivas para suscripciones de datos protegidos.
+    6. Publique el plano técnico en cualquier grupo de administración que vaya a hospedar datos protegidos.
+    7. Aplique el nuevo plano técnico a cada suscripción afectada, además de los planos técnicos existentes.
 
 ## <a name="conclusion"></a>Conclusión
 

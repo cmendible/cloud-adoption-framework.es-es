@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024193"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224315"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Rehospedaje de una aplicación Linux local en máquinas virtuales de Azure y en Azure Database for MySQL
 
@@ -432,7 +432,7 @@ Ahora, Contoso debe hacer lo siguiente:
 - Quitar las VM locales de los trabajos de copia de seguridad locales.
 - Actualizar la documentación interna para que muestre las nuevas ubicaciones y las direcciones IP.
 - Revisar los recursos que interactúan con las VM locales y actualizar los valores de configuración pertinentes o la documentación para reflejar la nueva configuración.
-- Contoso usaba el servicio de Azure Migrate con la asignación de dependencia para evaluar la VM **OSTICKETWEB** para la migración. Ahora, debe quitar de la VM los agentes (Microsoft Monitoring Agent o Dependency Agent) que se instalaron con este propósito.
+- Contoso usaba el servicio de Azure Migrate con la asignación de dependencia para evaluar la VM **OSTICKETWEB** para la migración. Contoso debe quitar de la máquina virtual los agentes Microsoft Monitoring Agent y Microsoft Dependency Agent que se instalaron con este fin.
 
 ## <a name="review-the-deployment"></a>Revisión de la implementación
 

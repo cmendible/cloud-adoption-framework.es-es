@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivaciones de la administración de costos y riesgos empresariales
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032088"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223614"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Motivaciones de la administración de costos y riesgos empresariales
 
@@ -37,9 +37,9 @@ La materia de administración de costos intenta abordar los principales riesgos 
 Los riesgos variarán según la organización, pero los siguientes sirven como riesgos comunes relacionados con los costos que puede usar como punto de partida para debatir en el seno de su equipo de gobernanza de la nube:
 
 - **Control del presupuesto.** No controlar el presupuesto puede llevar a un gasto excesivo con un proveedor de servicios en la nube.
-- **Pérdida de uso.** Las compras previas o los compromisos previos que no se utilicen pueden generar inversiones desperdiciadas.
+- **Pérdida de uso.** Las compras previas o los compromisos previos que no se utilicen pueden generar inversiones perdidas.
 - **Anomalías en el gasto.** Los aumentos inesperados en cualquier dirección pueden ser indicadores de un uso inadecuado.
-- **Recursos sobreaprovisionados.** La implementación de los recursos en una configuración que supere las necesidades de una aplicación o máquina virtual (VM) puede dar lugar a un aumento de los costos y un desperdicio de los recursos.
+- **Recursos sobreaprovisionados.** La implementación de los recursos en una configuración que supere las necesidades de una aplicación o máquina virtual (VM) puede dar lugar a un desperdicio de los recursos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

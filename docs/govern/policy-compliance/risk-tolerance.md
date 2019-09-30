@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicación de los riesgos empresariales asociados con una transformación a la nube
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032209"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223547"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluación de la tolerancia al riesgo
 
@@ -47,7 +47,7 @@ La identificación de riesgos es un proceso bastante directo. Los riesgos relaci
 Para ayudarle a entender la tolerancia al riesgo, vamos a examinar los datos del cliente. Si una empresa de cualquier sector publica datos de clientes en un servidor no seguro, el riesgo técnico de que los datos estén en peligro o los roben es prácticamente el mismo. Sin embargo, la tolerancia de una empresa a este riesgo variará en función de la naturaleza y el valor potencial de los datos.
 
 - Las empresas de atención sanitaria y servicios financieros en Estados Unidos se rigen por rígidos requisitos de cumplimiento de terceros. Se da por hecho que la información de identificación personal o los datos de salud son extremadamente confidenciales. Si estas empresas se ven involucradas en los escenarios de riesgo anteriores, pueden sufrir graves consecuencias. Su tolerancia será extremadamente baja. Los datos de clientes publicados dentro o fuera de la red deberán regirse por esas directivas de cumplimiento de terceros.
-- Una empresa de juegos cuyos datos de cliente se limitan a un nombre de usuario, tiempos de juego y puntuaciones más altas no es propensa a sufrir consecuencias significativas si reproduce los comportamientos de riesgo anteriores. Aunque todos los datos no protegidos están en riesgo, el impacto de ese riesgo es pequeño. Por lo tanto, la tolerancia al riesgo en este caso es alta.
+- Una empresa de juegos cuyos datos de cliente se limitan a un nombre de usuario, tiempos de juego y puntuaciones más altas no es propensa a sufrir consecuencias negativas significativas más allá de una pérdida de reputación si reproduce los comportamientos de riesgo anteriores. Aunque todos los datos no protegidos están en riesgo, el impacto de ese riesgo es pequeño. Por lo tanto, la tolerancia al riesgo en este caso es alta.
 - Una empresa mediana que presta servicios de limpieza de alfombras a miles de clientes estaría entre estos dos extremos de tolerancia. Los datos de los clientes pueden más sólidos, por ejemplo, contener detalles como el número de teléfono o la dirección. Ambos se podrían considerar datos de identificación personal y deben protegerse. Sin embargo, puede no haber ningún requisito específico de gobernanza que indique que los datos deben protegerse. Desde una perspectiva de TI, la respuesta es sencilla, proteger los datos. Desde una perspectiva empresarial, puede que no sea tan sencilla. La empresa necesitará más detalles antes de poder decidir un nivel de tolerancia para este riesgo.
 
 En la siguiente sección se indican algunas preguntas de ejemplo que podrían ayudar a las empresas a decidir el nivel de tolerancia al riesgo.
@@ -56,10 +56,11 @@ En la siguiente sección se indican algunas preguntas de ejemplo que podrían ay
 
 En esta sección se enumeran las preguntas que dan lugar a conversaciones en tres categorías: impacto en las pérdidas, probabilidad de pérdida y costos de remediación. Cuando la empresa y el departamento de TI se asocian para abordar cada una de estas áreas, se puede llegar fácilmente a la decisión sobre la administración de los riesgos y la tolerancia general a un riesgo en particular.
 
-**Impacto de la pérdida.** Preguntas para determinar el impacto de un riesgo. Estas preguntas pueden ser difíciles (a veces imposibles) de responder. Cuantificar el impacto es lo mejor, pero a veces la conversación por sí sola alcanza para comprender la tolerancia. También son aceptables los rangos, en particular si incluyen supuestos que determinan esos rangos.
+**Impacto de la pérdida.** Preguntas para determinar el impacto de un riesgo. Estas preguntas son de difícil respuesta. Cuantificar el impacto es lo mejor, pero a veces la conversación por sí sola alcanza para comprender la tolerancia. También son aceptables los rangos, en particular si incluyen supuestos que determinan esos rangos.
 
-- ¿Infringe este riesgo los requisitos de cumplimiento de un tercero?
-- ¿Infringe este riesgo las directivas corporativas internas?
+- ¿Podría infringir este riesgo los requisitos de cumplimiento de terceros?
+- ¿Podría infringir este riesgo las directivas corporativas internas?
+- ¿Podría este riesgo provocar la pérdida de vidas humanas, heridas graves o daños en la propiedad?
 - ¿Podría este riesgo generar un costo para los clientes o para la cuota de mercado? Si es así, ¿se puede cuantificar este costo?
 - ¿Podría este riesgo crear experiencias de cliente negativas? ¿Es probable que estas experiencias afecten a las ventas o a los ingresos?
 - ¿Puede este riesgo crear una nueva responsabilidad jurídica? Si es así, ¿hay algún antecedente de sentencias por daños y perjuicios en estos tipos de casos?
@@ -74,7 +75,7 @@ Estas preguntas básicas darán lugar a muchas más. Después de mantener un di�
 
 **Costos de remediación de los riesgos.** Preguntas para determinar el costo de mitigar o eliminar el riesgo. Estas preguntas pueden ser bastante directas, en particular cuando se representan en un rango.
 
-- ¿Hay una solución clara? ¿Cuánto cuesta?
+- ¿Hay alguna solución clara? Y, en caso afirmativo, ¿cuánto cuesta?
 - ¿Existen opciones para evitar o minimizar este riesgo? ¿Cuál es el rango de costos para esas soluciones?
 - ¿Qué se necesita de la empresa para seleccionar la mejor solución?
 - ¿Qué se necesita de la empresa para validar los costos?

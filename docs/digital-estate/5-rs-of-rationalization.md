@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Revise las opciones disponibles para racionalizar un patrimonio digital.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023613"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223874"
 ---
 # <a name="cloud-rationalization"></a>Racionalización de la nube
 
@@ -69,7 +69,7 @@ Estos son los principales motivos para hacer un rehospedaje:
 
 - Actualizaciones más rápidas y cortas
 - Portabilidad del código
-- Mayor eficiencia en la nube (recursos, velocidad, costo)
+- Mayor eficiencia en la nube (recursos, velocidad, costo, operaciones administradas)
 
 Factores de análisis cuantitativo:
 
@@ -77,6 +77,7 @@ Factores de análisis cuantitativo:
 - Dependencias (tráfico de red)
 - Tráfico de usuarios (vistas de página, tiempo en la página, tiempo de carga)
 - Plataforma de desarrollo (idiomas, plataforma de datos, servicios de nivel intermedio)
+- Base de datos (CPU, memoria, almacenamiento, versión)
 
 Factores de análisis cualitativo:
 
@@ -102,6 +103,7 @@ Factores de análisis cuantitativo:
 - Dependencias (tráfico de red)
 - Tráfico de usuarios (vistas de página, tiempo en la página, tiempo de carga)
 - Plataforma de desarrollo (idiomas, plataforma de datos, servicios de nivel intermedio)
+- Base de datos (CPU, memoria, almacenamiento, versión)
 
 Factores de análisis cualitativo:
 
@@ -125,6 +127,7 @@ Factores de análisis cuantitativo:
 - Dependencias (tráfico de red)
 - Tráfico de usuarios (vistas de página, tiempo en la página, tiempo de carga)
 - Plataforma de desarrollo (idiomas, plataforma de datos, servicios de nivel intermedio)
+- Base de datos (CPU, memoria, almacenamiento, versión)
 
 Factores de análisis cualitativo:
 
@@ -148,6 +151,7 @@ Factores de análisis cuantitativo:
 - Tamaño de máquina virtual (CPU, memoria, almacenamiento)
 - Dependencias (tráfico de red)
 - Activos que se van a retirar
+- Base de datos (CPU, memoria, almacenamiento, versión)
 
 Factores de análisis cualitativo:
 

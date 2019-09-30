@@ -4,25 +4,25 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivaciones para la coherencia de recursos y riesgos empresariales
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031446"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222015"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motivaciones para la coherencia de recursos y riesgos empresariales
 
-En este artículo se describen las razones por las que los clientes normalmente adoptan una materia de coherencia de recursos dentro de una estrategia de gobernanza en la nube. También se proporcionan algunos ejemplos de posibles riesgos empresariales que pueden impulsar las declaraciones de directivas.
+En este artículo se describen las razones por las que los clientes normalmente adoptan una materia de coherencia de recursos dentro de una estrategia de gobernanza en la nube. También se proporcionan algunos ejemplos de posibles riesgos empresariales que pueden motivar las declaraciones de directiva.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>¿Es pertinente la coherencia de recursos?
+## <a name="resource-consistency-relevancy"></a>Importancia de la coherencia de los recursos
 
 Cuando se trata de implementar recursos y cargas de trabajo, la nube ofrece una mayor agilidad y flexibilidad con respecto a la mayoría de los centros de datos locales tradicionales. Sin embargo, estas posibles ventajas basadas en la nube también vienen acompañadas de posibles inconvenientes de administración que pueden poner en grave peligro el éxito de su adopción de la nube. ¿Qué recursos ha implementado? ¿Qué equipos poseen qué recursos? ¿Tiene suficientes recursos para admitir una carga de trabajo? ¿Cómo sabe si las cargas de trabajo están funcionando correctamente?
 

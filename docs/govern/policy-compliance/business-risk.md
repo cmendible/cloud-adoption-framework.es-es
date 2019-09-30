@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Descripción del riesgo empresarial durante la migración a la nube
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031670"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220403"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Durante una transformación, se presentan los mismos riesgos relativos.
 
 - Durante la experimentación temprana, se implementan algunos recursos con poca o ninguna información relevante. El riesgo es pequeño.
 - Cuando se implementa la primera carga de trabajo, el riesgo aumenta un poco. Este riesgo se corrige fácilmente al elegir una aplicación intrínsecamente de bajo riesgo con una pequeña base de usuarios.
-- A medida que se conectan más cargas de trabajo, los riesgos cambian en cada versión. Nuevas aplicaciones se ponen en marcha, los riesgos cambian.
+- A medida que se conectan más cargas de trabajo, los riesgos cambian en cada versión. Nuevas aplicaciones se ponen en marcha y los riesgos cambian.
 - Cuando una empresa lanza las primeras 10 a 20 aplicaciones en línea, el perfil de riesgo es muy diferente al de cuando las 1000 aplicaciones entran en producción en la nube.
 
 Los recursos que se han acumulado en el patrimonio local tradicional probablemente lo han hecho a lo largo del tiempo. La madurez de los equipos de negocio y de TI probablemente estaba creciendo de manera similar. Este crecimiento paralelo puede tender a crear un bagaje de directivas innecesario.
@@ -54,10 +54,10 @@ Por el contrario, un enfoque de producto mínimo viable puede permitir al equipo
 
 A continuación se muestran algunos ejemplos básicos de riesgos empresariales que pueden existir como parte de un producto mínimo viable:
 
-- Todos los recursos corren el riesgo de ser dados por finalizados (por error o mantenimiento).
+- Todos los recursos corren el riesgo de ser eliminados (por error o mantenimiento).
 - Todos los recursos corren el riesgo de generar demasiados gastos.
-- Todos los recursos podrían verse comprometidos por contraseñas débiles.
-- Cualquier recurso con todos los puertos abiertos expuestos en Internet corre el riesgo de verse comprometido.
+- Todos los recursos podrían verse comprometidos por contraseñas débiles o una configuración poco segura.
+- Cualquier recurso con los puertos abiertos expuestos en Internet corre el riesgo de verse comprometido.
 
 Los ejemplos anteriores tienen por objeto establecer los riesgos empresariales de producto mínimo viable como una teoría. La lista real será única para cada entorno.
 Una vez establecido el producto mínimo viable de riesgo empresarial, se pueden convertir en [directivas](./index.md) para corregir cada riesgo.
