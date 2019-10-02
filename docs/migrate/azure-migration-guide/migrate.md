@@ -204,7 +204,7 @@ Para más información, consulte:
 
 - [Herramienta de migración de datos de Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
 
-# <a name="third-party-migration-toolstabthird-party-tools"></a>[Herramientas de migración de terceros](#tab/third-party-tools).
+# <a name="third-party-migration-toolstabthird-party-tools"></a>[Herramientas de migración de terceros](#tab/third-party-tools)
 
 Hay varias herramientas de migración de terceros y servicios de ISV que pueden ayudarlo con el proceso de migración. Cada uno ofrece distintas ventajas y fortalezas. Estas herramientas son:
 
