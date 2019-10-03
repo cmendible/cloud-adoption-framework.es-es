@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: Establecimiento de una revisión de adecuación operativa
               href: manage/operational-fitness-review.md
+            - name: Centralización de operaciones de administración
+              href: manage/centralize-operations.md
     - name: Referencia
       items:
         - name: Hoja de ruta de Cloud Adoption Framework
