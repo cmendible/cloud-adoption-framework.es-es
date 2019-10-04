@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda a configurar la gobernanza, seguridad y cumplimiento para el entorno de Azure.
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224271"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804483"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Gobernanza, seguridad y cumplimiento en Azure
 
-A medida que se establece la directiva corporativa y se planean las estrategias de gobierno, se pueden usar herramientas y servicios como Azure Policy, Azure Blueprints y Azure Security Center para aplicar y automatizar las decisiones de gobierno de su organización. Antes de empezar a planear el gobierno, use la [herramienta de banco de pruebas comparativas de gobierno](http://aka.ms/caf/gov/assess) para identificar posibles brechas en el enfoque del gobierno en la nube de su organización. Para obtener más información sobre cómo desarrollar procesos de gobierno, consulte la [guía de gobernanza de la plataforma de adopción de la nube para Azure](../../govern/index.md).
+A medida que se establece la directiva corporativa y se planean las estrategias de gobierno, se pueden usar herramientas y servicios como Azure Policy, Azure Blueprints y Azure Security Center para aplicar y automatizar las decisiones de gobierno de su organización. Antes de empezar a planear el gobierno, use la [herramienta de banco de pruebas comparativas de gobierno](https://cafbaseline.com) para identificar posibles brechas en el enfoque del gobierno en la nube de su organización. Para obtener más información sobre cómo desarrollar procesos de gobierno, consulte la [guía de gobernanza de la plataforma de adopción de la nube para Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -38,7 +38,7 @@ Para crear un plano técnico, realice el siguiente procedimiento:
 
 ::: zone target="chromeless"
 
-1. Vaya a la **introducción a los planos técnicos**.
+1. Vaya a **Introducción a planos técnicos**.
 1. En la sección **Crear un plano técnico**, seleccione **Crear**.
 1. Filtre la lista Planos técnicos para seleccionar el plano técnico adecuado.
 1. Escriba el **Nombre del plano técnico** y seleccione la **Ubicación de definición** adecuada.
@@ -78,7 +78,7 @@ Para publicar artefactos de un plano técnico en su suscripción:
 ::: zone target="docs"
 
 1. Vaya a [Planos técnicos - Definiciones del plano técnico](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
-1. Seleccione el plano técnico que creó en los pasos anteriores.
+1. Seleccione la definición del plano técnico que creó en los pasos anteriores.
 1. Revise la definición del plano técnico y seleccione **Publicar plano técnico**.
 1. Proporcione una **versión** (por ejemplo, _1.0_) y **notas de cambios** y, después, seleccione **Publicar**.
 
@@ -165,6 +165,7 @@ Para obtener más información, consulte:
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::

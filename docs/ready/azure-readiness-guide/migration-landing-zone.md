@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda a implementar una zona de aterrizaje de migración en Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223927"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811103"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implementación de una zona de aterrizaje para la migración
 
@@ -75,7 +75,7 @@ Las siguientes decisiones se representan en el plano técnico de la zona de ater
 
 Obtenga más información y descargue un ejemplo de referencia del plano técnico de la zona de aterrizaje de migración de la plataforma de adopción de la nube para realizar operaciones de implementación o personalización a partir de [ejemplos de Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Los ejemplos de plano técnico también están disponibles en el portal. Para más información sobre cómo implementar un plano técnico, consulte [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Los ejemplos de plano técnico también están disponibles en el portal. Para más información sobre cómo crear un plano técnico, consulte [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Para obtener instrucciones sobre la personalización que se debe realizar en este plano técnico o la zona de aterrizaje resultante, consulte los artículos sobre las [consideraciones de zona de aterrizaje](../considerations/index.md).
 
